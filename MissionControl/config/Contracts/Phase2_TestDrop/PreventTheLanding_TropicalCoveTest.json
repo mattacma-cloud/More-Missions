@@ -1,0 +1,28 @@
+{
+  "ID": "PreventTheLanding_TropicalCoveTest",
+  "RandomSpawns": {
+    "Enable": false
+  },
+  "HotDropProtection": {
+    "Enable": false
+  },
+  "AdditionalLances": {
+    "Enable": false,
+    "UseDialogue": false,
+    "AllyLanceCount": 0,
+    "EnemyLanceCount": 0
+  },
+  "ExtendedLances": {
+    "Enable": false,
+    "Autofill": false
+  },
+  "ExtendedBoundaries": {
+    "Enable": false
+  },
+  "DynamicWithdraw": {
+    "Enable": false
+  },
+  "AdditionalPlayerMechs": {
+    "Enable": true
+  }
+}
