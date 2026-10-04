@@ -74,14 +74,20 @@ Drag and drop the folders into your mods folder.
 Ensure you have also downloaded the LorePack_Helpersmod from here (https://github.com/mattacma-cloud/Lore-Packs/tree/main)
 
 Go into the mod.json and change     
+
 `"ContractIdContains": [ "c_fp_lp", "touring_tikonov" ],`
+
 to
+
 `"ContractIdContains": [ "c_fp_lp", "touring_tikonov", "TheVice_CapitolHillTest" ],`
 
 **Step 3**
 
 Go to BTX_CAC_Compatibility and in the mod.json, in the `"Use4LimitOnContractIds":` list change the last line from
+
 `      "c_fp_tMTM_3B_ThreeWayBattle"t"`
+
 to
+
 `     "c_fp_tMTM_3B_ThreeWayBattle",
       "ByTheSword_CragMireTest"`
