@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_tropicalCove_vJung.d067233b-797a-4b8a-b9c7-03fc7bab40d1",
+  "MapID": "mapGeneral_tropicalCove_vJung",
+  "Name": "encMC_PlanetaryEvacuation_TropicalCove",
+  "FriendlyName": "Tropical Cove",
+  "Description": "CONFIRMED Planetary Evacuation 2a. Enum 18004. Not live Mods until asked.",
+  "BattleValue": "0",
+  "ContractTypeID": "18004",
+  "EncounterLayerGUID": "d067233b-797a-4b8a-b9c7-03fc7bab40d1",
+  "TagSetID": "mapGeneral_tropicalCove_vJung.d067233b-797a-4b8a-b9c7-03fc7bab40d1",
+  "IncludeInBuild": "1"
+}

@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_tropicalCove_vJung.982b9c91-9578-4745-a079-ad760c17edc2",
+  "MapID": "mapGeneral_tropicalCove_vJung",
+  "Name": "encMC_PlanetaryLanding_TropicalCove",
+  "FriendlyName": "Tropical Cove",
+  "Description": "CONFIRMED Planetary Landing 2a. Enum 18003. Not live Mods until asked.",
+  "BattleValue": "0",
+  "ContractTypeID": "18003",
+  "EncounterLayerGUID": "982b9c91-9578-4745-a079-ad760c17edc2",
+  "TagSetID": "mapGeneral_tropicalCove_vJung.982b9c91-9578-4745-a079-ad760c17edc2",
+  "IncludeInBuild": "1"
+}

@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapArena_riverCrossing_vHigh.a7c3e91d-4b28-4f15-9e60-1d8c5a2b7f04",
+  "MapID": "mapArena_riverCrossing_vHigh",
+  "Name": "encMC_Reconnaissance_RiverCrossing",
+  "FriendlyName": "ARENA - River Crossing",
+  "Description": "Reconnaissance. Enum 18007 PROPOSED. mapArena_riverCrossing_vHigh. New layer GUID.",
+  "BattleValue": "0",
+  "ContractTypeID": "18007",
+  "EncounterLayerGUID": "a7c3e91d-4b28-4f15-9e60-1d8c5a2b7f04",
+  "TagSetID": "mapArena_riverCrossing_vHigh.a7c3e91d-4b28-4f15-9e60-1d8c5a2b7f04",
+  "IncludeInBuild": "1"
+}

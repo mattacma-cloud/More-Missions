@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_taigaRiver_iTnd.088830ea-d511-428a-8d73-800aae2b59aa",
+  "MapID": "mapGeneral_taigaRiver_iTnd",
+  "Name": "encMC_CombatPatrol_TaigaRiver",
+  "FriendlyName": "Taiga River",
+  "Description": "Combat Patrol Taiga River four-leg timed patrol. IDs confirmed 2026-09-20.",
+  "BattleValue": "0",
+  "ContractTypeID": "18000",
+  "EncounterLayerGUID": "088830ea-d511-428a-8d73-800aae2b59aa",
+  "TagSetID": "mapGeneral_taigaRiver_iTnd.088830ea-d511-428a-8d73-800aae2b59aa",
+  "IncludeInBuild": "1"
+}

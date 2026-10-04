@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_rawCliffsides_vHigh.5b1ab4cc-0e89-42a7-a465-794d7dadac42",
+  "MapID": "mapGeneral_rawCliffsides_vHigh",
+  "Name": "encMC_MajorPush_RawCliffsides",
+  "FriendlyName": "Raw Cliffsides",
+  "Description": "CONFIRMED Major Push 2a. Enum 18001. Not live Mods until asked.",
+  "BattleValue": "0",
+  "ContractTypeID": "18001",
+  "EncounterLayerGUID": "5b1ab4cc-0e89-42a7-a465-794d7dadac42",
+  "TagSetID": "mapGeneral_rawCliffsides_vHigh.5b1ab4cc-0e89-42a7-a465-794d7dadac42",
+  "IncludeInBuild": "1"
+}

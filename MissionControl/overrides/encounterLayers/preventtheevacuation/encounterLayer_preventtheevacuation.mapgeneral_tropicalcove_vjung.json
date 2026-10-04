@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_tropicalCove_vJung.c3e8a910-4b17-4c21-9d10-7a1b2c3d4e10",
+  "MapID": "mapGeneral_tropicalCove_vJung",
+  "Name": "encMC_PreventTheEvacuation",
+  "FriendlyName": "Prevent the Evacuation",
+  "Description": "Prevent the Evacuation. Enum 18010 PROPOSED.",
+  "BattleValue": "0",
+  "ContractTypeID": "18010",
+  "EncounterLayerGUID": "c3e8a910-4b17-4c21-9d10-7a1b2c3d4e10",
+  "TagSetID": "mapGeneral_tropicalCove_vJung.c3e8a910-4b17-4c21-9d10-7a1b2c3d4e10",
+  "IncludeInBuild": "1"
+}

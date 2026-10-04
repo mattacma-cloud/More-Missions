@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_rawCliffsides_vHigh.c4e7a91b-2d38-4f06-b8c1-5e9a7d4f2103",
+  "MapID": "mapGeneral_rawCliffsides_vHigh",
+  "Name": "encMC_ContestedGround_RawCliffsides",
+  "FriendlyName": "Raw Cliffsides",
+  "Description": "Contested Ground. Enum 18006 PROPOSED. Same Raw Cliffsides cells as Major Push. New layer GUID.",
+  "BattleValue": "0",
+  "ContractTypeID": "18006",
+  "EncounterLayerGUID": "c4e7a91b-2d38-4f06-b8c1-5e9a7d4f2103",
+  "TagSetID": "mapGeneral_rawCliffsides_vHigh.c4e7a91b-2d38-4f06-b8c1-5e9a7d4f2103",
+  "IncludeInBuild": "1"
+}

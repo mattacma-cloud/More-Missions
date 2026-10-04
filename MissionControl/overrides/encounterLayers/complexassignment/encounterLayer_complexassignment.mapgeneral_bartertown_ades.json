@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_barterTown_aDes.31134893-80be-4331-b3b9-ba11d58d80e3",
+  "MapID": "mapGeneral_barterTown_aDes",
+  "Name": "encMC_ComplexAssignment_BarterTown",
+  "FriendlyName": "Barter Town",
+  "Description": "CONFIRMED Complex Assignment 2a. Enum 18005. Not live Mods until asked.",
+  "BattleValue": "0",
+  "ContractTypeID": "18005",
+  "EncounterLayerGUID": "31134893-80be-4331-b3b9-ba11d58d80e3",
+  "TagSetID": "mapGeneral_barterTown_aDes.31134893-80be-4331-b3b9-ba11d58d80e3",
+  "IncludeInBuild": "1"
+}

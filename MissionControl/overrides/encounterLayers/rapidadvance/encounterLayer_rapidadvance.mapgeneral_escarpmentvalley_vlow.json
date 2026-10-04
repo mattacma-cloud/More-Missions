@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_escarpmentValley_vLow.64e42a17-bba0-43a1-ae94-b7c50b9b5375",
+  "MapID": "mapGeneral_escarpmentValley_vLow",
+  "Name": "encMC_RapidAdvance_EscarpmentValley",
+  "FriendlyName": "Escarpment Valley",
+  "Description": "CONFIRMED Rapid Advance 2a. Full lance occupy. Enum 18002. Not live Mods until asked.",
+  "BattleValue": "0",
+  "ContractTypeID": "18002",
+  "EncounterLayerGUID": "64e42a17-bba0-43a1-ae94-b7c50b9b5375",
+  "TagSetID": "mapGeneral_escarpmentValley_vLow.64e42a17-bba0-43a1-ae94-b7c50b9b5375",
+  "IncludeInBuild": "1"
+}
