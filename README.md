@@ -89,5 +89,6 @@ Go to BTX_CAC_Compatibility and in the mod.json, in the `"Use4LimitOnContractIds
 
 to
 
-`     "c_fp_tMTM_3B_ThreeWayBattle",
-      "ByTheSword_CragMireTest"`
+`      "c_fp_tMTM_3B_ThreeWayBattle",
+      "ByTheSword_CragMireTest"
+`
