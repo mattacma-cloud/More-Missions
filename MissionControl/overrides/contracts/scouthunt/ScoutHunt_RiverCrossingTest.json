@@ -1,0 +1,666 @@
+{
+  "ID": "ScoutHunt_RiverCrossingTest",
+  "contractName": "Scout Hunt",
+  "contractDisplayStyle": "BaseCampaignNormal",
+  "difficulty": 5,
+  "difficultyUIModifier": 0,
+  "weight": 1,
+  "scope": "STANDARD",
+  "finalDifficulty": 0,
+  "representativeCastDefIDOverride": null,
+  "missionSuccessStatementOverride": null,
+  "badFaithStatementOverride": null,
+  "goodFaithStatementOverride": null,
+  "shortDescription": "Commander, there is a {TEAM_TAR.FactionDef.Demonym} scout that is carrying information we cannot allow in enemy hands. We need you to get a pair of 'Mechs out in the field and hunt it down.\n\n <b><color=#e51717>This is a test for this mission shape.</color></b>",
+  "longDescription": "Sweep forward from the drop points and find that scout, Commander. Be sharp, it's moving fast and it cannot be allowed to escape.",
+  "salvagePotential": 16,
+  "requirementList": [],
+  "OnContractSuccessResults": [],
+  "OnContractFailureResults": [],
+  "contractTypeID": "ScoutHunt",
+  "encounterPlayStyle": "SinglePlayer",
+  "maxNumberOfPlayerUnits": 2,
+  "lanceMinTonnage": -1,
+  "lanceMaxTonnage": -1,
+  "mechMinTonnages": [
+    -1,
+    -1
+  ],
+  "mechMaxTonnages": [
+    55,
+    55
+  ],
+  "mapMood": null,
+  "startingFogOfWarVisibility": "Unknown",
+  "contractObjectiveList": [
+    {
+      "contractObjective": {
+        "EncounterObjectGuid": "73275787-720a-4c33-9f20-953b1bbf48bd"
+      },
+      "title": "Destroy the Scout and Occupy Alpha and Bravo",
+      "description": "",
+      "isPrimary": true,
+      "forPlayer": "Player1",
+      "objectiveGuids": [
+        "b8c3e91d-0023-4f15-9e60-1d8c5a2b7f04",
+        "b8c3e91d-0021-4f15-9e60-1d8c5a2b7f04",
+        "b8c3e91d-0022-4f15-9e60-1d8c5a2b7f04"
+      ]
+    },
+    {
+      "contractObjective": {
+        "EncounterObjectGuid": "c4e8b91d-0025-4f15-9e60-1d8c5a2b7f04"
+      },
+      "title": "Enemy Scout Reaches Evac Zone",
+      "description": "",
+      "isPrimary": false,
+      "forPlayer": "Player1",
+      "objectiveGuids": [
+        "b8c3e91d-0024-4f15-9e60-1d8c5a2b7f04"
+      ]
+    }
+  ],
+  "objectiveList": [
+    {
+      "objective": {
+        "EncounterObjectGuid": "b8c3e91d-0023-4f15-9e60-1d8c5a2b7f04"
+      },
+      "title": "Destroy the Scout",
+      "description": "",
+      "isPrimary": true,
+      "OnSuccessResults": [],
+      "OnFailureResults": [],
+      "OnSuccessDialogueGUID": null,
+      "OnFailureDialogueGUID": null
+    },
+    {
+      "objective": {
+        "EncounterObjectGuid": "b8c3e91d-0021-4f15-9e60-1d8c5a2b7f04"
+      },
+      "title": "Occupy Waypoint Alpha \u2014 in 5 rounds with 1 Mech",
+      "description": "",
+      "isPrimary": true,
+      "OnSuccessResults": [],
+      "OnFailureResults": [],
+      "OnSuccessDialogueGUID": null,
+      "OnFailureDialogueGUID": null
+    },
+    {
+      "objective": {
+        "EncounterObjectGuid": "b8c3e91d-0022-4f15-9e60-1d8c5a2b7f04"
+      },
+      "title": "Occupy Waypoint Bravo \u2014 in 5 rounds with 1 Mech",
+      "description": "",
+      "isPrimary": true,
+      "OnSuccessResults": [],
+      "OnFailureResults": [],
+      "OnSuccessDialogueGUID": null,
+      "OnFailureDialogueGUID": null
+    },
+    {
+      "objective": {
+        "EncounterObjectGuid": "b8c3e91d-0024-4f15-9e60-1d8c5a2b7f04"
+      },
+      "title": "Scout extract",
+      "description": "",
+      "isPrimary": false,
+      "OnSuccessResults": [],
+      "OnFailureResults": [],
+      "OnSuccessDialogueGUID": null,
+      "OnFailureDialogueGUID": null
+    }
+  ],
+  "artilleryObjectiveList": [],
+  "buildingList": [],
+  "chunkList": [],
+  "cameraFocusHelperList": [
+    {
+      "name": "Spawner_PlayerLance",
+      "encounterObject": {
+        "EncounterObjectGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe"
+      }
+    }
+  ],
+  "dialogueList": [
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "e3a1b2c4-7d18-4e90-9f01-aa11bb22cc02"
+      },
+      "name": "Dialogue_MissionStart",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "Get your 'Mechs to the oversight points and then get hunting, Commander.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0080-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_MissionSuccess",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "Scout destroyed. Good work.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0081-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_MissionFailure",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "They got away, Commander.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0082-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_Alpha_Half",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "Three rounds left to get to Alpha.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0083-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_Alpha_Last",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "One round left to get to Alpha.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0084-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_Alpha_Fail",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "You're too late to Alpha.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0085-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_Bravo_Half",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "Three rounds left to get to Bravo.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0086-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_Bravo_Last",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "One round left to get to Bravo.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0087-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_Bravo_Fail",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "You're too late to Bravo.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0088-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_Evac_Show",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "Their extract is marked. Do not let the scout reach it.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0089-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_Scout_Dead",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "Scout down.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    },
+    {
+      "dialogue": {
+        "EncounterObjectGuid": "b8c3e91d-0090-4f15-9e60-1d8c5a2b7f04"
+      },
+      "name": "Dialogue_Scout_Out",
+      "overrideDialogueBucketId": "",
+      "dialogueContent": [
+        {
+          "words": "The scout reached their extraction point. We failed, Commander.",
+          "wordsColor": {
+            "g": 1,
+            "r": 1,
+            "b": 1,
+            "a": 1
+          },
+          "selectedCastDefId": "castDef_DariusDefault",
+          "emote": "Default",
+          "audioName": "NONE",
+          "cameraFocusGuid": "",
+          "cameraDistance": "Far",
+          "cameraHeight": "Default",
+          "revealRadius": -1
+        }
+      ]
+    }
+  ],
+  "contractRewardOverride": -1,
+  "travelOnly": false,
+  "useTravelCostPenalty": false,
+  "usesExpiration": false,
+  "expirationTimeOverride": -1,
+  "negotiatedSalary": 1,
+  "negotiatedSalvage": 0,
+  "excludedFromProceduralGeneration": false,
+  "player1Team": {
+    "encounterLayerData": {
+      "EncounterObjectGuid": "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+    },
+    "teamGuid": "bf40fd39-ccf9-47c4-94a6-061809681140",
+    "teamName": "Player 1",
+    "faction": "Player1sMercUnit",
+    "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+    "lanceOverrideList": [
+      {
+        "lanceSpawner": {
+          "EncounterObjectGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe"
+        },
+        "name": "Spawner_PlayerLance",
+        "lanceDefId": "Manual",
+        "lanceTagSet": {
+          "items": [],
+          "tagSetSourceFile": "tags/LanceTags"
+        },
+        "lanceExcludedTagSet": {
+          "items": [],
+          "tagSetSourceFile": "tags/LanceTags"
+        },
+        "spawnEffectTags": {
+          "items": [],
+          "tagSetSourceFile": "tags/SpawnEffectTags"
+        },
+        "lanceDifficultyAdjustment": 0,
+        "selectedLanceDefId": null,
+        "selectedLanceDifficulty": 0,
+        "unitSpawnPointOverrideList": [
+          {
+            "unitSpawnPoint": {
+              "EncounterObjectGuid": "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39"
+            },
+            "customUnitName": "",
+            "customHeraldryDefId": "",
+            "unitType": "Mech",
+            "unitDefId": "mechDef_None",
+            "unitTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/UnitTags"
+            },
+            "unitExcludedTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/UnitTags"
+            },
+            "spawnEffectTags": {
+              "items": [],
+              "tagSetSourceFile": "tags/SpawnEffectTags"
+            },
+            "pilotDefId": "pilotDef_InheritLance",
+            "pilotTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/PilotTags"
+            },
+            "pilotExcludedTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/PilotTags"
+            },
+            "selectedUnitType": "UNDEFINED",
+            "selectedUnitDefId": "",
+            "selectedPilotDefId": ""
+          },
+          {
+            "unitSpawnPoint": {
+              "EncounterObjectGuid": "a55fc76c-c955-4b61-bb64-2608c9beb9f5"
+            },
+            "customUnitName": "",
+            "customHeraldryDefId": "",
+            "unitType": "Mech",
+            "unitDefId": "mechDef_None",
+            "unitTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/UnitTags"
+            },
+            "unitExcludedTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/UnitTags"
+            },
+            "spawnEffectTags": {
+              "items": [],
+              "tagSetSourceFile": "tags/SpawnEffectTags"
+            },
+            "pilotDefId": "pilotDef_InheritLance",
+            "pilotTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/PilotTags"
+            },
+            "pilotExcludedTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/PilotTags"
+            },
+            "selectedUnitType": "UNDEFINED",
+            "selectedUnitDefId": "",
+            "selectedPilotDefId": ""
+          }        ]
+      }
+    ]
+  },
+  "player2Team": {
+    "encounterLayerData": {
+      "EncounterObjectGuid": "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+    },
+    "teamGuid": "757173dd-b4e1-4bb5-9bee-d78e623cc867",
+    "teamName": "Player 2",
+    "faction": "Player2sMercUnit",
+    "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+    "lanceOverrideList": []
+  },
+  "employerTeam": {
+    "encounterLayerData": {
+      "EncounterObjectGuid": "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+    },
+    "teamGuid": "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
+    "teamName": "Employer",
+    "faction": "INVALID_UNSET",
+    "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+    "lanceOverrideList": []
+  },
+  "targetTeam": {
+    "encounterLayerData": {
+      "EncounterObjectGuid": "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+    },
+    "teamGuid": "be77cadd-e245-4240-a93e-b99cc98902a5",
+    "teamName": "Target",
+    "faction": "INVALID_UNSET",
+    "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+    "lanceOverrideList": [
+      {
+        "lanceSpawner": {
+          "EncounterObjectGuid": "b8c3e91d-0063-4f15-9e60-1d8c5a2b7f04"
+        },
+        "name": "Scout",
+        "lanceDefId": "Manual",
+        "lanceTagSet": {
+          "items": [
+            "lance_type_recon",
+            "lance_type_light",
+            "lance_type_mech"
+          ],
+          "tagSetSourceFile": "tags/LanceTags"
+        },
+        "lanceExcludedTagSet": {
+          "items": [
+            "lance_type_gladiator"
+          ],
+          "tagSetSourceFile": "tags/LanceTags"
+        },
+        "spawnEffectTags": {
+          "items": [],
+          "tagSetSourceFile": "tags/SpawnEffectTags"
+        },
+        "lanceDifficultyAdjustment": 0,
+        "selectedLanceDefId": null,
+        "selectedLanceDifficulty": 0,
+        "unitSpawnPointOverrideList": [
+          {
+            "unitSpawnPoint": {
+              "EncounterObjectGuid": "b8c3e91d-0043-4f15-9e60-1d8c5a2b7f04"
+            },
+            "customUnitName": "Scout",
+            "customHeraldryDefId": "",
+            "unitType": "Mech",
+            "unitDefId": "mechdef_phoenixhawk_PXH-1",
+            "unitTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/UnitTags"
+            },
+            "unitExcludedTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/UnitTags"
+            },
+            "spawnEffectTags": {
+              "items": [],
+              "tagSetSourceFile": "tags/SpawnEffectTags"
+            },
+            "pilotDefId": "pilot_d7_scout",
+            "pilotTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/PilotTags"
+            },
+            "pilotExcludedTagSet": {
+              "items": [],
+              "tagSetSourceFile": "tags/PilotTags"
+            },
+            "selectedUnitType": "UNDEFINED",
+            "selectedUnitDefId": "",
+            "selectedPilotDefId": ""
+          }
+        ]
+      }
+    ]
+  },
+  "targetsAllyTeam": {
+    "encounterLayerData": {
+      "EncounterObjectGuid": "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+    },
+    "teamGuid": "31151ed6-cfc2-467e-98c4-9ae5bea784cf",
+    "teamName": "Target's Ally",
+    "faction": "INVALID_UNSET",
+    "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+    "lanceOverrideList": []
+  },
+  "neutralToAllTeam": {
+    "encounterLayerData": {
+      "EncounterObjectGuid": "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+    },
+    "teamGuid": "61612bb3-abf9-4586-952a-0559fa9dcd75",
+    "teamName": "Neutral to All",
+    "faction": "INVALID_UNSET",
+    "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+    "lanceOverrideList": []
+  },
+  "hostileToAllTeam": {
+    "encounterLayerData": {
+      "EncounterObjectGuid": "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+    },
+    "teamGuid": "3c9f3a20-ab03-4bcb-8ab6-b1ef0442bbf0",
+    "teamName": "Hostile to All",
+    "faction": "INVALID_UNSET",
+    "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+    "lanceOverrideList": []
+  },
+  "employersAllyTeam": {
+    "encounterLayerData": null,
+    "teamGuid": "70af7e7f-39a8-4e81-87c2-bd01dcb01b5e",
+    "teamName": "Employers Ally",
+    "faction": "INVALID_UNSET",
+    "teamLeaderCastDefId": "castDef_TeamLeader_Current",
+    "lanceOverrideList": []
+  }
+}
