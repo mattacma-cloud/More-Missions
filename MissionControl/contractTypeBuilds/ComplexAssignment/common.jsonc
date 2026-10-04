@@ -1,0 +1,845 @@
+// ComplexAssignment — untimed sequential mix on Barter Town.
+// 2a: battle, assassinate, building attack, rescue. Combat Patrol spine only. No clocks.
+// CONFIRMED 2026-09-22. Not live Mods until asked.
+{
+  "Key": "ComplexAssignment",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Chunks": [
+    {
+      "Name": "Chunk_PlayerLance",
+      "Type": "Chunk",
+      "SubType": "PlayerLance",
+      "Children": [
+        {
+          "Name": "Spawner_PlayerLance",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "DiD barterTown player World.",
+          "Guid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "Team": "Player1",
+          "SpawnPointGuids": [
+            "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39",
+            "5df48a48-1840-49b0-84e9-126847053afa",
+            "a55fc76c-c955-4b61-bb64-2608c9beb9f5",
+            "0f10a383-7325-4726-b2c4-a0ef416e4b27"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Player 1"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_01",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b513c90a-18e5-47dc-a4ba-f3d627b87601",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_01",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Garrison at DiD Target_Lance_01 World.",
+          "Guid": "f78cce05-8078-4f5d-b240-256af1f7f71b",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "67d95242-284a-4316-b93d-7c03951e1664",
+            "d50c4ce7-6596-49c2-947d-28d3c95a8d6d",
+            "f013df77-26bc-4717-b031-a901d412ac48",
+            "c96293d7-9b95-48c0-a72f-8a9d8f82d361"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "PrioritiseTaggedUnit",
+              "Priority": 8,
+              "MustMatchAll": false,
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Battle",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Task 1. Destroy the garrison. Untimed.",
+          "Guid": "8e1a2b3c-4d5e-4f60-a171-b2c3d4e5f601",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Destroy the garrison",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "f78cce05-8078-4f5d-b240-256af1f7f71b"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_02",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "23bab26f-0224-45ca-8b22-5850aa59e57b",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_02",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Marked target at DiD Target_Lance_02 World.",
+          "Guid": "3f899376-6d15-413c-a260-a5f0aecff9bd",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "00c4ad37-d0f5-45e4-b54e-ab29d1646935"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles",
+            "assassinate_mark"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            },
+            {
+              "Type": "PrioritiseTaggedUnit",
+              "Priority": 8,
+              "MustMatchAll": false,
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Assassinate",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Task 2. DestroyLance cherry-pick for assassinate. MC 1.5.2 has no separate unit builder.",
+          "Guid": "9f2b3c4d-5e6f-4071-b282-c3d4e5f60712",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Assassinate the marked heavy",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "3f899376-6d15-413c-a260-a5f0aecff9bd"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Buildings",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "4d5e6f70-8192-4a34-b234-d4e5f6071829",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Buildings",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "Valley Base / Bravo plot. Tagged destroy_building; occupy stays blocked while those stand.",
+          "Guid": "5e6f7081-92a3-4b45-c345-e5f60718293a",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_DangerZone",
+          "ObjectiveGuid": "6f708192-a3b4-4c56-d456-f60718293a4b",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Destroy_Buildings",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Task 3. 1.5.2 wreck: OccupyRegion + opposing destroy_building tags. No DestroyXUnits.",
+          "Guid": "6f708192-a3b4-4c56-d456-f60718293a4b",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Capture Valley Base",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "5e6f7081-92a3-4b45-c345-e5f60718293a",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [
+            "destroy_building"
+          ],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "Capture Valley Base",
+          "UseDropship": false
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Rescue_Pickup",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "708192a3-b4c5-4d67-e567-0718293a4b5c",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Rescue_Pickup",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "Reach the friendly at DiD Employer_Lance_01 World. Ally spawns after this succeed.",
+          "Guid": "8192a3b4-c5d6-4e78-f678-18293a4b5c6d",
+          "Radius": 80.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "92a3b4c5-d6e7-4f89-a789-293a4b5c6d7e",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Rescue_Reach",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Task 4a. Untimed reach. Opens the ally, who then runs to the LZ.",
+          "Guid": "92a3b4c5-d6e7-4f89-a789-293a4b5c6d7e",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Reach the friendly",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "8192a3b4-c5d6-4e78-f678-18293a4b5c6d",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Employer_Lance_01",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "222442a1-1616-44f5-90f8-d26269123521",
+      "StartingStatus": "Inactive",
+      "ControlledByContract": false,
+      "Children": [
+        {
+          "Name": "Spawner_Employer_Lance_01",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Rescue ally. Instant at pickup. StayInsideRegion to player LZ.",
+          "Guid": "559d756d-4c4e-495c-ac38-ca593e041896",
+          "Team": "Employer",
+          "SpawnPointGuids": [
+            "70db0bca-424d-4366-8c07-df3b0d9019e6",
+            "7c1bac4c-ca24-4cc9-b59f-903745891932",
+            "7c30108d-c203-4240-a74f-76cc057ccae0"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Employer_Lance"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "b4c5d6e7-f809-41ab-c9ab-4b5c6d7e8f90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Ally_Extract",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a3b4c5d6-e7f8-409a-b89a-3a4b5c6d7e8f",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Ally_Extract",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "Player LZ. Ally StayInsideRegion here then dropship.",
+          "Guid": "b4c5d6e7-f809-41ab-c9ab-4b5c6d7e8f90",
+          "Radius": 80.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "c5d6e7f8-091a-42bc-dabc-5c6d7e8f901a",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Ally_Extract",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Task 4b. Ally dropship at the LZ. Player evac waits for this.",
+          "Guid": "c5d6e7f8-091a-42bc-dabc-5c6d7e8f901a",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Extract the friendly",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "b4c5d6e7-f809-41ab-c9ab-4b5c6d7e8f90",
+          "LanceToUseRegionGuid": "559d756d-4c4e-495c-ac38-ca593e041896",
+          "RequiredTagsOnUnit": [
+            "Employer_Lance"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Evac",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "d6e7f809-1a2b-43cd-ebcd-6d7e8f901a2b",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Evac",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "Player dropship after the ally extracts. Same World as LZ, own GUID.",
+          "Guid": "f8091a2b-3c4d-45ef-ade0-8f901a2b3c4d",
+          "Radius": 80.0,
+          "RegionDefId": "regionDef_Positive",
+          "ObjectiveGuid": "091a2b3c-4d5e-460f-bef1-901a2b3c4d5e",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Evac",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Player extract. Opens after ally dropship.",
+          "Guid": "091a2b3c-4d5e-460f-bef1-901a2b3c4d5e",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Extract",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "f8091a2b-3c4d-45ef-ade0-8f901a2b3c4d",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupied] 'Mech(s)",
+          "UseDropship": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Battle_Garrison_02",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b21a0001-4c01-4a01-8a01-000000000001",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Spawner_Battle_Garrison_02",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Destroy the second garrison",
+          "Guid": "b21a0001-4c01-4a01-8a01-000000000011",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "b21a0002-4c01-4a01-8a01-000000000001",
+            "b21a0002-4c01-4a01-8a01-000000000002",
+            "b21a0002-4c01-4a01-8a01-000000000003",
+            "b21a0002-4c01-4a01-8a01-000000000004"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "PrioritiseTaggedUnit",
+              "Priority": 8,
+              "MustMatchAll": false,
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Battle_Garrison_02",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Destroy the second garrison",
+          "Guid": "b21a0001-4c01-4a01-8a01-000000000021",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Destroy the second garrison",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "b21a0001-4c01-4a01-8a01-000000000011"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Assassinate_Escort",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b21a0001-4c01-4a01-8a01-000000000002",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Assassinate_Escort",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "(Optional) Destroy the assassinate escort",
+          "Guid": "b21a0001-4c01-4a01-8a01-000000000012",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "b21a0002-4c01-4a01-8a01-000000000011",
+            "b21a0002-4c01-4a01-8a01-000000000012",
+            "b21a0002-4c01-4a01-8a01-000000000013",
+            "b21a0002-4c01-4a01-8a01-000000000014"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "PrioritiseTaggedUnit",
+              "Priority": 8,
+              "MustMatchAll": false,
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Assassinate_Escort",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "(Optional) Destroy the assassinate escort",
+          "Guid": "b21a0001-4c01-4a01-8a01-000000000022",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "(Optional) Destroy the assassinate escort",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "b21a0001-4c01-4a01-8a01-000000000012"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Base_Garrison",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b21a0001-4c01-4a01-8a01-000000000003",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Base_Garrison",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "(Optional) Destroy the base garrison",
+          "Guid": "b21a0001-4c01-4a01-8a01-000000000013",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "b21a0002-4c01-4a01-8a01-000000000021",
+            "b21a0002-4c01-4a01-8a01-000000000022",
+            "b21a0002-4c01-4a01-8a01-000000000023",
+            "b21a0002-4c01-4a01-8a01-000000000024"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Vehicle",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "PrioritiseTaggedUnit",
+              "Priority": 8,
+              "MustMatchAll": false,
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Base_Garrison",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "(Optional) Destroy the base garrison",
+          "Guid": "b21a0001-4c01-4a01-8a01-000000000023",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "(Optional) Destroy the base garrison",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "b21a0001-4c01-4a01-8a01-000000000013"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Rescue_Garrison",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b21a0001-4c01-4a01-8a01-000000000004",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Rescue_Garrison",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "(Optional) Destroy the rescue garrison",
+          "Guid": "b21a0001-4c01-4a01-8a01-000000000014",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "b21a0002-4c01-4a01-8a01-000000000031",
+            "b21a0002-4c01-4a01-8a01-000000000032",
+            "b21a0002-4c01-4a01-8a01-000000000033",
+            "b21a0002-4c01-4a01-8a01-000000000034"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "PrioritiseTaggedUnit",
+              "Priority": 8,
+              "MustMatchAll": false,
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Rescue_Garrison",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "(Optional) Destroy the rescue garrison",
+          "Guid": "b21a0001-4c01-4a01-8a01-000000000024",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "(Optional) Destroy the rescue garrison",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "b21a0001-4c01-4a01-8a01-000000000014"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_DefaultDialogue",
+      "Type": "Chunk",
+      "SubType": "Dialogue",
+      "Children": [
+        {
+          "Name": "Dialogue_MissionStart",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "e273a41b-9c50-4d61-8e72-f1a2b3c4d5e6",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Battle",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "f384b52c-0d61-4e72-9f83-02b3c4d5e6f7",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Assassinate",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "0495c63d-1e72-4f83-a094-13c4d5e6f708",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Buildings",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "15a6d74e-2f83-4094-b1a5-24d5e6f70819",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Rescue",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "26b7e85f-3094-41a5-c2b6-35e6f708192a",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Extract",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "37c8f960-41a5-42b6-d3c7-46f708192a3b",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_EncounterBoundary",
+      "Type": "Chunk",
+      "SubType": "EncounterBoundary",
+      "Children": [
+        {
+          "Name": "EncounterBoundaryRect",
+          "Type": "Region",
+          "SubType": "Boundary",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "Trigger_MissionStart",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "After Begin: intro bark. Battle already Active.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e273a41b-9c50-4d61-8e72-f1a2b3c4d5e6"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Battle_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Open assassinate.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "8e1a2b3c-4d5e-4f60-a171-b2c3d4e5f601",
+          "Status": "Success"
+        },
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "b21a0001-4c01-4a01-8a01-000000000021",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "f384b52c-0d61-4e72-9f83-02b3c4d5e6f7"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "23bab26f-0224-45ca-8b22-5850aa59e57b"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "b21a0001-4c01-4a01-8a01-000000000002"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Assassinate_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Open building wreck.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "9f2b3c4d-5e6f-4071-b282-c3d4e5f60712",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "0495c63d-1e72-4f83-a094-13c4d5e6f708"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "4d5e6f70-8192-4a34-b234-d4e5f6071829"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "b21a0001-4c01-4a01-8a01-000000000003"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Tag_Buildings",
+      "TriggerOn": "OnEncounterStateChanged",
+      "Description": "Mark Valley Base buildings when the wreck chunk activates.",
+      "SucceedOn": "All",
+      "Conditionals": [
+        {
+          "Type": "EncounterObjectMatchesState",
+          "Guid": "4d5e6f70-8192-4a34-b234-d4e5f6071829",
+          "Status": "Active"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "SetUnitsInRegionToBeTaggedObjectiveTargets",
+          "RegionGuid": "5e6f7081-92a3-4b45-c345-e5f60718293a",
+          "Team": "Target",
+          "UnitType": "Building",
+          "NumberOfUnits": 4,
+          "IsObjectiveTarget": true,
+          "Tags": [
+            "destroy_building"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Buildings_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Open rescue pickup. Ally stays Inactive until the player reaches that hex.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "6f708192-a3b4-4c56-d456-f60718293a4b",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "15a6d74e-2f83-4094-b1a5-24d5e6f70819"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "708192a3-b4c5-4d67-e567-0718293a4b5c"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "b21a0001-4c01-4a01-8a01-000000000004"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Rescue_Reach_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Spawn ally. They run to the LZ. Open ally extract occupy.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "92a3b4c5-d6e7-4f89-a789-293a4b5c6d7e",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "26b7e85f-3094-41a5-c2b6-35e6f708192a"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "222442a1-1616-44f5-90f8-d26269123521"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "a3b4c5d6-e7f8-409a-b89a-3a4b5c6d7e8f"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Ally_Extract_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Player dropship after the friendly is out.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "c5d6e7f8-091a-42bc-dabc-5c6d7e8f901a",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "37c8f960-41a5-42b6-d3c7-46f708192a3b"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "d6e7f809-1a2b-43cd-ebcd-6d7e8f901a2b"
+        }
+      ]
+    }
+  ]
+}

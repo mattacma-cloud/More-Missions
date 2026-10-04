@@ -1,0 +1,582 @@
+// RapidAdvance — land with ally, smash three lances, full-lance occupy in 10, hold 6, 4th lance on hold.
+// CONFIRMED 2026-09-22. Not live Mods until asked.
+// Timer-fail: CompleteObjective CompletionType Failed.
+{
+  "Key": "RapidAdvance",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Chunks": [
+    {
+      "Name": "Chunk_PlayerLance",
+      "Type": "Chunk",
+      "SubType": "PlayerLance",
+      "Children": [
+        {
+          "Name": "Spawner_PlayerLance",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "Team": "Player1",
+          "SpawnPointGuids": [
+            "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39",
+            "5df48a48-1840-49b0-84e9-126847053afa",
+            "a55fc76c-c955-4b61-bb64-2608c9beb9f5",
+            "0f10a383-7325-4726-b2c4-a0ef416e4b27"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Player 1"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Employer_Lance_01",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "222442a1-1616-44f5-90f8-d26269123521",
+      "StartingStatus": "Active",
+      "ControlledByContract": false,
+      "Children": [
+        {
+          "Name": "Spawner_Employer_Lance_01",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Allied lance Instant with the player.",
+          "Guid": "559d756d-4c4e-495c-ac38-ca593e041896",
+          "Team": "Employer",
+          "SpawnPointGuids": [
+            "70db0bca-424d-4366-8c07-df3b0d9019e6",
+            "7c1bac4c-ca24-4cc9-b59f-903745891932",
+            "7c30108d-c203-4240-a74f-76cc057ccae0",
+            "b4c4e701-4b21-4d11-8e01-559d756d0004"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Employer_Ally"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_01",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b513c90a-18e5-47dc-a4ba-f3d627b87601",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_01",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "f78cce05-8078-4f5d-b240-256af1f7f71b",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "67d95242-284a-4316-b93d-7c03951e1664",
+            "d50c4ce7-6596-49c2-947d-28d3c95a8d6d",
+            "f013df77-26bc-4717-b031-a901d412ac48",
+            "c96293d7-9b95-48c0-a72f-8a9d8f82d361"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "PrioritiseTaggedUnit",
+              "Priority": 8,
+              "MustMatchAll": false,
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_DestroyLance_01",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "a0b9c5b2-c594-4c5a-be1d-028a51c51519",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "(Optional) Break first blocking lance",
+          "Priority": 8,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "f78cce05-8078-4f5d-b240-256af1f7f71b"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_02",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "70088858-545d-4ca1-8d68-ce0736ae648b",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_02",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "3f899376-6d15-413c-a260-a5f0aecff9bd",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "00c4ad37-d0f5-45e4-b54e-ab29d1646935",
+            "fb517114-a960-4d21-ac59-7af694107ab1",
+            "4c74c107-23a4-4648-b758-11f8a8917d64",
+            "666fff26-8734-4d15-858d-12ed74f036d2"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "PrioritiseTaggedUnit",
+              "Priority": 8,
+              "MustMatchAll": false,
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_DestroyLance_02",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "c0ab94b1-933f-4f6e-9482-f35d459c3d14",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "(Optional) Break second blocking lance",
+          "Priority": 8,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "3f899376-6d15-413c-a260-a5f0aecff9bd"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_03",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "ef92f139-546c-44d4-8cb7-64352f5c0da7",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_03",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "f11631eb-034f-4d16-8f4f-2599481976ff",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "4b9a4506-105a-48d1-b1e6-dde99edd6439",
+            "dcfc1ad6-3fdf-42c6-8ae9-e7afa2c5a42b",
+            "a76da3ec-a28a-4d59-ab63-1d175407f7f6",
+            "d328624a-0615-4dcd-b9e0-f73b2031afbf"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "PrioritiseTaggedUnit",
+              "Priority": 8,
+              "MustMatchAll": false,
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_DestroyLance_03",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "7b4e9d84-4d93-43bb-a42f-1647ab66d17c",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "(Optional) Break third blocking lance",
+          "Priority": 8,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "f11631eb-034f-4d16-8f4f-2599481976ff"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_04",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "6167f3eb-6313-4b47-a75b-99714a28be13",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_04",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Spawns when the hold starts.",
+          "Guid": "a7944fc0-efe6-44e4-a5fc-b32fb14dbb3b",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "693f94f8-0a0a-49e5-8059-7880f662318a",
+            "3d9462b0-03e7-40b6-814a-9eceda8df20d",
+            "06c2b57f-5d6e-445d-a84a-1c38ba9e2569",
+            "b42a763a-fe97-4d01-adb0-f30c7bf26e95"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            },
+            {
+              "Type": "PrioritiseTaggedUnit",
+              "Priority": 8,
+              "MustMatchAll": false,
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_DestroyLance_04",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "41803aa1-c278-4b57-83a9-9533b9cbe0a5",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "(Optional) Break the hold-wave lance",
+          "Priority": 8,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "a7944fc0-efe6-44e4-a5fc-b32fb14dbb3b"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Reach",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "4eac3192-806d-4fb3-9c42-7b5eaf309d66",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Region_Reach",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "Existing OR DefendBase World. Full lance in 10 rounds.",
+          "Guid": "3d9b2081-7f5c-4ea2-8b31-6a4d9e2f8c55",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "2c8a1f70-6e4b-4d91-9a20-5f3c8d1e7b44",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Reach",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Full lance occupy. Miss the 10-round clock and the contract fails.",
+          "Guid": "2c8a1f70-6e4b-4d91-9a20-5f3c8d1e7b44",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Reach the mark — 10 rounds, full lance",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "3d9b2081-7f5c-4ea2-8b31-6a4d9e2f8c55",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 4,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Hold",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "71df64c5-b390-42e6-af75-ae81d2632099",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Hold",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "Same World as the reach mark. Hold 6 rounds.",
+          "Guid": "60ce53b4-a28f-41d5-be64-9d70c1521f88",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_Positive",
+          "ObjectiveGuid": "5fbd42a3-917e-40c4-ad53-8c6fb0410e77",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Hold",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Hold the mark 6 rounds. Fourth enemy lance arrives when this opens.",
+          "Guid": "5fbd42a3-917e-40c4-ad53-8c6fb0410e77",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Hold the mark — 6 rounds, full lance",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "60ce53b4-a28f-41d5-be64-9d70c1521f88",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 4,
+          "DurationToOccupy": 6,
+          "DurationType": "Rounds",
+          "ProgressFormat": "[durationRemaining] Round(s)",
+          "UseDropship": false
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Evac",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a40297f8-e6c3-45b9-d2a8-d1b4059653cc",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Evac",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "Player LZ extract after the hold.",
+          "Guid": "93f186e7-d5b2-44a8-c197-c0a3f48542bb",
+          "Radius": 80.0,
+          "RegionDefId": "regionDef_Positive",
+          "ObjectiveGuid": "82e075d6-c4a1-43f7-b086-bf92e37431aa",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Evac",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Untimed dropship after the hold.",
+          "Guid": "82e075d6-c4a1-43f7-b086-bf92e37431aa",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Extract",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "93f186e7-d5b2-44a8-c197-c0a3f48542bb",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupied] 'Mech(s)",
+          "UseDropship": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_DefaultDialogue",
+      "Type": "Chunk",
+      "SubType": "Dialogue",
+      "Children": [
+        {
+          "Name": "Dialogue_MissionStart",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "c513a809-f7d4-46ca-a3b9-e2c516a764dd",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_EncounterBoundary",
+      "Type": "Chunk",
+      "SubType": "EncounterBoundary",
+      "Children": [
+        {
+          "Name": "EncounterBoundaryRect",
+          "Type": "Region",
+          "SubType": "Boundary",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "Trigger_Reach_Clock",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "10-round reach fail clock. 5 halfway, 4, then 1 fail.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Reach_Half",
+          "Rounds": 5,
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "2c8a1f70-6e4b-4d91-9a20-5f3c8d1e7b44",
+                "Status": "Success"
+              }
+            ]
+          },
+          "Results": [
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Reach_Last",
+              "Rounds": 4,
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "2c8a1f70-6e4b-4d91-9a20-5f3c8d1e7b44",
+                    "Status": "Success"
+                  }
+                ]
+              },
+              "Results": [
+                {
+                  "Type": "Delay",
+                  "Name": "TimerFail_Reach",
+                  "Rounds": 1,
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "2c8a1f70-6e4b-4d91-9a20-5f3c8d1e7b44",
+                        "Status": "Success"
+                      }
+                    ]
+                  },
+                  "Results": [
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "2c8a1f70-6e4b-4d91-9a20-5f3c8d1e7b44",
+                      "CompletionType": "Failed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Reach_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Full lance arrived. Open 6-round hold and the 4th lance.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "2c8a1f70-6e4b-4d91-9a20-5f3c8d1e7b44",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "SetStatus",
+          "Status": "Finished",
+          "EncounterGuid": "3d9b2081-7f5c-4ea2-8b31-6a4d9e2f8c55"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "71df64c5-b390-42e6-af75-ae81d2632099"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "6167f3eb-6313-4b47-a75b-99714a28be13"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Hold_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Hold done. Extract.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "5fbd42a3-917e-40c4-ad53-8c6fb0410e77",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "SetStatus",
+          "Status": "Finished",
+          "EncounterGuid": "60ce53b4-a28f-41d5-be64-9d70c1521f88"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "a40297f8-e6c3-45b9-d2a8-d1b4059653cc"
+        }
+      ]
+    }
+  ]
+}

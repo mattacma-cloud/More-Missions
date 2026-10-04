@@ -1,0 +1,526 @@
+// TheVice — enum 18011 PROPOSED. Layer c3e8a911-4b17-4c21-9d10-7a1b2c3d4e11. Map mapGeneral_capitolHill_uTech.
+{
+  "Key": "TheVice",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Chunks": [
+    {
+      "Name": "Chunk_PlayerLance",
+      "Type": "Chunk",
+      "SubType": "PlayerLance",
+      "Children": [
+        {
+          "Name": "Spawner_PlayerLance",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "Team": "Player1",
+          "SpawnPointGuids": [
+            "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39",
+            "5df48a48-1840-49b0-84e9-126847053afa",
+            "a55fc76c-c955-4b61-bb64-2608c9beb9f5",
+            "0f10a383-7325-4726-b2c4-a0ef416e4b27"
+          ],
+          "SpawnType": "DropPod",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Player 1",
+            "mc_no_extended_lance"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Ally",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Ally",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "44246ade-2ec5-5c8e-b7a9-468ba3be0ba5",
+          "Team": "Employer",
+          "SpawnPointGuids": [
+            "60dbed84-5ea8-59f1-8eca-2a824b690bce",
+            "bd1a77c3-4ef7-55e0-9147-b38473eed609",
+            "82653d7b-bf44-5131-b402-4fea4f841752",
+            "cc51a057-f8a3-5950-8533-2df25f8e59b9"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Ally_Heavy",
+            "mc_no_extended_lance"
+          ]
+        }
+,
+        {
+          "Name": "Objective_Ally_Survives",
+          "Type": "Objective",
+          "SubType": "DefendXUnits",
+          "Description": "",
+          "Guid": "c4e10001-4b17-4c21-9d10-7a1b2c3d4e21",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Allied lance survives",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RequiredTagsOnUnit": [
+            "Ally_Heavy"
+          ],
+          "NumberOfUnitsToDefend": 1,
+          "ProgressFormat": ""
+        }
+,
+        {
+          "Name": "Objective_Ally_Damaged",
+          "Type": "Objective",
+          "SubType": "DefendXUnits",
+          "Description": "",
+          "Guid": "c4e10002-4b17-4c21-9d10-7a1b2c3d4e21",
+          "ContractObjectiveGuid": "c4e10003-4b17-4c21-9d10-7a1b2c3d4e21",
+          "Title": "",
+          "Priority": 2,
+          "DisplayToUser": false,
+          "IsPrimaryObjective": false,
+          "RequiredTagsOnUnit": [
+            "Ally_Heavy"
+          ],
+          "NumberOfUnitsToDefend": 4,
+          "ProgressFormat": ""
+        }
+      ],
+      "Guid": "a94a1acc-742f-5cda-a19f-cdb2fd8e148a",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Survive",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Objective_Survive",
+          "Type": "Objective",
+          "SubType": "Generic",
+          "Description": "",
+          "Guid": "07142c12-c61e-5852-a892-7b5bcda74216",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Survive 12 rounds",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true
+        }
+      ],
+      "Guid": "46fbf75a-f9a7-57d0-8378-de920f595653",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Enemy_North",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Enemy_North",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "d6c61b92-1113-598c-ba32-d6dab5c88c9b",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "dfb06e53-dec5-5615-a9f0-e19c2ed5f509",
+            "7c909355-88e6-5fea-83ac-fe2a44836d6e",
+            "40a074cb-c620-5e85-8ffc-637f82941dc2",
+            "34e4dc29-28b6-573f-831e-6166c5ce6ae4"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Enemy_North",
+            "mc_no_extended_lance"
+          ]
+        }
+,
+        {
+          "Name": "Objective_Destroy_North",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "c4e10011-4b17-4c21-9d10-7a1b2c3d4e21",
+          "ContractObjectiveGuid": "c4e10004-4b17-4c21-9d10-7a1b2c3d4e21",
+          "Title": "Destroy the north lance",
+          "Priority": 3,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "d6c61b92-1113-598c-ba32-d6dab5c88c9b"
+        }
+      ],
+      "Guid": "04e22549-0729-5631-8a84-27fd903abbaf",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Enemy_South",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Enemy_South",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "786943ee-2bc8-5d43-8444-87fab9e6fdd9",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "f3aed7c2-38d2-5dae-a6fc-53ae0b5ff8f7",
+            "51b358ed-58ed-528f-957f-99751874b92d",
+            "a6960681-7435-5737-89e0-7de26fde319a",
+            "fb01076f-c148-5730-9981-ca24f6da4ceb"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Enemy_South",
+            "mc_no_extended_lance"
+          ]
+        }
+,
+        {
+          "Name": "Objective_Destroy_South",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "c4e10012-4b17-4c21-9d10-7a1b2c3d4e21",
+          "ContractObjectiveGuid": "c4e10004-4b17-4c21-9d10-7a1b2c3d4e21",
+          "Title": "Destroy the south lance",
+          "Priority": 3,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "786943ee-2bc8-5d43-8444-87fab9e6fdd9"
+        }
+      ],
+      "Guid": "efe6b17d-9fed-5808-85ad-500936a39807",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Enemy_East",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Enemy_East",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "ed6733f8-d76e-51bf-9cfc-b1d7f0436bee",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "d8b195a4-01b2-5bef-b02f-6e3213eb5e98",
+            "cc1b927f-7b3b-587a-b273-a47cc65b8dc5",
+            "e65cd9f5-69ac-5dd0-8b39-efb3ae3ee6c4",
+            "5537e5d3-f5b2-5e1d-a20f-04cd5e0c3fde"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Enemy_East",
+            "mc_no_extended_lance"
+          ]
+        }
+,
+        {
+          "Name": "Objective_Destroy_East",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "c4e10013-4b17-4c21-9d10-7a1b2c3d4e21",
+          "ContractObjectiveGuid": "c4e10004-4b17-4c21-9d10-7a1b2c3d4e21",
+          "Title": "Destroy the east lance",
+          "Priority": 3,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "ed6733f8-d76e-51bf-9cfc-b1d7f0436bee"
+        }
+      ],
+      "Guid": "804df896-761e-5d8e-9b05-7cc5e4e39207",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Enemy_West",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Enemy_West",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "ac60390d-c34f-52cf-ad83-5afe448b3113",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "72c081d0-0288-5035-8bb0-eabe6f8dacdd",
+            "0012316e-d090-5b4b-953d-68f2845b92c6",
+            "6511329a-86b4-51fc-922b-f4972599fd12",
+            "3c571a80-27c4-5a4b-91a9-b356c68abf06"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Enemy_West",
+            "mc_no_extended_lance"
+          ]
+        }
+,
+        {
+          "Name": "Objective_Destroy_West",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "c4e10014-4b17-4c21-9d10-7a1b2c3d4e21",
+          "ContractObjectiveGuid": "c4e10004-4b17-4c21-9d10-7a1b2c3d4e21",
+          "Title": "Destroy the west lance",
+          "Priority": 3,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "ac60390d-c34f-52cf-ad83-5afe448b3113"
+        }
+      ],
+      "Guid": "b3662e64-0b3d-5763-af98-13536835686f",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Evac",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Region_Evac",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "11c17447-fa14-539b-a2e7-a25d30b47ea4",
+          "Radius": 80.0,
+          "RegionDefId": "regionDef_Positive",
+          "ObjectiveGuid": "8e5a3c72-34e5-58a4-851e-193d4eea4593",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Evac",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "",
+          "Guid": "8e5a3c72-34e5-58a4-851e-193d4eea4593",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Dust off",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "11c17447-fa14-539b-a2e7-a25d30b47ea4",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "",
+          "UseDropship": true
+        }
+      ],
+      "Guid": "a4157222-0c9b-5005-a8f4-9cb039282fd0",
+      "StartingStatus": "Inactive"
+    },
+    {
+      "Name": "Chunk_DefaultDialogue",
+      "Type": "Chunk",
+      "SubType": "Dialogue",
+      "Children": [
+        {
+          "Name": "Dialogue_Ally_Start",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "c4e10021-4b17-4c21-9d10-7a1b2c3d4e21",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Ally_Damaged",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "c4e10022-4b17-4c21-9d10-7a1b2c3d4e21",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Ally_Lost",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "c4e10023-4b17-4c21-9d10-7a1b2c3d4e21",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionStart",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "62e56268-594d-5b56-93d0-e4cab39152de",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionSuccess",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a77b8b12-1ad6-5d69-9e14-09db0f6093e4",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionFailure",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b2057d4a-5071-564e-a448-76924bcd0c3f",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Dustoff_Open",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "be0c686a-58d6-5d20-8ef2-c826616fe4ca",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_EncounterBoundary",
+      "Type": "Chunk",
+      "SubType": "EncounterBoundary",
+      "Children": [
+        {
+          "Name": "EncounterBoundaryRect",
+          "Type": "Region",
+          "SubType": "Boundary",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "Trigger_Ally_Damaged",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "c4e10002-4b17-4c21-9d10-7a1b2c3d4e21",
+          "Status": "Failed"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "c4e10022-4b17-4c21-9d10-7a1b2c3d4e21",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Ally_Lost",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "c4e10001-4b17-4c21-9d10-7a1b2c3d4e21",
+          "Status": "Failed"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "c4e10023-4b17-4c21-9d10-7a1b2c3d4e21",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Start",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "Survive 12 rounds, then the southwest dust off opens.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "c4e10021-4b17-4c21-9d10-7a1b2c3d4e21",
+          "IsInterrupt": false
+        },
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "62e56268-594d-5b56-93d0-e4cab39152de",
+          "IsInterrupt": false
+        },
+        {
+          "Type": "Delay",
+          "Name": "Hold_12",
+          "Rounds": 12,
+          "Results": [
+            {
+              "Type": "CompleteObjective",
+              "ObjectiveGuid": "07142c12-c61e-5852-a892-7b5bcda74216",
+              "CompletionType": "Succeed"
+            },
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "be0c686a-58d6-5d20-8ef2-c826616fe4ca",
+              "IsInterrupt": false
+            },
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "a4157222-0c9b-5005-a8f4-9cb039282fd0"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1186 @@
+// CombatPatrol — Taiga four-leg patrol. Not a Warzone clone.
+// IDs confirmed. Not installed in live Mods\MissionControl until install-combatpatrol-test.ps1.
+// Timer-fail: CompleteObjective CompletionType Failed (HBS CompleteObjectiveType).
+{
+  "Key": "CombatPatrol",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Chunks": [
+    {
+      "Name": "Chunk_PlayerLance",
+      "Type": "Chunk",
+      "SubType": "PlayerLance",
+      "Children": [
+        {
+          "Name": "Spawner_PlayerLance",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "Team": "Player1",
+          "SpawnPointGuids": [
+            "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39",
+            "5df48a48-1840-49b0-84e9-126847053afa",
+            "a55fc76c-c955-4b61-bb64-2608c9beb9f5",
+            "0f10a383-7325-4726-b2c4-a0ef416e4b27"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Player 1"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Leg_1_Occupy",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "3d2a70f6-720a-475e-9e38-f3dab5243eb3",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Objective_Leg_1",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Reach Waypoint 1 with one 'Mech.",
+          "Guid": "14d170ac-f882-4855-9596-01c96b41a64a",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Waypoint 1 — 6 rounds, 1 'Mech",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "2f01519f-50c8-4b7b-9876-0db328225416",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_Leg_1",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "2f01519f-50c8-4b7b-9876-0db328225416",
+          "Radius": 80.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "14d170ac-f882-4855-9596-01c96b41a64a",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Leg_2_Occupy",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "34dae530-e47d-4c7b-9c37-3e354420b85c",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Objective_Leg_2",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Reach Waypoint 2 with one 'Mech.",
+          "Guid": "4e5552d1-67c1-4276-b8da-55945628f338",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Waypoint 2 — 5 rounds, 1 'Mech",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "bb3dad98-439a-4c9d-928c-d074286b8d50",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_Leg_2",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "bb3dad98-439a-4c9d-928c-d074286b8d50",
+          "Radius": 80.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "4e5552d1-67c1-4276-b8da-55945628f338",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Leg_3_Occupy",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "293c5e8b-931f-4817-ba97-f2fa1743d4db",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Objective_Leg_3",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Get the full lance to Waypoint 3 (River Base).",
+          "Guid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Waypoint 3 — 7 rounds, lance",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "5dc5a191-476c-4aa5-84a3-7a4544e30cba",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 4,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_Leg_3",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "5dc5a191-476c-4aa5-84a3-7a4544e30cba",
+          "Radius": 60.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Leg_4_Occupy",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "87c53c62-e28c-4bea-85ca-c761a782fcdc",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Objective_Leg_4",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Rally the lance at Waypoint 4.",
+          "Guid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Waypoint 4 — 6 rounds, lance",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "660eb0ae-f59a-48cd-8b7a-7ac521499867",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 4,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_Leg_4",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "660eb0ae-f59a-48cd-8b7a-7ac521499867",
+          "Radius": 80.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Event_Mech",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "d8dc0d1e-f195-4e54-8765-3cc22723d65a",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Event_Mech",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "76424e46-1b08-4465-9028-14aa796aee89",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "d03953b6-cca0-4ba8-89c0-2d5f2eaadb3a",
+            "f7ef75ce-f46f-4437-8b0a-c5a47263ad71",
+            "fc983b95-69bb-427d-9593-0d95b5f568cb",
+            "56036ee2-6a77-42a7-b01d-543a6014ef35"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 360.0,
+          "Tags": [
+            "event_mech"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Event_Mech",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Optional intercepting 'Mechs. You may ignore them.",
+          "Guid": "c2f25b04-333f-44ae-8418-2fad15a3125c",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Intercepting 'Mechs [Optional]",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "76424e46-1b08-4465-9028-14aa796aee89"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Event_Tank",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "4a683fb6-11d2-4aed-8057-52ac5596948e",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Event_Tank",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "6a59f5e1-8f14-4df2-9c30-bd29c7b6a3af",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "b2f6fb15-0ae9-447a-8f15-5b56752476fb",
+            "c776ee73-4b3d-4576-9dbf-a8caecfb1584",
+            "3f4f6b27-7c87-421f-b896-fe01808ff4df",
+            "041c8143-3c1c-4551-87f6-25b750d550da"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Vehicle",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 360.0,
+          "Tags": [
+            "event_tank"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Event_Tank",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Optional tanks. You may ignore them.",
+          "Guid": "1cdd0efa-365c-4f25-a493-1ef1808ec3f5",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Intercepting tanks [Optional]",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "6a59f5e1-8f14-4df2-9c30-bd29c7b6a3af"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Event_Artillery",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "87d95427-1433-4786-8aa7-0a7bdb9b1388",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Artillery_Strike",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Position-only marker for DestroyBuildingsAtLanceSpawns at J13.",
+          "Guid": "a55cc666-6557-4db2-b702-934f4e870644",
+          "Team": "NeutralToAll",
+          "SpawnPointGuids": [
+            "5da376e0-f00a-4194-a57d-afa9f38b15aa"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": true,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 1.0,
+          "Tags": [
+            "arty_strike_marker",
+            "mc_no_extended_lance"
+          ]
+        },
+        {
+          "Name": "Spawner_Artillery_Walk",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "da6bcda5-bf0e-4de9-bac6-848eeebc23a8",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "0672e771-43f8-446a-815e-988cd6d5ef79",
+            "43e3fe15-7b1d-41b6-97c8-60a40e790ce3",
+            "2ad36b72-a7e4-4bd3-b027-f7b28087253e",
+            "d8cfb7f4-2deb-4d29-b84f-1ff1ab3990e0"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 400.0,
+          "Tags": [
+            "event_light_mech"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Artillery_Walk",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Optional light 'Mechs. You may ignore them.",
+          "Guid": "31638ae7-cb68-4273-9d0e-a2a05e87db03",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Intercepting light 'Mechs [Optional]",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "da6bcda5-bf0e-4de9-bac6-848eeebc23a8"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Event_Artillery_Overwatch",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "f992954b-f484-47b2-bb2a-2b587b935f83",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Artillery_Overwatch",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "P11 overwatch artillery. No objective. Activates round 2.",
+          "Guid": "1ca284c3-6977-4344-b00a-b782ba6dfc6e",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "47a888cf-0a3e-4ea9-b8eb-9925b0a75827",
+            "42f7a86a-9d3c-4942-bcdc-eda19819de8c",
+            "e412e23e-44ec-4936-8856-67b6cc87a572",
+            "45331521-eff2-4e79-aa9f-b868d6d72049"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Vehicle",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 2000.0,
+          "Tags": [
+            "event_artillery_overwatch",
+            "mc_no_extended_lance"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Event_Buildings",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "e0e85867-c864-40d1-936e-110ec421026d",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Buildings",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "River Base structures. No HUD mark. Tagged before occupy opens.",
+          "Guid": "f16d919b-abe0-4c80-81c7-792c2fe693c0",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "8b8cb8ad-4b6f-4296-b879-c1ce0678152e",
+          "ShowHexWhenActive": false,
+          "AlwaysShowRegionWhenActive": false
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Event_Buildings_Occupy",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "e1e96978-a864-40d1-936e-110ec4210271",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Objective_Destroy_Buildings",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Opens after Waypoint 3 so arriving at the mark does not complete it. Opposing destroy_building tags block occupy until they fall.",
+          "Guid": "8b8cb8ad-4b6f-4296-b879-c1ce0678152e",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Destroy River Base structures",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "f16d919b-abe0-4c80-81c7-792c2fe693c0",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [
+            "destroy_building"
+          ],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[opposingUnitsInRegion] structure(s) still standing",
+          "UseDropship": false
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Event_Turrets",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "92b7cafb-77b6-4aa2-855a-f22297ec806f",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Event_Turrets",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "8178be42-6e92-42ee-908f-c930ec4a1fde",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "32c009c0-6533-4410-8ccd-620fc87f9072",
+            "ff985402-4ea4-4b27-b338-5b2f7f9cfb30",
+            "7fbe1871-2243-449b-b320-b9d47ce9a131",
+            "a8507740-f088-44b5-bbf0-d36179786637"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Turret",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 400.0,
+          "Tags": [
+            "event_turret"
+          ]
+        },
+        {
+          "Name": "Objective_Event_Turrets",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Optional turrets.",
+          "Guid": "807af88d-e1d9-49f5-8bc9-20e612c3213a",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Destroy base turrets [Optional]",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "8178be42-6e92-42ee-908f-c930ec4a1fde"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Exit_Mission",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "e395a2c8-8018-4d05-8fce-7d57068fbca8",
+      "StartingStatus": "Inactive",
+      "OnActiveExecute": [
+        {
+          "Type": "Dialogue",
+          "EncounterGuid": "7db35656-45bc-4a78-aa7f-7a91e0f45a6d"
+        }
+      ],
+      "Children": [
+        {
+          "Name": "Objective_Exit_Mission",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "",
+          "Guid": "d8dd6175-b1c3-4c59-97e0-dd55e299788f",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Waypoint 5 — extract",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "74d4b4ea-2499-4d9d-be6c-cce41cf5f583",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] 'Mech(s)",
+          "UseDropship": true
+        },
+        {
+          "Name": "Region_Exit_Plot",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "74d4b4ea-2499-4d9d-be6c-cce41cf5f583",
+          "Radius": 120.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "d8dd6175-b1c3-4c59-97e0-dd55e299788f",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_DefaultDialogue",
+      "Type": "Chunk",
+      "SubType": "Dialogue",
+      "Children": [
+        {
+          "Name": "Dialogue_MissionStart",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "CombatPatrol-only GUID so HBS does not auto-play stock 73df8d9c at briefing.",
+          "Guid": "f7e65b8c-6927-4a2a-baf2-04fe19319c7a",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionSuccess",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionFailure",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "d3d33d95-9ed7-4686-b9eb-954ebe51cc02",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Leg_1",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "e64491df-79cb-4fd2-973c-e59557b990ed",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Leg_2",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "082c974c-446e-4bca-9c78-289db306cbc5",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Leg_3",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b28e2440-27ec-4bc9-9a4f-721323653543",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Leg_4",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "21338b06-8b5b-4899-866b-2ad409c58a2d",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Shock",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "3da7b424-d363-4ead-948c-67b72438d32e",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Evac",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "7db35656-45bc-4a78-aa7f-7a91e0f45a6d",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Timer_Half",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "Shared halfway-clock bark. ShowOnlyOnce false so each leg can fire it.",
+          "Guid": "efc566be-c3f2-4616-88f3-7f81d4adad72",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": false
+        },
+        {
+          "Name": "Dialogue_Timer_LastRound",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "Shared 1-round-left bark. ShowOnlyOnce false so each leg can fire it.",
+          "Guid": "c3776212-fa69-43da-b21e-ae2975317d02",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": false
+        },
+        {
+          "Name": "Dialogue_TimeFailed",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "545c386f-ef13-48a7-be14-e662639a6f13",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_EncounterBoundary",
+      "Type": "Chunk",
+      "SubType": "EncounterBoundary",
+      "Children": [
+        {
+          "Name": "EncounterBoundaryRect",
+          "Type": "Region",
+          "SubType": "Boundary",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "Trigger_MissionStart",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "After Begin: intro bark, Leg 1 bark, first intercept, 6-round Alpha clock with halfway and last-round warnings.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "f7e65b8c-6927-4a2a-baf2-04fe19319c7a"
+        },
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e64491df-79cb-4fd2-973c-e59557b990ed"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "d8dc0d1e-f195-4e54-8765-3cc22723d65a"
+        },
+        {
+          "Type": "Delay",
+          "Name": "Spawn_Artillery_Overwatch",
+          "Rounds": 2,
+          "Results": [
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "f992954b-f484-47b2-bb2a-2b587b935f83"
+            }
+          ]
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Leg_1_Half",
+          "Rounds": 3,
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "14d170ac-f882-4855-9596-01c96b41a64a",
+                "Status": "Success"
+              }
+            ]
+          },
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "efc566be-c3f2-4616-88f3-7f81d4adad72"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Leg_1_Last",
+              "Rounds": 2,
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "14d170ac-f882-4855-9596-01c96b41a64a",
+                    "Status": "Success"
+                  }
+                ]
+              },
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "c3776212-fa69-43da-b21e-ae2975317d02"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerFail_Leg_1",
+                  "Rounds": 1,
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "14d170ac-f882-4855-9596-01c96b41a64a",
+                        "Status": "Success"
+                      }
+                    ]
+                  },
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "545c386f-ef13-48a7-be14-e662639a6f13"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "14d170ac-f882-4855-9596-01c96b41a64a",
+                      "CompletionType": "Failed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Leg_1_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Open Bravo, tanks, 5-round clock.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "14d170ac-f882-4855-9596-01c96b41a64a",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "082c974c-446e-4bca-9c78-289db306cbc5"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "34dae530-e47d-4c7b-9c37-3e354420b85c"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "4a683fb6-11d2-4aed-8057-52ac5596948e"
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Leg_2_Half",
+          "Rounds": 2,
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "4e5552d1-67c1-4276-b8da-55945628f338",
+                "Status": "Success"
+              }
+            ]
+          },
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "efc566be-c3f2-4616-88f3-7f81d4adad72"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Leg_2_Last",
+              "Rounds": 2,
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "4e5552d1-67c1-4276-b8da-55945628f338",
+                    "Status": "Success"
+                  }
+                ]
+              },
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "c3776212-fa69-43da-b21e-ae2975317d02"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerFail_Leg_2",
+                  "Rounds": 1,
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "4e5552d1-67c1-4276-b8da-55945628f338",
+                        "Status": "Success"
+                      }
+                    ]
+                  },
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "545c386f-ef13-48a7-be14-e662639a6f13"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "4e5552d1-67c1-4276-b8da-55945628f338",
+                      "CompletionType": "Failed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Leg_2_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Open Waypoint 3 only. Tag buildings now. Turrets and buildings occupy wait until you arrive.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "4e5552d1-67c1-4276-b8da-55945628f338",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "b28e2440-27ec-4bc9-9a4f-721323653543"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "293c5e8b-931f-4817-ba97-f2fa1743d4db"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "e0e85867-c864-40d1-936e-110ec421026d"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "87d95427-1433-4786-8aa7-0a7bdb9b1388"
+        },
+        {
+          "Type": "DestroyBuildingsAtLanceSpawns",
+          "LanceSpawnerGuid": "a55cc666-6557-4db2-b702-934f4e870644",
+          "Radius": 48
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Leg_3_Half",
+          "Rounds": 4,
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+                "Status": "Success"
+              }
+            ]
+          },
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "efc566be-c3f2-4616-88f3-7f81d4adad72"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Leg_3_Last",
+              "Rounds": 2,
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+                    "Status": "Success"
+                  }
+                ]
+              },
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "c3776212-fa69-43da-b21e-ae2975317d02"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerFail_Leg_3",
+                  "Rounds": 1,
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+                        "Status": "Success"
+                      }
+                    ]
+                  },
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "545c386f-ef13-48a7-be14-e662639a6f13"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+                      "CompletionType": "Failed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Leg_3_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Arriving at Waypoint 3: spawn turrets, then open buildings occupy after a beat so the waypoint does not complete the wreck. Open Waypoint 4.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "21338b06-8b5b-4899-866b-2ad409c58a2d"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "92b7cafb-77b6-4aa2-855a-f22297ec806f"
+        },
+        {
+          "Type": "SetUnitsInRegionToBeTaggedObjectiveTargets",
+          "RegionGuid": "f16d919b-abe0-4c80-81c7-792c2fe693c0",
+          "Team": "Target",
+          "UnitType": "Building",
+          "NumberOfUnits": 8,
+          "IsObjectiveTarget": true,
+          "Tags": [
+            "destroy_building"
+          ]
+        },
+        {
+          "Type": "Delay",
+          "Name": "Open_Buildings_After_Turrets",
+          "Time": 1,
+          "Results": [
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "e1e96978-a864-40d1-936e-110ec4210271"
+            }
+          ]
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "87c53c62-e28c-4bea-85ca-c761a782fcdc"
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Leg_4_Half",
+          "Rounds": 3,
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+                "Status": "Success"
+              }
+            ]
+          },
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "efc566be-c3f2-4616-88f3-7f81d4adad72"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Leg_4_Last",
+              "Rounds": 2,
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+                    "Status": "Success"
+                  }
+                ]
+              },
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "c3776212-fa69-43da-b21e-ae2975317d02"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerFail_Leg_4",
+                  "Rounds": 1,
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+                        "Status": "Success"
+                      }
+                    ]
+                  },
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "545c386f-ef13-48a7-be14-e662639a6f13"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+                      "CompletionType": "Failed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Tag_Buildings",
+      "TriggerOn": "OnEncounterStateChanged",
+      "Description": "Mark River Base buildings as attack targets when the building region chunk activates (Waypoint 2 success, before you arrive).",
+      "SucceedOn": "All",
+      "Conditionals": [
+        {
+          "Type": "EncounterObjectMatchesState",
+          "Guid": "e0e85867-c864-40d1-936e-110ec421026d",
+          "Status": "Active"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "SetUnitsInRegionToBeTaggedObjectiveTargets",
+          "RegionGuid": "f16d919b-abe0-4c80-81c7-792c2fe693c0",
+          "Team": "Target",
+          "UnitType": "Building",
+          "NumberOfUnits": 8,
+          "IsObjectiveTarget": true,
+          "Tags": [
+            "destroy_building"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Open_Evac",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Dropship evac after Waypoint 4 and River Base structures both succeed.",
+      "SucceedOn": "All",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+          "Status": "Success"
+        },
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "8b8cb8ad-4b6f-4296-b879-c1ce0678152e",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "e395a2c8-8018-4d05-8fce-7d57068fbca8"
+        }
+      ]
+    }
+  ]
+}

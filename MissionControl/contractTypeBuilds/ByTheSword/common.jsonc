@@ -1,0 +1,551 @@
+// ByTheSword — enum 18012 PROPOSED. Layer c3e8a912-4b17-4c21-9d10-7a1b2c3d4e12. Map mapGeneral_cragMire_vLow.
+{
+  "Key": "ByTheSword",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Chunks": [
+    {
+      "Name": "Chunk_PlayerLance",
+      "Type": "Chunk",
+      "SubType": "PlayerLance",
+      "Children": [
+        {
+          "Name": "Spawner_PlayerLance",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "Team": "Player1",
+          "SpawnPointGuids": [
+            "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39",
+            "5df48a48-1840-49b0-84e9-126847053afa",
+            "a55fc76c-c955-4b61-bb64-2608c9beb9f5",
+            "0f10a383-7325-4726-b2c4-a0ef416e4b27"
+          ],
+          "SpawnType": "DropPod",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Player 1",
+            "mc_no_extended_lance"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_March",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Region_March",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "09dc2bc6-458f-5b0a-9205-4885ed80eae5",
+          "Radius": 160.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "10fa2a91-8a09-5b46-b824-c101033db4c6",
+          "ShowHexWhenActive": false,
+          "AlwaysShowRegionWhenActive": false
+        }
+      ],
+      "Guid": "6422b8fb-5ed7-52b9-a0a2-d348e5731cf5",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Ally_1",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Ally_1",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "02e7d597-36e2-54d6-b96d-3a950fcbb2eb",
+          "Team": "Employer",
+          "SpawnPointGuids": [
+            "bb1e3c2c-6d7f-5199-bbc4-082c89c2f2aa",
+            "71705fb5-1ed3-5f66-b788-71a45abb4be0",
+            "6b21ceff-abf2-5c59-ac02-6b6119ddc237",
+            "5187b59c-af8e-5453-9fe6-2a3ca58398de"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Ally_1",
+            "mc_no_extended_lance"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "09dc2bc6-458f-5b0a-9205-4885ed80eae5"
+            }
+          ]
+        }
+      ],
+      "Guid": "1d443de8-a8ef-5ff2-846f-3ab6ae8f2654",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Ally_2",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Ally_2",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "1a9e3196-826d-556b-8fa2-2d9c72b971b6",
+          "Team": "Employer",
+          "SpawnPointGuids": [
+            "f08ea3f0-5817-5923-a071-bf8fa7298bf7",
+            "95af23ac-bb12-5888-9e31-021d7ac8d033",
+            "5576f4b6-70ea-5f9b-a40c-2d19d1202e4a",
+            "bd1c3579-9584-5668-bd8b-927279cf3f7b"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Ally_2",
+            "mc_no_extended_lance"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "09dc2bc6-458f-5b0a-9205-4885ed80eae5"
+            }
+          ]
+        }
+      ],
+      "Guid": "d2bd8efd-0120-5b6e-a439-e2593489f379",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Enemy",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Enemy",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "8158279f-d120-5fca-8b18-3a7e4b0e3067",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "5e0f893c-400f-57be-a6e6-e35b62f07f13",
+            "22ea7081-1cf2-5617-8e8c-3d4ca8ffcc7d",
+            "35716b03-c5de-5d11-908d-27428bcf2bcb",
+            "9f77caa8-97a3-5550-b5dc-1a6bdf8ca3ab"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Enemy_Heavy",
+            "mc_no_extended_lance"
+          ]
+        },
+        {
+          "Name": "Objective_Defeat_Enemy",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "10fa2a91-8a09-5b46-b824-c101033db4c6",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Defeat the enemy lance",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "8158279f-d120-5fca-8b18-3a7e4b0e3067"
+        }
+      ],
+      "Guid": "914460f1-a6da-53cf-a665-59893400725c",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Ally_1_Objective",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b1a33001-4b17-4c21-9d10-7a1b2c3d4e31",
+      "StartingStatus": "Inactive",
+      "ControlledByContract": true,
+      "Children": [
+        {
+          "Name": "Objective_Avoid_Ally_1",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "1b4c3363-af8b-54a0-a389-1f5f5b2952f9",
+          "ContractObjectiveGuid": "b1a35001-4b17-4c21-9d10-7a1b2c3d4e51",
+          "Title": "Avoid destroying allied lance 1",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "02e7d597-36e2-54d6-b96d-3a950fcbb2eb"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Ally_2_Objective",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b1a33002-4b17-4c21-9d10-7a1b2c3d4e32",
+      "StartingStatus": "Inactive",
+      "ControlledByContract": true,
+      "Children": [
+        {
+          "Name": "Objective_Avoid_Ally_2",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "69ab96d6-6d27-52a5-acfe-38031eb7ccec",
+          "ContractObjectiveGuid": "b1a35001-4b17-4c21-9d10-7a1b2c3d4e51",
+          "Title": "Avoid destroying allied lance 2",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "1a9e3196-826d-556b-8fa2-2d9c72b971b6"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Evac_Objective",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b1a36005-4b17-4c21-9d10-7a1b2c3d4e65",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Objective_Evac",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "",
+          "Guid": "b1a36003-4b17-4c21-9d10-7a1b2c3d4e63",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Dust off",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "b1a36002-4b17-4c21-9d10-7a1b2c3d4e62",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "",
+          "UseDropship": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Evac",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b1a36001-4b17-4c21-9d10-7a1b2c3d4e61",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Evac",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "b1a36002-4b17-4c21-9d10-7a1b2c3d4e62",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_Positive",
+          "ObjectiveGuid": "b1a36003-4b17-4c21-9d10-7a1b2c3d4e63",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_DefaultDialogue",
+      "Type": "Chunk",
+      "SubType": "Dialogue",
+      "Children": [
+        {
+          "Name": "Dialogue_MissionStart",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a1b0594a-90b6-58a4-aaa7-e1899e9e6b69",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionSuccess",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "e6effcde-d111-57df-9bc3-e6e5ebef25d4",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionFailure",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "98652df6-448d-5544-8c71-7a759302edb0",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Dustoff",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b1a36004-4b17-4c21-9d10-7a1b2c3d4e64",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Turn",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "7f2e570a-2959-52f4-95f5-d0713252c087",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Landing",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b1a34001-4b17-4c21-9d10-7a1b2c3d4e41",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_EnemySighted",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b1a34002-4b17-4c21-9d10-7a1b2c3d4e42",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true,
+          "Trigger": "OnFirstContact"
+        },
+        {
+          "Name": "Dialogue_BetrayalHint",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b1a34003-4b17-4c21-9d10-7a1b2c3d4e43",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_EncounterBoundary",
+      "Type": "Chunk",
+      "SubType": "EncounterBoundary",
+      "Children": [
+        {
+          "Name": "EncounterBoundaryRect",
+          "Type": "Region",
+          "SubType": "Boundary",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "Trigger_Start",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "Landing and the briefing.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "b1a34001-4b17-4c21-9d10-7a1b2c3d4e41",
+          "IsInterrupt": false
+        },
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "a1b0594a-90b6-58a4-aaa7-e1899e9e6b69",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Hint_3",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "Round 3 hint that the allies may turn.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Delay",
+          "Name": "Hint_3",
+          "Rounds": 3,
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "b1a34003-4b17-4c21-9d10-7a1b2c3d4e43",
+              "IsInterrupt": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Turn_Show",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "Round 5 bark, then show the former-ally objectives.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Delay",
+          "Name": "Turn_5_Show",
+          "Rounds": 5,
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "7f2e570a-2959-52f4-95f5-d0713252c087",
+              "IsInterrupt": false
+            },
+            {
+              "Name": "Activate_Ally_1_Chunk",
+              "Type": "SetStatus",
+              "Description": "",
+              "Status": "Active",
+              "EncounterGuid": "b1a33001-4b17-4c21-9d10-7a1b2c3d4e31"
+            },
+            {
+              "Name": "Activate_Ally_1",
+              "Type": "SetStatus",
+              "Description": "",
+              "Status": "Active",
+              "EncounterGuid": "1b4c3363-af8b-54a0-a389-1f5f5b2952f9"
+            },
+            {
+              "Name": "Activate_Ally_2_Chunk",
+              "Type": "SetStatus",
+              "Description": "",
+              "Status": "Active",
+              "EncounterGuid": "b1a33002-4b17-4c21-9d10-7a1b2c3d4e32"
+            },
+            {
+              "Name": "Activate_Ally_2",
+              "Type": "SetStatus",
+              "Description": "",
+              "Status": "Active",
+              "EncounterGuid": "69ab96d6-6d27-52a5-acfe-38031eb7ccec"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Evac_North",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "North dust off opens when the original enemy lance is destroyed.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "10fa2a91-8a09-5b46-b824-c101033db4c6",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "b1a36004-4b17-4c21-9d10-7a1b2c3d4e64",
+          "IsInterrupt": false
+        },
+        {
+          "Name": "Activate_Evac_Chunk",
+          "Type": "SetStatus",
+          "Description": "",
+          "Status": "Active",
+          "EncounterGuid": "b1a36001-4b17-4c21-9d10-7a1b2c3d4e61"
+        },
+        {
+          "Name": "Activate_Evac_Region",
+          "Type": "SetStatus",
+          "Description": "",
+          "Status": "Active",
+          "EncounterGuid": "b1a36002-4b17-4c21-9d10-7a1b2c3d4e62"
+        },
+        {
+          "Name": "Activate_Evac_Objective",
+          "Type": "SetStatus",
+          "Description": "",
+          "Status": "Active",
+          "EncounterGuid": "b1a36003-4b17-4c21-9d10-7a1b2c3d4e63"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Turn_Teams",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "Round 5 both allied lances become hostile to everyone.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Delay",
+          "Name": "Turn_5",
+          "Rounds": 5,
+          "Results": [
+            {
+              "Type": "SetTeamByLanceSpawnerGuid",
+              "Name": "",
+              "Description": "",
+              "Team": "HostileToAll",
+              "AlertLance": true,
+              "LanceSpawnerGuid": "02e7d597-36e2-54d6-b96d-3a950fcbb2eb"
+            },
+            {
+              "Type": "SetTeamByLanceSpawnerGuid",
+              "Name": "",
+              "Description": "",
+              "Team": "HostileToAll",
+              "AlertLance": true,
+              "LanceSpawnerGuid": "1a9e3196-826d-556b-8fa2-2d9c72b971b6"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

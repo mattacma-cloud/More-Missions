@@ -1,0 +1,165 @@
+// ScoutHunt riverCrossing overlay. New layer. Not Warzone 86c2bb0a.
+{
+  "EncounterLayerId": "mapArena_riverCrossing_vHigh.b8d4f02e-5c39-4026-af71-2e9d6b3c8015",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Overrides": [
+    {
+      "Path": "$",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Plots": [
+          {
+            "Name": "Plot1",
+            "Variant": "Default",
+            "IsActive": true
+          }
+        ]
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_PlayerLance')].Children[?(@.Name == 'Spawner_PlayerLance')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -320.0,
+            "y": 163.0,
+            "z": -960.0
+          }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 0,
+            "z": 0.0
+          }
+        },
+        "SpawnPointPositions": {
+          "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "a55fc76c-c955-4b61-bb64-2608c9beb9f5": {
+            "x": 640.0,
+            "y": 0.0,
+            "z": 256.0
+          }
+        },
+        "SpawnPointRotations": {},
+        "PreciseSpawnPoints": false,
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Alpha')].Children[?(@.Name == 'Region_Alpha')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -704.0,
+            "y": 163.0,
+            "z": -192.0
+          }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Bravo')].Children[?(@.Name == 'Region_Bravo')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 832.0,
+            "y": 163.0,
+            "z": -320.0
+          }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Scout')].Children[?(@.Name == 'Spawner_Scout')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 960.0,
+            "y": 163.0,
+            "z": 960.0
+          }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 180,
+            "z": 0.0
+          }
+        },
+        "SpawnPointPositions": {
+          "b8c3e91d-0043-4f15-9e60-1d8c5a2b7f04": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Scout_Evac_Hidden')].Children[?(@.Name == 'Region_Scout_Evac_Hidden')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -960.0,
+            "y": 163.0,
+            "z": -960.0
+          }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Scout_Evac_Visible')].Children[?(@.Name == 'Region_Scout_Evac_Visible')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -960.0,
+            "y": 163.0,
+            "z": -960.0
+          }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_EncounterBoundary')].Children[?(@.Name == 'EncounterBoundaryRect')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "Width": 2000,
+        "Length": 2000
+      }
+    }
+  ]
+}

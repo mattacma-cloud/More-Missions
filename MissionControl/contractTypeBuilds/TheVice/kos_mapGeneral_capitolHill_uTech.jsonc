@@ -1,0 +1,319 @@
+// TheVice — enum 18011 PROPOSED. Layer c3e8a911-4b17-4c21-9d10-7a1b2c3d4e11. Map mapGeneral_capitolHill_uTech.
+{
+  "EncounterLayerId": "mapGeneral_capitolHill_uTech.c3e8a911-4b17-4c21-9d10-7a1b2c3d4e11",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Overrides": [
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_PlayerLance')].Children[?(@.Name == 'Spawner_PlayerLance')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 400.0,
+            "z": 0.0
+          }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "SpawnPointPositions": {
+          "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "5df48a48-1840-49b0-84e9-126847053afa": {
+            "x": 16,
+            "y": 0,
+            "z": -16
+          },
+          "a55fc76c-c955-4b61-bb64-2608c9beb9f5": {
+            "x": 32,
+            "y": 0,
+            "z": 0
+          },
+          "0f10a383-7325-4726-b2c4-a0ef416e4b27": {
+            "x": 16,
+            "y": 0,
+            "z": 16
+          }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Ally')].Children[?(@.Name == 'Spawner_Ally')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 40.0,
+            "y": 400.0,
+            "z": 20.0
+          }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "SpawnPointPositions": {
+          "60dbed84-5ea8-59f1-8eca-2a824b690bce": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "bd1a77c3-4ef7-55e0-9147-b38473eed609": {
+            "x": 16,
+            "y": 0,
+            "z": -16
+          },
+          "82653d7b-bf44-5131-b402-4fea4f841752": {
+            "x": 32,
+            "y": 0,
+            "z": 0
+          },
+          "cc51a057-f8a3-5950-8533-2df25f8e59b9": {
+            "x": 16,
+            "y": 0,
+            "z": 16
+          }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Enemy_North')].Children[?(@.Name == 'Spawner_Enemy_North')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 400.0,
+            "z": 600.0
+          }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "SpawnPointPositions": {
+          "dfb06e53-dec5-5615-a9f0-e19c2ed5f509": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "7c909355-88e6-5fea-83ac-fe2a44836d6e": {
+            "x": 16,
+            "y": 0,
+            "z": -16
+          },
+          "40a074cb-c620-5e85-8ffc-637f82941dc2": {
+            "x": 32,
+            "y": 0,
+            "z": 0
+          },
+          "34e4dc29-28b6-573f-831e-6166c5ce6ae4": {
+            "x": 16,
+            "y": 0,
+            "z": 16
+          }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Enemy_South')].Children[?(@.Name == 'Spawner_Enemy_South')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -60.0,
+            "y": 400.0,
+            "z": -450.0
+          }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "SpawnPointPositions": {
+          "f3aed7c2-38d2-5dae-a6fc-53ae0b5ff8f7": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "51b358ed-58ed-528f-957f-99751874b92d": {
+            "x": 16,
+            "y": 0,
+            "z": -16
+          },
+          "a6960681-7435-5737-89e0-7de26fde319a": {
+            "x": 32,
+            "y": 0,
+            "z": 0
+          },
+          "fb01076f-c148-5730-9981-ca24f6da4ceb": {
+            "x": 16,
+            "y": 0,
+            "z": 16
+          }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Enemy_East')].Children[?(@.Name == 'Spawner_Enemy_East')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 570.0,
+            "y": 400.0,
+            "z": 0.0
+          }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "SpawnPointPositions": {
+          "d8b195a4-01b2-5bef-b02f-6e3213eb5e98": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "cc1b927f-7b3b-587a-b273-a47cc65b8dc5": {
+            "x": 16,
+            "y": 0,
+            "z": -16
+          },
+          "e65cd9f5-69ac-5dd0-8b39-efb3ae3ee6c4": {
+            "x": 32,
+            "y": 0,
+            "z": 0
+          },
+          "5537e5d3-f5b2-5e1d-a20f-04cd5e0c3fde": {
+            "x": 16,
+            "y": 0,
+            "z": 16
+          }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Enemy_West')].Children[?(@.Name == 'Spawner_Enemy_West')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -450.0,
+            "y": 400.0,
+            "z": 0.0
+          }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "SpawnPointPositions": {
+          "72c081d0-0288-5035-8bb0-eabe6f8dacdd": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "0012316e-d090-5b4b-953d-68f2845b92c6": {
+            "x": 16,
+            "y": 0,
+            "z": -16
+          },
+          "6511329a-86b4-51fc-922b-f4972599fd12": {
+            "x": 32,
+            "y": 0,
+            "z": 0
+          },
+          "3c571a80-27c4-5a4b-91a9-b356c68abf06": {
+            "x": 16,
+            "y": 0,
+            "z": 16
+          }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Evac')].Children[?(@.Name == 'Region_Evac')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -320.0,
+            "y": 180.0,
+            "z": -320.0
+          }
+        },
+        "Radius": 80.0
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_EncounterBoundary')].Children[?(@.Name == 'EncounterBoundaryRect')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "Width": 1800,
+        "Length": 1800
+      }
+    }
+  ]
+}

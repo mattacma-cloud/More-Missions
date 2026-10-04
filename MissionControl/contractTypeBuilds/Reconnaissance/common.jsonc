@@ -1,0 +1,855 @@
+// Reconnaissance — mapArena_riverCrossing_vHigh. Enum 18007 PROPOSED. Layer a7c3e91d-4b28-4f15-9e60-1d8c5a2b7f04.
+{
+  "Key": "Reconnaissance",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Chunks": [
+    {
+      "Name": "Chunk_PlayerLance",
+      "Type": "Chunk",
+      "SubType": "PlayerLance",
+      "Children": [
+        {
+          "Name": "Spawner_PlayerLance",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Solo 55-ton recon. One spawn point. mc_no_extended_lance.",
+          "Guid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "Team": "Player1",
+          "SpawnPointGuids": [
+            "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Player 1",
+            "mc_no_extended_lance"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_WP_1",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a7c3e91d-0011-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Objective_WP_1",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Reach Waypoint 1 with the recon 'Mech. Untimed. 90m buffer.",
+          "Guid": "a7c3e91d-0021-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Waypoint 1",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "a7c3e91d-0031-4f15-9e60-1d8c5a2b7f04",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_WP_1",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "a7c3e91d-0031-4f15-9e60-1d8c5a2b7f04",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "a7c3e91d-0021-4f15-9e60-1d8c5a2b7f04",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_WP_2",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a7c3e91d-0012-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Objective_WP_2",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Reach Waypoint 2 with the recon 'Mech. Untimed. 90m buffer.",
+          "Guid": "a7c3e91d-0022-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Waypoint 2",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "a7c3e91d-0032-4f15-9e60-1d8c5a2b7f04",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_WP_2",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "a7c3e91d-0032-4f15-9e60-1d8c5a2b7f04",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "a7c3e91d-0022-4f15-9e60-1d8c5a2b7f04",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_WP_3",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a7c3e91d-0013-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Objective_WP_3",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Reach Waypoint 3 with the recon 'Mech. Untimed. 90m buffer.",
+          "Guid": "a7c3e91d-0023-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Waypoint 3",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "a7c3e91d-0033-4f15-9e60-1d8c5a2b7f04",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_WP_3",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "a7c3e91d-0033-4f15-9e60-1d8c5a2b7f04",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "a7c3e91d-0023-4f15-9e60-1d8c5a2b7f04",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_WP_4",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a7c3e91d-0014-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Objective_WP_4",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Reach Waypoint 4 with the recon 'Mech. Untimed. 90m buffer.",
+          "Guid": "a7c3e91d-0024-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Waypoint 4",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "a7c3e91d-0034-4f15-9e60-1d8c5a2b7f04",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_WP_4",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "a7c3e91d-0034-4f15-9e60-1d8c5a2b7f04",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "a7c3e91d-0024-4f15-9e60-1d8c5a2b7f04",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_WP_5",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a7c3e91d-0015-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Objective_WP_5",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Reach Waypoint 5 with the recon 'Mech. Untimed. 90m buffer.",
+          "Guid": "a7c3e91d-0025-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Waypoint 5",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "a7c3e91d-0035-4f15-9e60-1d8c5a2b7f04",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_WP_5",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "a7c3e91d-0035-4f15-9e60-1d8c5a2b7f04",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "a7c3e91d-0025-4f15-9e60-1d8c5a2b7f04",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Exit_Mission",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a7c3e91d-0016-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Objective_Exit_Mission",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Reach the extraction hex. Success if the recon 'Mech extracts.",
+          "Guid": "a7c3e91d-0026-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Extract",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "a7c3e91d-0036-4f15-9e60-1d8c5a2b7f04",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": true
+        },
+        {
+          "Name": "Region_Exit_Plot",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "a7c3e91d-0036-4f15-9e60-1d8c5a2b7f04",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "a7c3e91d-0026-4f15-9e60-1d8c5a2b7f04",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ],
+      "OnActiveExecute": [
+        {
+          "Type": "Dialogue",
+          "EncounterGuid": "a7c3e91d-0087-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Hunter_1",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a7c3e91d-0201-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Hunter_1",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "a7c3e91d-0211-4f15-9e60-1d8c5a2b7f04",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "a7c3e91d-0310-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0311-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0312-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0313-4f15-9e60-1d8c5a2b7f04"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 360.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Hunter_1",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Optional hunter lance. You may ignore them.",
+          "Guid": "a7c3e91d-0221-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Hunter lance 1 [Optional]",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "a7c3e91d-0211-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Hunter_2",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a7c3e91d-0202-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Hunter_2",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "a7c3e91d-0212-4f15-9e60-1d8c5a2b7f04",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "a7c3e91d-0320-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0321-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0322-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0323-4f15-9e60-1d8c5a2b7f04"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 360.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Hunter_2",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Optional hunter lance. You may ignore them.",
+          "Guid": "a7c3e91d-0222-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Hunter lance 2 [Optional]",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "a7c3e91d-0212-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Hunter_3",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a7c3e91d-0203-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Hunter_3",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "a7c3e91d-0213-4f15-9e60-1d8c5a2b7f04",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "a7c3e91d-0330-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0331-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0332-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0333-4f15-9e60-1d8c5a2b7f04"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 360.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Hunter_3",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Optional hunter lance. You may ignore them.",
+          "Guid": "a7c3e91d-0223-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Hunter lance 3 [Optional]",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "a7c3e91d-0213-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Hunter_4",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "a7c3e91d-0204-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Hunter_4",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "a7c3e91d-0214-4f15-9e60-1d8c5a2b7f04",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "a7c3e91d-0340-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0341-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0342-4f15-9e60-1d8c5a2b7f04",
+            "a7c3e91d-0343-4f15-9e60-1d8c5a2b7f04"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 360.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Hunter_4",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Optional hunter lance. You may ignore them.",
+          "Guid": "a7c3e91d-0224-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Hunter lance 4 [Optional]",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "a7c3e91d-0214-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_DefaultDialogue",
+      "Type": "Chunk",
+      "SubType": "Dialogue",
+      "Children": [
+        {
+          "Name": "Dialogue_MissionStart",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "Reconnaissance-only MissionStart GUID.",
+          "Guid": "e3a1b2c4-7d18-4e90-9f01-aa11bb22cc01",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionSuccess",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0080-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionFailure",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0081-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_WP_1",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0082-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_WP_2",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0083-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_WP_3",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0084-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_WP_4",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0085-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_WP_5",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0086-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Evac",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0087-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Hunter_1",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0088-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Hunter_2",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0089-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Hunter_3",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0090-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Hunter_4",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "a7c3e91d-0091-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_EncounterBoundary",
+      "Type": "Chunk",
+      "SubType": "EncounterBoundary",
+      "Children": [
+        {
+          "Name": "EncounterBoundaryRect",
+          "Type": "Region",
+          "SubType": "Boundary",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "Trigger_MissionStart",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "After Begin: intro, WP1, hunters at rounds 3/6/9/12. No waypoint clocks.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e3a1b2c4-7d18-4e90-9f01-aa11bb22cc01"
+        },
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "a7c3e91d-0082-4f15-9e60-1d8c5a2b7f04"
+        },
+        {
+          "Type": "Delay",
+          "Name": "Spawn_Hunter_1",
+          "Rounds": 3,
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "a7c3e91d-0088-4f15-9e60-1d8c5a2b7f04"
+            },
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "a7c3e91d-0201-4f15-9e60-1d8c5a2b7f04"
+            }
+          ]
+        },
+        {
+          "Type": "Delay",
+          "Name": "Spawn_Hunter_2",
+          "Rounds": 6,
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "a7c3e91d-0089-4f15-9e60-1d8c5a2b7f04"
+            },
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "a7c3e91d-0202-4f15-9e60-1d8c5a2b7f04"
+            }
+          ]
+        },
+        {
+          "Type": "Delay",
+          "Name": "Spawn_Hunter_3",
+          "Rounds": 9,
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "a7c3e91d-0090-4f15-9e60-1d8c5a2b7f04"
+            },
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "a7c3e91d-0203-4f15-9e60-1d8c5a2b7f04"
+            }
+          ]
+        },
+        {
+          "Type": "Delay",
+          "Name": "Spawn_Hunter_4",
+          "Rounds": 12,
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "a7c3e91d-0091-4f15-9e60-1d8c5a2b7f04"
+            },
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "a7c3e91d-0204-4f15-9e60-1d8c5a2b7f04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_WP_1_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Open WP2.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "a7c3e91d-0021-4f15-9e60-1d8c5a2b7f04",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "a7c3e91d-0083-4f15-9e60-1d8c5a2b7f04"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "a7c3e91d-0012-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_WP_2_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Open WP3.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "a7c3e91d-0022-4f15-9e60-1d8c5a2b7f04",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "a7c3e91d-0084-4f15-9e60-1d8c5a2b7f04"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "a7c3e91d-0013-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_WP_3_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Open WP4.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "a7c3e91d-0023-4f15-9e60-1d8c5a2b7f04",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "a7c3e91d-0085-4f15-9e60-1d8c5a2b7f04"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "a7c3e91d-0014-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_WP_4_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Open WP5.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "a7c3e91d-0024-4f15-9e60-1d8c5a2b7f04",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "a7c3e91d-0086-4f15-9e60-1d8c5a2b7f04"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "a7c3e91d-0015-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_WP_5_Success",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Open extract.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "a7c3e91d-0025-4f15-9e60-1d8c5a2b7f04",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "a7c3e91d-0016-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    }
+  ]
+}

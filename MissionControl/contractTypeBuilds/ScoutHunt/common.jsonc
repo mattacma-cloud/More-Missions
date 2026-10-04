@@ -1,0 +1,598 @@
+// ScoutHunt — mapArena_riverCrossing_vHigh. Enum 18008 PROPOSED. Layer b8d4f02e-5c39-4026-af71-2e9d6b3c8015.
+{
+  "Key": "ScoutHunt",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Chunks": [
+    {
+      "Name": "Chunk_PlayerLance",
+      "Type": "Chunk",
+      "SubType": "PlayerLance",
+      "Children": [
+        {
+          "Name": "Spawner_PlayerLance",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Player mark and the nearer eastern mark. Two 55-ton slots. mc_no_extended_lance.",
+          "Guid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "Team": "Player1",
+          "SpawnPointGuids": [
+            "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39",
+            "a55fc76c-c955-4b61-bb64-2608c9beb9f5"
+          ],
+          "SpawnType": "DropPod",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Player 1",
+            "mc_no_extended_lance"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Alpha",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b8c3e91d-0011-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Objective_Alpha",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "One 'Mech on Alpha within 5 rounds from Begin. Parallel with Bravo.",
+          "Guid": "b8c3e91d-0021-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Occupy Waypoint Alpha \u2014 5 rounds, 1 'Mech",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "b8c3e91d-0031-4f15-9e60-1d8c5a2b7f04",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_Alpha",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "b8c3e91d-0031-4f15-9e60-1d8c5a2b7f04",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "b8c3e91d-0021-4f15-9e60-1d8c5a2b7f04",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Bravo",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b8c3e91d-0012-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Objective_Bravo",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "One 'Mech on Bravo within 5 rounds from Begin. Parallel with Alpha.",
+          "Guid": "b8c3e91d-0022-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Occupy Waypoint Bravo \u2014 5 rounds, 1 'Mech",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "b8c3e91d-0032-4f15-9e60-1d8c5a2b7f04",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_Bravo",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "b8c3e91d-0032-4f15-9e60-1d8c5a2b7f04",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "b8c3e91d-0022-4f15-9e60-1d8c5a2b7f04",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Scout",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b8c3e91d-0013-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Spawner_Scout",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Single Phoenix Hawk, d7 scout, 100% speed, StayInsideRegion to hidden evac.",
+          "Guid": "b8c3e91d-0063-4f15-9e60-1d8c5a2b7f04",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "b8c3e91d-0043-4f15-9e60-1d8c5a2b7f04"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 360.0,
+          "Tags": [
+            "scout_mech"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "b8c3e91d-0034-4f15-9e60-1d8c5a2b7f04"
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Destroy_Scout",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Destroy the enemy scout before it reaches extract.",
+          "Guid": "b8c3e91d-0023-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Destroy the scout",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "b8c3e91d-0063-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Scout_Evac_Hidden",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b8c3e91d-0014-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Objective_Scout_Evac",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Escape detector. Not the mission objective. Killing the scout must not fail the contract.",
+          "Guid": "b8c3e91d-0024-4f15-9e60-1d8c5a2b7f04",
+          "ContractObjectiveGuid": "c4e8b91d-0025-4f15-9e60-1d8c5a2b7f04",
+          "Title": "(Hidden) Scout extract",
+          "Priority": 2,
+          "DisplayToUser": false,
+          "IsPrimaryObjective": false,
+          "RegionGuid": "b8c3e91d-0034-4f15-9e60-1d8c5a2b7f04",
+          "LanceToUseRegionGuid": "b8c3e91d-0063-4f15-9e60-1d8c5a2b7f04",
+          "RequiredTagsOnUnit": [
+            "scout_mech"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy] unit(s)",
+          "UseDropship": false
+        },
+        {
+          "Name": "Region_Scout_Evac_Hidden",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "b8c3e91d-0034-4f15-9e60-1d8c5a2b7f04",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "b8c3e91d-0024-4f15-9e60-1d8c5a2b7f04",
+          "ShowHexWhenActive": false,
+          "AlwaysShowRegionWhenActive": false
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Scout_Evac_Visible",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b8c3e91d-0015-4f15-9e60-1d8c5a2b7f04",
+      "StartingStatus": "Inactive",
+      "OnActiveExecute": [
+        {
+          "Type": "Dialogue",
+          "EncounterGuid": "b8c3e91d-0088-4f15-9e60-1d8c5a2b7f04"
+        }
+      ],
+      "Children": [
+        {
+          "Name": "Region_Scout_Evac_Visible",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "Visible enemy extract after 8 rounds. Same cell as hidden occupy.",
+          "Guid": "b8c3e91d-0035-4f15-9e60-1d8c5a2b7f04",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "b8c3e91d-0024-4f15-9e60-1d8c5a2b7f04",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_DefaultDialogue",
+      "Type": "Chunk",
+      "SubType": "Dialogue",
+      "Children": [
+        {
+          "Name": "Dialogue_MissionStart",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "ScoutHunt-only MissionStart GUID.",
+          "Guid": "e3a1b2c4-7d18-4e90-9f01-aa11bb22cc02",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionSuccess",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0080-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionFailure",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0081-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Alpha_Half",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0082-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Alpha_Last",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0083-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Alpha_Fail",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0084-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Bravo_Half",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0085-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Bravo_Last",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0086-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Bravo_Fail",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0087-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Evac_Show",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0088-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Scout_Dead",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0089-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Scout_Out",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b8c3e91d-0090-4f15-9e60-1d8c5a2b7f04",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_EncounterBoundary",
+      "Type": "Chunk",
+      "SubType": "EncounterBoundary",
+      "Children": [
+        {
+          "Name": "EncounterBoundaryRect",
+          "Type": "Region",
+          "SubType": "Boundary",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "Trigger_MissionStart",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "After Begin: parallel 5-round Alpha/Bravo clocks. Reveal enemy extract hex at round 8.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e3a1b2c4-7d18-4e90-9f01-aa11bb22cc02"
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Alpha_Half",
+          "Rounds": 2,
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "b8c3e91d-0082-4f15-9e60-1d8c5a2b7f04"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Alpha_Last",
+              "Rounds": 2,
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "b8c3e91d-0083-4f15-9e60-1d8c5a2b7f04"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerFail_Alpha",
+                  "Rounds": 1,
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "b8c3e91d-0084-4f15-9e60-1d8c5a2b7f04"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "b8c3e91d-0021-4f15-9e60-1d8c5a2b7f04",
+                      "CompletionType": "Failed"
+                    }
+                  ],
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "b8c3e91d-0021-4f15-9e60-1d8c5a2b7f04",
+                        "Status": "Success"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "b8c3e91d-0021-4f15-9e60-1d8c5a2b7f04",
+                    "Status": "Success"
+                  }
+                ]
+              }
+            }
+          ],
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "b8c3e91d-0021-4f15-9e60-1d8c5a2b7f04",
+                "Status": "Success"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Bravo_Half",
+          "Rounds": 2,
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "b8c3e91d-0085-4f15-9e60-1d8c5a2b7f04"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Bravo_Last",
+              "Rounds": 2,
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "b8c3e91d-0086-4f15-9e60-1d8c5a2b7f04"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerFail_Bravo",
+                  "Rounds": 1,
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "b8c3e91d-0087-4f15-9e60-1d8c5a2b7f04"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "b8c3e91d-0022-4f15-9e60-1d8c5a2b7f04",
+                      "CompletionType": "Failed"
+                    }
+                  ],
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "b8c3e91d-0022-4f15-9e60-1d8c5a2b7f04",
+                        "Status": "Success"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "b8c3e91d-0022-4f15-9e60-1d8c5a2b7f04",
+                    "Status": "Success"
+                  }
+                ]
+              }
+            }
+          ],
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "b8c3e91d-0022-4f15-9e60-1d8c5a2b7f04",
+                "Status": "Success"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Delay",
+          "Name": "Reveal_Scout_Evac",
+          "Rounds": 8,
+          "Results": [
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "b8c3e91d-0015-4f15-9e60-1d8c5a2b7f04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Scout_Destroyed",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Scout destroyed.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "b8c3e91d-0023-4f15-9e60-1d8c5a2b7f04",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "b8c3e91d-0089-4f15-9e60-1d8c5a2b7f04"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Scout_Escaped",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "Scout occupied extract. Fail destroy unless the scout is already dead.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "b8c3e91d-0024-4f15-9e60-1d8c5a2b7f04",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Delay",
+          "Name": "Fail_Destroy_If_Still_Open",
+          "Rounds": 1,
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "b8c3e91d-0090-4f15-9e60-1d8c5a2b7f04"
+            },
+            {
+              "Type": "CompleteObjective",
+              "ObjectiveGuid": "b8c3e91d-0023-4f15-9e60-1d8c5a2b7f04",
+              "CompletionType": "Failed"
+            }
+          ],
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "b8c3e91d-0023-4f15-9e60-1d8c5a2b7f04",
+                "Status": "Success"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

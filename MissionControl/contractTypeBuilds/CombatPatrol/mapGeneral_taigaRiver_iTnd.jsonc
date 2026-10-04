@@ -1,0 +1,288 @@
+// CombatPatrol Taiga — World X/Z from atlas (existing Warzone/vanilla markers).
+// River Base plot ON. Not installed until install-combatpatrol-test.ps1.
+{
+  "EncounterLayerId": "mapGeneral_taigaRiver_iTnd.088830ea-d511-428a-8d73-800aae2b59aa",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Overrides": [
+    {
+      "Path": "$",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Plots": [
+          {
+            "Name": "Hill Top",
+            "Variant": "Default",
+            "IsActive": false
+          },
+          {
+            "Name": "Valley Area",
+            "Variant": "Default",
+            "IsActive": false
+          },
+          {
+            "Name": "Ridge Factory",
+            "Variant": "PlotVariant1",
+            "IsActive": false
+          },
+          {
+            "Name": "River Base",
+            "Variant": "PlotVariant1",
+            "IsActive": true
+          },
+          {
+            "Name": "River Base Turrets",
+            "Variant": "Default",
+            "IsActive": false
+          },
+          {
+            "Name": "River Base Turrets",
+            "Variant": "PlotVariant1",
+            "IsActive": true
+          },
+          {
+            "Name": "River Base Landing Zone",
+            "Variant": "PlotVariant1",
+            "IsActive": false
+          }
+        ]
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_PlayerLance')].Children[?(@.Name == 'Spawner_PlayerLance')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": -728.0, "y": 165.07, "z": -193.98 }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": { "x": 0.0, "y": 57.0, "z": 0.0 }
+        },
+        "SpawnPointPositions": {
+          "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "5df48a48-1840-49b0-84e9-126847053afa": { "x": 14.0, "y": 0.46, "z": -24.25 },
+          "a55fc76c-c955-4b61-bb64-2608c9beb9f5": { "x": -14.0, "y": -4.73, "z": -24.25 },
+          "0f10a383-7325-4726-b2c4-a0ef416e4b27": { "x": 0.0, "y": -0.89, "z": -48.5 }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_1_Occupy')].Children[?(@.Name == 'Region_Leg_1')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": -168.0, "y": 176.92, "z": -339.48 }
+        }
+      }
+    },
+    // G11 CaptureBase Lance_Enemy_Reinforcements. Was D11 (backs to C10).
+    // Yaw 284 faces C10. ~70m WNW of Checkpoint Alpha; not a new MapID.
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Mech')].Children[?(@.Name == 'Spawner_Event_Mech')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": -234.0, "y": 176.07, "z": -313.0 }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": { "x": 0.0, "y": 284.0, "z": 0.0 }
+        },
+        "SpawnPointPositions": {
+          "d03953b6-cca0-4ba8-89c0-2d5f2eaadb3a": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "f7ef75ce-f46f-4437-8b0a-c5a47263ad71": { "x": 14.0, "y": 0.0, "z": -24.0 },
+          "fc983b95-69bb-427d-9593-0d95b5f568cb": { "x": -14.0, "y": 0.0, "z": -24.0 },
+          "56036ee2-6a77-42a7-b01d-543a6014ef35": { "x": 0.0, "y": 0.0, "z": -48.0 }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_2_Occupy')].Children[?(@.Name == 'Region_Leg_2')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": 112.0, "y": 135.75, "z": -290.98 }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Tank')].Children[?(@.Name == 'Spawner_Event_Tank')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": 46.2, "y": 142.97, "z": -506.0 }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        "SpawnPointPositions": {
+          "b2f6fb15-0ae9-447a-8f15-5b56752476fb": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "c776ee73-4b3d-4576-9dbf-a8caecfb1584": { "x": 14.0, "y": 0.0, "z": -24.0 },
+          "3f4f6b27-7c87-421f-b896-fe01808ff4df": { "x": -14.0, "y": 0.0, "z": -24.0 },
+          "041c8143-3c1c-4551-87f6-25b750d550da": { "x": 0.0, "y": 0.0, "z": -48.0 }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_3_Occupy')].Children[?(@.Name == 'Region_Leg_3')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": 169.6, "y": 165.45, "z": -391.5 }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Artillery')].Children[?(@.Name == 'Spawner_Artillery_Strike')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": 142.0, "y": 124.88, "z": -530.0 }
+        },
+        "SpawnPointPositions": {
+          "5da376e0-f00a-4194-a57d-afa9f38b15aa": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Artillery')].Children[?(@.Name == 'Spawner_Artillery_Walk')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": 119.0, "y": 205.48, "z": 205.0 }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": { "x": 0.0, "y": 180.0, "z": 0.0 }
+        },
+        "SpawnPointPositions": {
+          "0672e771-43f8-446a-815e-988cd6d5ef79": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "43e3fe15-7b1d-41b6-97c8-60a40e790ce3": { "x": 14.0, "y": 0.0, "z": -24.0 },
+          "2ad36b72-a7e4-4bd3-b027-f7b28087253e": { "x": -14.0, "y": 0.0, "z": -24.0 },
+          "d8cfb7f4-2deb-4d29-b84f-1ff1ab3990e0": { "x": 0.0, "y": 0.0, "z": -48.0 }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    // P11 overlay: no named atlas marker. Column P = I2 x (64) plus seven 128m
+    // cells; row 11 = I2 z (866) minus nine 128m cells. y from N11 Rescue
+    // Region_Escape (nearest named east-flat marker). Yaw 270 faces the patrol.
+    // Local +Z pads sit west of the lead so the lance stays inside x=1000.
+    // Not a new MapID.
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Artillery_Overwatch')].Children[?(@.Name == 'Spawner_Artillery_Overwatch')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": 960.0, "y": 155.53, "z": -286.0 }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": { "x": 0.0, "y": 270.0, "z": 0.0 }
+        },
+        "SpawnPointPositions": {
+          "47a888cf-0a3e-4ea9-b8eb-9925b0a75827": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "42f7a86a-9d3c-4942-bcdc-eda19819de8c": { "x": 14.0, "y": 0.0, "z": 24.0 },
+          "e412e23e-44ec-4936-8856-67b6cc87a572": { "x": -14.0, "y": 0.0, "z": 24.0 },
+          "45331521-eff2-4e79-aa9f-b868d6d72049": { "x": 0.0, "y": 0.0, "z": 48.0 }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_4_Occupy')].Children[?(@.Name == 'Region_Leg_4')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": 168.0, "y": 184.4, "z": 48.49 }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Buildings')].Children[?(@.Name == 'Region_Buildings')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": 169.6, "y": 165.45, "z": -391.5 }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Turrets')].Children[?(@.Name == 'Spawner_Event_Turrets')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": 170.0, "y": 165.45, "z": -398.0 }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        "SpawnPointPositions": {
+          "32c009c0-6533-4410-8ccd-620fc87f9072": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "ff985402-4ea4-4b27-b338-5b2f7f9cfb30": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "7fbe1871-2243-449b-b320-b9d47ce9a131": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "a8507740-f088-44b5-bbf0-d36179786637": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        "SpawnPointRotations": {},
+        "PreciseSpawnPoints": false,
+        "MountOn": {
+          "32c009c0-6533-4410-8ccd-620fc87f9072": "PlotParent/River Base Turrets/PlotVariant1/envPrfFndn_turretTowerMount",
+          "ff985402-4ea4-4b27-b338-5b2f7f9cfb30": "PlotParent/River Base Turrets/PlotVariant1/envPrfFndn_turretTowerMount (1)",
+          "7fbe1871-2243-449b-b320-b9d47ce9a131": "PlotParent/River Base Turrets/PlotVariant1/envPrfFndn_turretTowerMount (2)",
+          "a8507740-f088-44b5-bbf0-d36179786637": "PlotParent/River Base Turrets/PlotVariant1/envPrfFndn_turretTowerMount (3)"
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Exit_Mission')].Children[?(@.Name == 'Region_Exit_Plot')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": -406.0, "y": 107.29, "z": 509.22 }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_EncounterBoundary')].Children[?(@.Name == 'EncounterBoundaryRect')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        "Width": 2000,
+        "Length": 2000
+      }
+    }
+  ]
+}

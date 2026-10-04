@@ -1,0 +1,1014 @@
+// PreventTheLanding — enum 18009 PROPOSED. Layer c3e8a909-4b17-4c21-9d10-7a1b2c3d4e09. Map mapGeneral_tropicalCove_vJung.
+{
+  "Key": "PreventTheLanding",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Chunks": [
+    {
+      "Name": "Chunk_PlayerLance",
+      "Type": "Chunk",
+      "SubType": "PlayerLance",
+      "Children": [
+        {
+          "Name": "Spawner_PlayerLance",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "Team": "Player1",
+          "SpawnPointGuids": [
+            "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39",
+            "5df48a48-1840-49b0-84e9-126847053afa",
+            "a55fc76c-c955-4b61-bb64-2608c9beb9f5",
+            "0f10a383-7325-4726-b2c4-a0ef416e4b27"
+          ],
+          "SpawnType": "DropPod",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Player 1",
+            "mc_no_extended_lance"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Ally",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Ally",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "edc47c0b-14d2-591d-a2ec-26484b64606e",
+          "Team": "Employer",
+          "SpawnPointGuids": [
+            "3f5b9fa5-e9cd-55ff-b93c-33ef8a354532",
+            "463f9602-be1c-5897-b50c-8f9aef44e5f7",
+            "c2d98b2c-e4ed-5076-9cd0-c4c5c0bfcdf3",
+            "6f39ba55-e3a1-5ebb-b525-69d940733d04"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Ally_Heavy",
+            "mc_no_extended_lance"
+          ]
+        }
+      ],
+      "Guid": "7728d7df-a8ee-5377-b926-e8d2ba112013",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Battle_Heavy",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Battle_Heavy",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "254f367b-301a-509e-b2d8-da267c3667be",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "d0c778da-030d-55fd-ba35-09557b7ee133",
+            "51f30f63-64fb-5dee-8b11-3d09c2de7aa1",
+            "90caf148-e8f9-52df-9e55-fc8e8f32c8c5",
+            "258d2457-348d-556d-ac4b-60bdc6399429"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Enemy_Heavy",
+            "mc_no_extended_lance"
+          ]
+        }
+,
+        {
+          "Name": "Objective_Heavy_Destroyed",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "b1a10001-4b17-4c21-9d10-7a1b2c3d4e11",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Destroy the heavy lance",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "254f367b-301a-509e-b2d8-da267c3667be"
+        }
+      ],
+      "Guid": "34157a63-07b4-576d-8349-5298a0e3ae2b",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Battle_Assault",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Battle_Assault",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "20eafa38-59ea-5c2c-aa70-43d2c991cb9a",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "1bd29a13-a883-5c63-8429-67e9a1446750",
+            "13febceb-7621-5fbb-a320-908b3f37cadd",
+            "a364aef3-35fa-5fb9-b07b-c97cf376b1b7",
+            "332a8301-ff04-581e-b756-4163b19e699e"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Enemy_Assault",
+            "mc_no_extended_lance"
+          ]
+        }
+,
+        {
+          "Name": "Objective_Assault_Destroyed",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "b1a10002-4b17-4c21-9d10-7a1b2c3d4e11",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Destroy the assault lance",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "20eafa38-59ea-5c2c-aa70-43d2c991cb9a"
+        }
+      ],
+      "Guid": "1fa0903d-c9d4-59e9-9d8b-ac4a083ee66b",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Stop_Marker",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Region_Stop_Marker",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "ef8e88a7-62ec-5f5f-9b27-919af91f1cbb",
+          "Radius": 1.0,
+          "RegionDefId": "regionDef_TargetZone",
+          "ObjectiveGuid": "ac40b1fd-60d2-52c8-8a7b-5987f7d78627",
+          "ShowHexWhenActive": false,
+          "AlwaysShowRegionWhenActive": false
+        }
+      ],
+      "Guid": "8b3a2564-acaa-580b-bc1b-4c49f2ba7f2f",
+      "StartingStatus": "Active"
+    },
+    {
+      "Name": "Chunk_Convoy_1",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Convoy_1",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "d479c181-cbc9-53b2-b4e6-403cae3979c0",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "96db0f27-5651-50ff-9955-898074dad3a2",
+            "ae31c8e4-8594-5c15-86b0-5d7153475953",
+            "ca0acf0b-7595-5f1d-8932-e97572b5893b",
+            "d8ffe51e-15a7-5d02-ba6a-9a43ef0c5db6"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Convoy_1",
+            "mc_no_extended_lance"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "5277f46c-7d0c-5b48-899f-218c6ed423d1"
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Convoy1_Destroyed",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "ac40b1fd-60d2-52c8-8a7b-5987f7d78627",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Stop convoy 1",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "d479c181-cbc9-53b2-b4e6-403cae3979c0"
+        }
+      ],
+      "Guid": "23accfc3-50bf-5477-9cd9-5ab61f56f076",
+      "StartingStatus": "Inactive"
+    },
+    {
+      "Name": "Chunk_Lift_1",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Region_Lift_1",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "5277f46c-7d0c-5b48-899f-218c6ed423d1",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "ac40b1fd-60d2-52c8-8a7b-5987f7d78627",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ],
+      "Guid": "ecc91c1a-503b-5332-bab2-020d0e56d877",
+      "StartingStatus": "Inactive"
+    },
+    {
+      "Name": "Chunk_Convoy_2",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Convoy_2",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "1896b01a-91db-51f8-b33e-5b80abb63412",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "f18fe473-9991-5f38-ae8b-049149f712a0",
+            "8df2d569-0267-5755-a46a-5345b3ab2f30",
+            "1f239a14-cea0-5993-83f1-cfe5f683befb",
+            "6833ead0-da76-52fb-86da-7eb3b724e00b"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Vehicle",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Convoy_2",
+            "mc_no_extended_lance"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "a90b9c9b-6773-59aa-80bb-97157a9a2be3"
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Convoy2_Destroyed",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "a354853e-897e-5e6a-a62c-748dfd85801f",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Stop convoy 2",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "1896b01a-91db-51f8-b33e-5b80abb63412"
+        }
+      ],
+      "Guid": "d7eeac6a-052c-53c2-8192-e72a1b177cdb",
+      "StartingStatus": "Inactive"
+    },
+    {
+      "Name": "Chunk_Lift_2",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Region_Lift_2",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "a90b9c9b-6773-59aa-80bb-97157a9a2be3",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "a354853e-897e-5e6a-a62c-748dfd85801f",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ],
+      "Guid": "9cda3cc1-6add-587d-bacb-9c8daf7dc455",
+      "StartingStatus": "Inactive"
+    },
+    {
+      "Name": "Chunk_Convoy_3",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Convoy_3",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "7370e70f-bbcf-5461-8f6a-61abf1dd4395",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "7f11286d-968a-5353-b902-82bd96b1e619",
+            "7a677023-65b6-57a1-b506-ef6bd418ff13",
+            "28186013-61e3-5a12-8e33-90a83537f682",
+            "e572f66c-242b-5450-bfdb-8bf992644970"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Convoy_3",
+            "mc_no_extended_lance"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "921fc6e5-af16-567b-b22e-7858ba001891"
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Convoy3_Destroyed",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "1624e17f-953e-5a2a-a150-4acfc39fe6f6",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Stop convoy 3",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "7370e70f-bbcf-5461-8f6a-61abf1dd4395"
+        }
+      ],
+      "Guid": "a53964af-7104-5934-8c66-9bf9c2b06d9a",
+      "StartingStatus": "Inactive"
+    },
+    {
+      "Name": "Chunk_Lift_3",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Region_Lift_3",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "921fc6e5-af16-567b-b22e-7858ba001891",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "1624e17f-953e-5a2a-a150-4acfc39fe6f6",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ],
+      "Guid": "04378c80-025b-5671-933c-db81955a3a64",
+      "StartingStatus": "Inactive"
+    },
+    {
+      "Name": "Chunk_Convoy_4",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Spawner_Convoy_4",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "5e7cc588-da38-5751-9ca7-553040758624",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "ddabefad-dbc6-5acc-8ae4-89a65afce4aa",
+            "2666c96b-bf8e-5641-a134-ac82d46e3c63",
+            "66a00f65-576c-5a37-aeec-46d55cc8c840",
+            "b390b4ae-c1e0-5e89-98ec-c5a3ff130233"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Vehicle",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Convoy_4",
+            "mc_no_extended_lance"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "8986532d-6379-562a-a29e-a92da37c54a7"
+            }
+          ]
+        },
+        {
+          "Name": "Objective_Convoy4_Destroyed",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "",
+          "Guid": "678691ea-d39b-5376-827c-79a87715a3b0",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Stop convoy 4",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "LanceToDestroyGuid": "5e7cc588-da38-5751-9ca7-553040758624"
+        }
+      ],
+      "Guid": "3072aea2-ceec-5b14-b416-89e314420167",
+      "StartingStatus": "Inactive"
+    },
+    {
+      "Name": "Chunk_Lift_4",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Region_Lift_4",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "8986532d-6379-562a-a29e-a92da37c54a7",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "678691ea-d39b-5376-827c-79a87715a3b0",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ],
+      "Guid": "439f69a6-62da-546b-8fae-033510b6410e",
+      "StartingStatus": "Inactive"
+    },
+    {
+      "Name": "Chunk_Evac",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Children": [
+        {
+          "Name": "Region_Evac",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "",
+          "Guid": "2946d424-e221-5588-99f9-d2c2c951a95a",
+          "Radius": 80.0,
+          "RegionDefId": "regionDef_Positive",
+          "ObjectiveGuid": "ac40b1fd-60d2-52c8-8a7b-5987f7d78627",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        }
+      ],
+      "Guid": "a74be87b-2fa7-507c-96cd-786a04fda5f2",
+      "StartingStatus": "Inactive"
+    },
+    {
+      "Name": "Chunk_DefaultDialogue",
+      "Type": "Chunk",
+      "SubType": "Dialogue",
+      "Children": [
+        {
+          "Name": "Dialogue_MissionStart",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "99ce79cc-033c-5e15-813a-c7850c1075cb",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionSuccess",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "cbe7317b-e5a0-5dd6-8bb6-9670b873c47b",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_MissionFailure",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "d3a8451a-5170-5710-8c04-189b10b48761",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Dustoff_Open",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "0c93e5f6-1f9a-56f5-9668-be54a35bab45",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy1_Move",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "f6a83e64-1add-5099-8c48-8697fb503862",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy2_Move",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "19c5b046-4549-5aa9-b2ee-dc1753c59a98",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy3_Move",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "6d471453-aea2-5744-baac-a5538437a604",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy4_Move",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "029733af-98c8-583e-b61e-ad1d3757fd9a",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy1_Gone",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "438c3cf5-d0bb-54ba-8a9b-7e5a4eb43866",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy2_Gone",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "17a48359-27b0-53b1-bce1-28d269b9e942",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy3_Gone",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "c253b5e1-a95a-5954-b276-447349bdb583",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy4_Gone",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "08ea4466-ea9b-5a95-9755-79929375124c",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy1_Away",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b3eb77c1-1b74-57aa-ab03-3a44c38bf67f",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy2_Away",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "2ae8f499-0e57-5ff1-8080-c9e550e68e70",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy3_Away",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "fb7e9348-083a-5960-b800-76190f8992ea",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Convoy4_Away",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "adfb734c-8820-537d-8124-53a92f66fbd3",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+{
+          "Name": "Dialogue_Convoy1_Damaged",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "d25f4d7d-8986-5791-9e74-7cd59f963027",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+{
+          "Name": "Dialogue_Convoy2_Damaged",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "fa1a8486-f6e6-5d8b-b8d8-172f57a69fa2",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+{
+          "Name": "Dialogue_Convoy3_Damaged",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "5b851287-7f01-5df3-a246-74a84566e4ac",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+{
+          "Name": "Dialogue_Convoy4_Damaged",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "f8f02062-c8cb-53a4-925d-223c803fffbb",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+{
+          "Name": "Dialogue_Convoy1_AtZone",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "21def84f-9fb1-524e-8129-fc7c1e31f746",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+{
+          "Name": "Dialogue_Convoy2_AtZone",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "cbe0f967-9749-5fd1-aee5-345c746f06b9",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+{
+          "Name": "Dialogue_Convoy3_AtZone",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "1f1e7f0b-9d84-502e-ae80-7a715832901d",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+{
+          "Name": "Dialogue_Convoy4_AtZone",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "23b8fdf2-204b-5422-a8ad-f728d08ae731",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Heavy_Gone",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b1a10003-4b17-4c21-9d10-7a1b2c3d4e11",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        },
+        {
+          "Name": "Dialogue_Assault_Gone",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "b1a10004-4b17-4c21-9d10-7a1b2c3d4e11",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        }
+      ]
+    },
+{
+      "Name": "Chunk_EncounterBoundary",
+      "Type": "Chunk",
+      "SubType": "EncounterBoundary",
+      "Children": [
+        {
+          "Name": "EncounterBoundaryRect",
+          "Type": "Region",
+          "SubType": "Boundary",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "Trigger_Waves",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "Convoys on rounds 3, 6, 9, and 12.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "99ce79cc-033c-5e15-813a-c7850c1075cb",
+          "IsInterrupt": false
+        },
+        {
+          "Type": "Delay",
+          "Name": "Wave_1",
+          "Rounds": 3,
+          "Results": [
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "23accfc3-50bf-5477-9cd9-5ab61f56f076"
+            },
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "ecc91c1a-503b-5332-bab2-020d0e56d877"
+            },
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "f6a83e64-1add-5099-8c48-8697fb503862",
+              "IsInterrupt": false
+            },
+            {
+              "Type": "Delay",
+              "Name": "Wave_2",
+              "Rounds": 3,
+              "Results": [
+                {
+                  "Type": "SetStatus",
+                  "Status": "Active",
+                  "EncounterGuid": "d7eeac6a-052c-53c2-8192-e72a1b177cdb"
+                },
+                {
+                  "Type": "SetStatus",
+                  "Status": "Active",
+                  "EncounterGuid": "9cda3cc1-6add-587d-bacb-9c8daf7dc455"
+                },
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "19c5b046-4549-5aa9-b2ee-dc1753c59a98",
+                  "IsInterrupt": false
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "Wave_3",
+                  "Rounds": 3,
+                  "Results": [
+                    {
+                      "Type": "SetStatus",
+                      "Status": "Active",
+                      "EncounterGuid": "a53964af-7104-5934-8c66-9bf9c2b06d9a"
+                    },
+                    {
+                      "Type": "SetStatus",
+                      "Status": "Active",
+                      "EncounterGuid": "04378c80-025b-5671-933c-db81955a3a64"
+                    },
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "6d471453-aea2-5744-baac-a5538437a604",
+                      "IsInterrupt": false
+                    },
+                    {
+                      "Type": "Delay",
+                      "Name": "Wave_4",
+                      "Rounds": 3,
+                      "Results": [
+                        {
+                          "Type": "SetStatus",
+                          "Status": "Active",
+                          "EncounterGuid": "3072aea2-ceec-5b14-b416-89e314420167"
+                        },
+                        {
+                          "Type": "SetStatus",
+                          "Status": "Active",
+                          "EncounterGuid": "439f69a6-62da-546b-8fae-033510b6410e"
+                        },
+                        {
+                          "Type": "Dialogue",
+                          "DialogueGuid": "029733af-98c8-583e-b61e-ad1d3757fd9a",
+                          "IsInterrupt": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Convoy1_Destroyed",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "ac40b1fd-60d2-52c8-8a7b-5987f7d78627",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "438c3cf5-d0bb-54ba-8a9b-7e5a4eb43866",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Convoy2_Destroyed",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "a354853e-897e-5e6a-a62c-748dfd85801f",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "17a48359-27b0-53b1-bce1-28d269b9e942",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Convoy3_Destroyed",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "1624e17f-953e-5a2a-a150-4acfc39fe6f6",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "c253b5e1-a95a-5954-b276-447349bdb583",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Convoy4_Destroyed",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "678691ea-d39b-5376-827c-79a87715a3b0",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "08ea4466-ea9b-5a95-9755-79929375124c",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Heavy_Destroyed",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "b1a10001-4b17-4c21-9d10-7a1b2c3d4e11",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "b1a10003-4b17-4c21-9d10-7a1b2c3d4e11",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Assault_Destroyed",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "b1a10002-4b17-4c21-9d10-7a1b2c3d4e11",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "b1a10004-4b17-4c21-9d10-7a1b2c3d4e11",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_All_Destroyed",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "All four convoys destroyed.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusesConditional",
+          "Statuses": [
+            {
+              "Guid": "ac40b1fd-60d2-52c8-8a7b-5987f7d78627",
+              "Status": "Success"
+            },
+            {
+              "Guid": "a354853e-897e-5e6a-a62c-748dfd85801f",
+              "Status": "Success"
+            },
+            {
+              "Guid": "1624e17f-953e-5a2a-a150-4acfc39fe6f6",
+              "Status": "Success"
+            },
+            {
+              "Guid": "678691ea-d39b-5376-827c-79a87715a3b0",
+              "Status": "Success"
+            },
+            {
+              "Guid": "b1a10001-4b17-4c21-9d10-7a1b2c3d4e11",
+              "Status": "Success"
+            },
+            {
+              "Guid": "b1a10002-4b17-4c21-9d10-7a1b2c3d4e11",
+              "Status": "Success"
+            }
+          ]
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "cbe7317b-e5a0-5dd6-8bb6-9670b873c47b",
+          "IsInterrupt": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1195 @@
+// PlanetaryLanding — hold advance point, 4 allied waves / 12r to own jumpoffs, 2+4 enemy.
+// CONFIRMED 2026-09-22. Not live Mods until asked.
+{
+  "Key": "PlanetaryLanding",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Chunks": [
+    {
+      "Name": "Chunk_PlayerLance",
+      "Type": "Chunk",
+      "SubType": "PlayerLance",
+      "Children": [
+        {
+          "Name": "Spawner_PlayerLance",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Drops at the landing site. Hold is the advance point, not the pads.",
+          "Guid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "Team": "Player1",
+          "SpawnPointGuids": [
+            "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39",
+            "5df48a48-1840-49b0-84e9-126847053afa",
+            "a55fc76c-c955-4b61-bb64-2608c9beb9f5",
+            "0f10a383-7325-4726-b2c4-a0ef416e4b27"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Player 1"
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Hold",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "6afb0c1d-2893-44a5-e2dc-e708192a3b3d",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Region_Hold",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "Advance point. 3 overlay cells / 384m along landing yaw 122.",
+          "Guid": "59eafb0c-1782-4394-d1cb-d6f708192a2c",
+          "Radius": 90.0,
+          "RegionDefId": "regionDef_Positive",
+          "ObjectiveGuid": "7b0c1d2e-39a4-45b6-f3ed-f8192a3b4c4e",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Hold",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Hold the advance point. Player evac waits until all four friendlies extract.",
+          "Guid": "7b0c1d2e-39a4-45b6-f3ed-f8192a3b4c4e",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Hold the advance point",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "59eafb0c-1782-4394-d1cb-d6f708192a2c",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 12,
+          "DurationType": "Rounds",
+          "ProgressFormat": "[durationRemaining] Round(s)",
+          "UseDropship": false
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Employer_Lance_01",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "222442a1-1616-44f5-90f8-d26269123521",
+      "StartingStatus": "Inactive",
+      "ControlledByContract": false,
+      "Children": [
+        {
+          "Name": "Spawner_Employer_Lance_01",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Wave 1. Lands at LZ, StayInsideRegion to jumpoff Bravo.",
+          "Guid": "559d756d-4c4e-495c-ac38-ca593e041896",
+          "Team": "Employer",
+          "SpawnPointGuids": [
+            "70db0bca-424d-4366-8c07-df3b0d9019e6",
+            "7c1bac4c-ca24-4cc9-b59f-903745891932",
+            "7c30108d-c203-4240-a74f-76cc057ccae0",
+            "a1c4e701-4b21-4d11-8e01-70db0bca0004"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Ally_Wave_1"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "26b7c8d9-e45f-4061-a898-a3c4d5e6f7f9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Jumpoff_1",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "37c8d9ea-f560-4172-b9a9-b4d5e6f7080a",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Jumpoff_1",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "DiD Bravo region World.",
+          "Guid": "26b7c8d9-e45f-4061-a898-a3c4d5e6f7f9",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "48d9eafb-0671-4283-c0ba-c5e6f708191b",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Ally_Extract_1",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "",
+          "Guid": "48d9eafb-0671-4283-c0ba-c5e6f708191b",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Friendly lance 1 extracts",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "26b7c8d9-e45f-4061-a898-a3c4d5e6f7f9",
+          "LanceToUseRegionGuid": "559d756d-4c4e-495c-ac38-ca593e041896",
+          "RequiredTagsOnUnit": [
+            "Ally_Wave_1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 4,
+          "DurationType": "Rounds",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy]",
+          "UseDropship": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Employer_Lance_02",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "0c1ff6d2-a809-444b-bcfa-8c890593724f",
+      "StartingStatus": "Inactive",
+      "ControlledByContract": false,
+      "Children": [
+        {
+          "Name": "Spawner_Employer_Lance_02",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Wave 2. Jumpoff Alpha.",
+          "Guid": "574928a1-ee1c-4cd1-a83f-d4a30aa1b05a",
+          "Team": "Employer",
+          "SpawnPointGuids": [
+            "74c85f6a-1050-4bfc-b6bc-e693224691fc",
+            "e4cf8328-8e38-4b0a-b615-c8cf0e29959d",
+            "362c4974-6d34-44b7-8618-a74dbc487c3c",
+            "a1c4e702-4b21-4d11-8e02-74c85f6a0004"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Vehicle",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Ally_Wave_2"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "22b2c3d4-e5f6-4071-b282-c3d4e5f60718"
+            }
+          ]
+        }
+,
+        {
+          "Name": "Objective_Convoy2_Damaged",
+          "Type": "Objective",
+          "SubType": "DefendXUnits",
+          "Description": "Hidden. Fails when this convoy is no longer four units.",
+          "Guid": "e0470005-4c01-4a01-8a01-000000000002",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "(Optional) Convoy survives",
+          "Priority": 3,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "RequiredTagsOnUnit": [
+            "Ally_Wave_2"
+          ],
+          "NumberOfUnitsToDefend": 4,
+          "ProgressFormat": ""
+        },
+        {
+          "Name": "Objective_Convoy2_Destroyed",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Hidden. Succeeds when this convoy is wiped out.",
+          "Guid": "e0470006-4c01-4a01-8a01-000000000002",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Convoy 2 destroyed",
+          "Priority": 9,
+          "DisplayToUser": false,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "574928a1-ee1c-4cd1-a83f-d4a30aa1b05a"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Jumpoff_2",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "11a1b2c3-d4e5-4f60-a171-b2c3d4e5f607",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Jumpoff_2",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "DiD Alpha region World.",
+          "Guid": "22b2c3d4-e5f6-4071-b282-c3d4e5f60718",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "33c3d4e5-f607-4182-c393-d4e5f6071829",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Convoy2_AtWaypoint",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Bark only. First convoy unit at the lift.",
+          "Guid": "e0480001-4c01-4a01-8a01-000000000002",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Convoy at lift",
+          "Priority": 9,
+          "DisplayToUser": false,
+          "IsPrimaryObjective": false,
+          "RegionGuid": "22b2c3d4-e5f6-4071-b282-c3d4e5f60718",
+          "LanceToUseRegionGuid": "574928a1-ee1c-4cd1-a83f-d4a30aa1b05a",
+          "RequiredTagsOnUnit": [
+            "Ally_Wave_2"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "",
+          "UseDropship": false
+        },
+        {
+          "Name": "Objective_Ally_Extract_2",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "",
+          "Guid": "33c3d4e5-f607-4182-c393-d4e5f6071829",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Convoy extracts",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "22b2c3d4-e5f6-4071-b282-c3d4e5f60718",
+          "LanceToUseRegionGuid": "574928a1-ee1c-4cd1-a83f-d4a30aa1b05a",
+          "RequiredTagsOnUnit": [
+            "Ally_Wave_2"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 4,
+          "DurationType": "Rounds",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy]",
+          "UseDropship": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Employer_Lance_03",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "8c1d2e3f-4a5b-46c7-8d9e-0f1a2b3c4d5e",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Employer_Lance_03",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Wave 3. Jumpoff Employer_Lance_02 World.",
+          "Guid": "9d2e3f40-5b6c-47d8-9e0f-1a2b3c4d5e60",
+          "Team": "Employer",
+          "SpawnPointGuids": [
+            "ae3f4051-6c7d-48e9-a010-2b3c4d5e6f71",
+            "bf405162-7d8e-49fa-b121-3c4d5e6f7082",
+            "c0516273-8e9f-4a0b-c232-4d5e6f708193",
+            "a1c4e703-4b21-4d11-8e03-ae3f40510004"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Ally_Wave_3"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "55e5f607-1829-43a4-e5b5-f60718293a4b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Jumpoff_3",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "44d4e5f6-0718-4293-d4a4-e5f60718293a",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Jumpoff_3",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "DiD Employer_Lance_02 World (4th distinct pad; only 3 occupy regions on this map).",
+          "Guid": "55e5f607-1829-43a4-e5b5-f60718293a4b",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "66f60718-293a-44b5-f6c6-0718293a4b5c",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Ally_Extract_3",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "",
+          "Guid": "66f60718-293a-44b5-f6c6-0718293a4b5c",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Friendly lance 3 extracts",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "55e5f607-1829-43a4-e5b5-f60718293a4b",
+          "LanceToUseRegionGuid": "9d2e3f40-5b6c-47d8-9e0f-1a2b3c4d5e60",
+          "RequiredTagsOnUnit": [
+            "Ally_Wave_3"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 4,
+          "DurationType": "Rounds",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy]",
+          "UseDropship": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Employer_Lance_04",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "d1627384-9f0a-4b1c-8343-5e6f7081a2a4",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Employer_Lance_04",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "Wave 4. Jumpoff Charlie.",
+          "Guid": "e2738495-a01b-4c2d-9454-6f7081a2b3b5",
+          "Team": "Employer",
+          "SpawnPointGuids": [
+            "f38495a6-b12c-4d3e-a565-7081a2b3c4c6",
+            "0495a6b7-c23d-4e4f-8676-81a2b3c4d5d7",
+            "15a6b7c8-d34e-4f50-9787-92b3c4d5e6e8",
+            "a1c4e704-4b21-4d11-8e04-f38495a60004"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Vehicle",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": false,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Ally_Wave_4"
+          ],
+          "AI": [
+            {
+              "Type": "StayInsideRegion",
+              "RegionGuid": "88193a4b-5c6d-46d7-b8e8-293a4b5c6d7e"
+            }
+          ]
+        }
+,
+        {
+          "Name": "Objective_Convoy4_Damaged",
+          "Type": "Objective",
+          "SubType": "DefendXUnits",
+          "Description": "Hidden. Fails when this convoy is no longer four units.",
+          "Guid": "e0470005-4c01-4a01-8a01-000000000004",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "(Optional) Last convoy survives",
+          "Priority": 3,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": false,
+          "RequiredTagsOnUnit": [
+            "Ally_Wave_4"
+          ],
+          "NumberOfUnitsToDefend": 4,
+          "ProgressFormat": ""
+        },
+        {
+          "Name": "Objective_Convoy4_Destroyed",
+          "Type": "Objective",
+          "SubType": "DestroyLance",
+          "Description": "Hidden. Succeeds when this convoy is wiped out.",
+          "Guid": "e0470006-4c01-4a01-8a01-000000000004",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Convoy 4 destroyed",
+          "Priority": 9,
+          "DisplayToUser": false,
+          "IsPrimaryObjective": false,
+          "LanceToDestroyGuid": "e2738495-a01b-4c2d-9454-6f7081a2b3b5"
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Jumpoff_4",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "7708293a-4b5c-45c6-a7d7-18293a4b5c6d",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Jumpoff_4",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "DiD Charlie region World.",
+          "Guid": "88193a4b-5c6d-46d7-b8e8-293a4b5c6d7e",
+          "Radius": 140.0,
+          "RegionDefId": "regionDef_EvacZone",
+          "ObjectiveGuid": "992a4b5c-6d7e-47e8-c9f9-3a4b5c6d7e8f",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Convoy4_AtWaypoint",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "Bark only. First unit of the last convoy at the lift.",
+          "Guid": "e0480001-4c01-4a01-8a01-000000000004",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Last convoy at lift",
+          "Priority": 9,
+          "DisplayToUser": false,
+          "IsPrimaryObjective": false,
+          "RegionGuid": "88193a4b-5c6d-46d7-b8e8-293a4b5c6d7e",
+          "LanceToUseRegionGuid": "e2738495-a01b-4c2d-9454-6f7081a2b3b5",
+          "RequiredTagsOnUnit": [
+            "Ally_Wave_4"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "",
+          "UseDropship": false
+        },
+        {
+          "Name": "Objective_Ally_Extract_4",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "",
+          "Guid": "992a4b5c-6d7e-47e8-c9f9-3a4b5c6d7e8f",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Last convoy extracts",
+          "Priority": 2,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "88193a4b-5c6d-46d7-b8e8-293a4b5c6d7e",
+          "LanceToUseRegionGuid": "e2738495-a01b-4c2d-9454-6f7081a2b3b5",
+          "RequiredTagsOnUnit": [
+            "Ally_Wave_4"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 4,
+          "DurationType": "Rounds",
+          "ProgressFormat": "[unitsOccupyingSoFar]/[numberOfUnitsToOccupy]",
+          "UseDropship": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_01",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "b1010001-18e5-47dc-a4ba-f3d627b87611",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_01",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "f78cce05-8078-4f5d-b240-256af1f7f71b",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "67d95242-284a-4316-b93d-7c03951e1664",
+            "d50c4ce7-6596-49c2-947d-28d3c95a8d6d",
+            "f013df77-26bc-4717-b031-a901d412ac48",
+            "c96293d7-9b95-48c0-a72f-8a9d8f82d361"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_02",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "23bab26f-0224-45ca-8b22-5850aa59e57b",
+      "StartingStatus": "Active",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_02",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "3f899376-6d15-413c-a260-a5f0aecff9bd",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "00c4ad37-d0f5-45e4-b54e-ab29d1646935",
+            "fb517114-a960-4d21-ac59-7af694107ab1",
+            "4c74c107-23a4-4648-b758-11f8a8917d64",
+            "666fff26-8734-4d15-858d-12ed74f036d2"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_03",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "96baf0af-9aac-4962-ada0-50c95809c9a6",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_03",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "fddf5e8b-07c6-492b-861e-2d9c2bde80ee",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "37634f3f-6855-4572-b526-1fa66e770831",
+            "c2f52419-e1ba-43db-bb53-f2d21eba4f8c",
+            "3ae6c2d2-470c-4c61-866a-1e2ff3cfb918",
+            "39045acd-b014-45d3-8bdd-6c0f3a91cb99"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_04",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "ca19cb2c-07e1-43a0-9b73-ed387ba0de5a",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_04",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "9cd2da77-9a07-4c41-afbe-bbfdfbe0a257",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "8b83155c-95b9-486c-acba-9621a0a88ac5",
+            "5ac42749-004e-46a6-9e39-16530ceaafb1",
+            "5d56649b-20a9-4b5f-8b48-4fd147ade7cf",
+            "4b762f22-4c5b-4b80-8a05-3ad929e27a8f"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_05",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "99999853-b45f-4f30-85c3-3febcbdd7521",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_05",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "c76a6d7f-2e68-46f8-b2b1-797b5c46462c",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "24f0af6b-6e66-46fc-8561-25dc66fb8f8f",
+            "72837ee7-79ed-4f8e-9058-55514e7a4999",
+            "faefca76-3649-4874-83b7-931d720c51fe",
+            "87131a08-ec1b-4a34-afcb-088334229a7f"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Target_Lance_06",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "82575c41-aa0c-41d7-9955-f69839e8a080",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Spawner_Target_Lance_06",
+          "Type": "Spawner",
+          "SubType": "SimpleLance",
+          "Description": "",
+          "Guid": "a7944fc0-efe6-44e4-a5fc-b32fb14dbb3b",
+          "Team": "Target",
+          "SpawnPointGuids": [
+            "693f94f8-0a0a-49e5-8059-7880f662318a",
+            "3d9462b0-03e7-40b6-814a-9eceda8df20d",
+            "06c2b57f-5d6e-445d-a84a-1c38ba9e2569",
+            "b42a763a-fe97-4d01-adb0-f30c7bf26e95"
+          ],
+          "SpawnType": "Instant",
+          "SpawnUnitTypeHint": "Mech",
+          "PreciseSpawnPoints": false,
+          "AlertLanceOnSpawn": true,
+          "DefaultDetectionRange": 200.0,
+          "Tags": [
+            "Hostiles"
+          ],
+          "AI": [
+            {
+              "Type": "MagicKnowledgeByTag",
+              "Action": "Add",
+              "Tags": [
+                "Player 1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_Evac",
+      "Type": "Chunk",
+      "SubType": "Container",
+      "Guid": "aa3b5c6d-7e8f-48f9-da0a-4b5c6d7e8f90",
+      "StartingStatus": "Inactive",
+      "Children": [
+        {
+          "Name": "Region_Evac",
+          "Type": "Region",
+          "SubType": "Normal",
+          "Description": "Player extract at the landing site after all friendlies are gone.",
+          "Guid": "bb4c6d7e-8f90-490a-eb1b-5c6d7e8f901a",
+          "Radius": 80.0,
+          "RegionDefId": "regionDef_Positive",
+          "ObjectiveGuid": "cc5d7e8f-901a-4a1b-fc2c-6d7e8f901a2b",
+          "ShowHexWhenActive": true,
+          "AlwaysShowRegionWhenActive": true
+        },
+        {
+          "Name": "Objective_Evac",
+          "Type": "Objective",
+          "SubType": "OccupyRegion",
+          "Description": "",
+          "Guid": "cc5d7e8f-901a-4a1b-fc2c-6d7e8f901a2b",
+          "ContractObjectiveGuid": "73275787-720a-4c33-9f20-953b1bbf48bd",
+          "Title": "Extract",
+          "Priority": 1,
+          "DisplayToUser": true,
+          "IsPrimaryObjective": true,
+          "RegionGuid": "bb4c6d7e-8f90-490a-eb1b-5c6d7e8f901a",
+          "LanceToUseRegionGuid": "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+          "RequiredTagsOnUnit": [
+            "Player 1"
+          ],
+          "RequiredTagsOnOpposingUnit": [],
+          "NumberOfUnitsToOccupy": 1,
+          "DurationToOccupy": 0,
+          "DurationType": "AfterMoveComplete",
+          "ProgressFormat": "[unitsOccupied] 'Mech(s)",
+          "UseDropship": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_DefaultDialogue",
+      "Type": "Chunk",
+      "SubType": "Dialogue",
+      "Children": [
+        {
+          "Name": "Dialogue_MissionStart",
+          "Type": "Dialogue",
+          "SubType": "Simple",
+          "Description": "",
+          "Guid": "c05173d4-8ef9-4a0b-c832-4d6e7f809193",
+          "ShowGizmoHint": false,
+          "ShowOnlyOnce": true
+        }
+      ]
+    },
+    {
+      "Name": "Chunk_EncounterBoundary",
+      "Type": "Chunk",
+      "SubType": "EncounterBoundary",
+      "Children": [
+        {
+          "Name": "EncounterBoundaryRect",
+          "Type": "Region",
+          "SubType": "Boundary",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "Triggers": [
+    {
+      "Name": "Trigger_Waves",
+      "TriggerOn": "OnEncounterIntroComplete",
+      "Description": "r3/6/9/12: one ally + jumpoff + one enemy. Nested Delay 3.",
+      "Conditionals": [
+        {
+          "Type": "AlwaysTrueConditional"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Delay",
+          "Name": "Wave_1",
+          "Rounds": 3,
+          "Results": [
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "222442a1-1616-44f5-90f8-d26269123521"
+            },
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "e0470001-4c01-4a01-8a01-000000000001",
+              "IsInterrupt": false
+            },
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "37c8d9ea-f560-4172-b9a9-b4d5e6f7080a"
+            },
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "96baf0af-9aac-4962-ada0-50c95809c9a6"
+            },
+            {
+              "Type": "Delay",
+              "Name": "Wave_2",
+              "Rounds": 3,
+              "Results": [
+                {
+                  "Type": "SetStatus",
+                  "Status": "Active",
+                  "EncounterGuid": "0c1ff6d2-a809-444b-bcfa-8c890593724f"
+                },
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "e0470001-4c01-4a01-8a01-000000000002",
+                  "IsInterrupt": false
+                },
+                {
+                  "Type": "SetStatus",
+                  "Status": "Active",
+                  "EncounterGuid": "11a1b2c3-d4e5-4f60-a171-b2c3d4e5f607"
+                },
+                {
+                  "Type": "SetStatus",
+                  "Status": "Active",
+                  "EncounterGuid": "ca19cb2c-07e1-43a0-9b73-ed387ba0de5a"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "Wave_3",
+                  "Rounds": 3,
+                  "Results": [
+                    {
+                      "Type": "SetStatus",
+                      "Status": "Active",
+                      "EncounterGuid": "8c1d2e3f-4a5b-46c7-8d9e-0f1a2b3c4d5e"
+                    },
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "e0470001-4c01-4a01-8a01-000000000003",
+                      "IsInterrupt": false
+                    },
+                    {
+                      "Type": "SetStatus",
+                      "Status": "Active",
+                      "EncounterGuid": "44d4e5f6-0718-4293-d4a4-e5f60718293a"
+                    },
+                    {
+                      "Type": "SetStatus",
+                      "Status": "Active",
+                      "EncounterGuid": "99999853-b45f-4f30-85c3-3febcbdd7521"
+                    },
+                    {
+                      "Type": "Delay",
+                      "Name": "Wave_4",
+                      "Rounds": 3,
+                      "Results": [
+                        {
+                          "Type": "SetStatus",
+                          "Status": "Active",
+                          "EncounterGuid": "d1627384-9f0a-4b1c-8343-5e6f7081a2a4"
+                        },
+                        {
+                          "Type": "Dialogue",
+                          "DialogueGuid": "e0470001-4c01-4a01-8a01-000000000004",
+                          "IsInterrupt": false
+                        },
+                        {
+                          "Type": "SetStatus",
+                          "Status": "Active",
+                          "EncounterGuid": "7708293a-4b5c-45c6-a7d7-18293a4b5c6d"
+                        },
+                        {
+                          "Type": "SetStatus",
+                          "Status": "Active",
+                          "EncounterGuid": "82575c41-aa0c-41d7-9955-f69839e8a080"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Open_Player_Evac",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "All four friendlies extracted. Player may leave. Hold completes if still running.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusesConditional",
+          "Statuses": [
+            {
+              "Guid": "48d9eafb-0671-4283-c0ba-c5e6f708191b",
+              "Status": "Success"
+            },
+            {
+              "Guid": "33c3d4e5-f607-4182-c393-d4e5f6071829",
+              "Status": "Success"
+            },
+            {
+              "Guid": "66f60718-293a-44b5-f6c6-0718293a4b5c",
+              "Status": "Success"
+            },
+            {
+              "Guid": "992a4b5c-6d7e-47e8-c9f9-3a4b5c6d7e8f",
+              "Status": "Success"
+            }
+          ]
+        }
+      ],
+      "Results": [
+        {
+          "Type": "CompleteObjective",
+          "ObjectiveGuid": "7b0c1d2e-39a4-45b6-f3ed-f8192a3b4c4e",
+          "CompletionType": "Succeed"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "aa3b5c6d-7e8f-48f9-da0a-4b5c6d7e8f90"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Ally_Away_1",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "48d9eafb-0671-4283-c0ba-c5e6f708191b",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e0470002-4c01-4a01-8a01-000000000001",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Ally_Away_2",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "33c3d4e5-f607-4182-c393-d4e5f6071829",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e0470002-4c01-4a01-8a01-000000000002",
+          "IsInterrupt": false
+        },
+        {
+          "Type": "CompleteObjective",
+          "ObjectiveGuid": "e0470005-4c01-4a01-8a01-000000000002",
+          "CompletionType": "Succeed"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Ally_Away_3",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "66f60718-293a-44b5-f6c6-0718293a4b5c",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e0470002-4c01-4a01-8a01-000000000003",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Ally_Away_4",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "992a4b5c-6d7e-47e8-c9f9-3a4b5c6d7e8f",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e0470002-4c01-4a01-8a01-000000000004",
+          "IsInterrupt": false
+        },
+        {
+          "Type": "CompleteObjective",
+          "ObjectiveGuid": "e0470005-4c01-4a01-8a01-000000000004",
+          "CompletionType": "Succeed"
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Convoy2_AtWaypoint",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "First unit of convoy 2 is on the lift pad.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "e0480001-4c01-4a01-8a01-000000000002",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e0480002-4c01-4a01-8a01-000000000002",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Convoy4_AtWaypoint",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "First unit of the last convoy is on the lift pad.",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "e0480001-4c01-4a01-8a01-000000000004",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e0480002-4c01-4a01-8a01-000000000004",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Convoy2_Damaged",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "e0470005-4c01-4a01-8a01-000000000002",
+          "Status": "Failed"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e0470003-4c01-4a01-8a01-000000000002",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Convoy4_Damaged",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "e0470005-4c01-4a01-8a01-000000000004",
+          "Status": "Failed"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e0470003-4c01-4a01-8a01-000000000004",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Convoy2_Destroyed",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "e0470006-4c01-4a01-8a01-000000000002",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e0470004-4c01-4a01-8a01-000000000002",
+          "IsInterrupt": false
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_Convoy4_Destroyed",
+      "TriggerOn": "OnObjectiveUpdated",
+      "Description": "",
+      "Conditionals": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "e0470006-4c01-4a01-8a01-000000000004",
+          "Status": "Success"
+        }
+      ],
+      "Results": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e0470004-4c01-4a01-8a01-000000000004",
+          "IsInterrupt": false
+        }
+      ]
+    }
+  ]
+}
