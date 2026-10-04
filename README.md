@@ -16,7 +16,7 @@ released for use.
 If you would like to contribute to the testing / improvement of these missions, please reach out to me on Discord 
 (User ID: Stareater1) and I’ll add you to the development chat, or you can reach out to me here.
 
-**Activating the Mission Shapes for Testing**
+## **Activating the Mission Shapes for Testing**
 
 The method for playtesting the mission shapes is set up as a series of interlinked, 1 mission flashpoints that stay open 
 for 10 years. This gives players time to recover and plan for each in turn. The first flashpoint will appear at 
@@ -62,3 +62,26 @@ Mission			              Completion Tag
 + Prevent the Evacuation	  (event_phase2_preventtheevacuation_done)
 + The Vice		              (event_phase2_thevice_done)
 + By the Sword		          (event_phase2_bythesword_done)
+
+## Installation
+
+**Step 1**
+
+Drag and drop the folders into your mods folder.
+
+**Step 2**
+
+Ensure you have also downloaded the LorePack_Helpersmod from here (https://github.com/mattacma-cloud/Lore-Packs/tree/main)
+
+Go into the mod.json and change     
+`"ContractIdContains": [ "c_fp_lp", "touring_tikonov" ],`
+to
+`"ContractIdContains": [ "c_fp_lp", "touring_tikonov", "TheVice_CapitolHillTest" ],`
+
+**Step 3**
+
+Go to BTX_CAC_Compatibility and in the mod.json, in the `"Use4LimitOnContractIds":` list change the last line from
+`      "c_fp_tMTM_3B_ThreeWayBattle"t"`
+to
+`     "c_fp_tMTM_3B_ThreeWayBattle",
+      "ByTheSword_CragMireTest"`
