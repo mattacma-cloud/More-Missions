@@ -1,0 +1,16 @@
+{
+  "useHmAnimation": true,
+  "flashpointPrefix": "fp_phase2_planetaryevacuation",
+  "swapColour": true,
+  "useOnlyInner": true,
+  "autoDetectContracts": true,
+  "useContractColourOverride": true,
+  "innerCircle": {
+    "Colour": "#17A8E5",
+    "Alpha": 0.44
+  },
+  "contractColour": {
+    "Colour": "#17A8E5",
+    "Alpha": 0.35
+  }
+}

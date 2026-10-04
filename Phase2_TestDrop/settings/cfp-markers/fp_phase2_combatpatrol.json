@@ -1,0 +1,16 @@
+{
+  "useHmAnimation": true,
+  "flashpointPrefix": "fp_phase2_combatpatrol",
+  "swapColour": true,
+  "useOnlyInner": true,
+  "autoDetectContracts": true,
+  "useContractColourOverride": true,
+  "innerCircle": {
+    "Colour": "#E51717",
+    "Alpha": 0.44
+  },
+  "contractColour": {
+    "Colour": "#E51717",
+    "Alpha": 0.35
+  }
+}

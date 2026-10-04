@@ -1,0 +1,238 @@
+{
+  "StartingMilestoneID": "ms_fp_phase2_reconnaissance_001_Start",
+  "Milestones": [
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_reconnaissance_001_Start",
+        "Name": "Start",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_SetNextMilestone",
+              "value": "ms_fp_phase2_reconnaissance_002_Mission",
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_reconnaissance_002_Mission",
+        "Name": "Mission",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_AddContract",
+              "value": "mapArena_riverCrossing_vHigh",
+              "valueConstant": null,
+              "additionalValues": [
+                "",
+                "a7c3e91d-4b28-4f15-9e60-1d8c5a2b7f04",
+                "Reconnaissance_RiverCrossingTest",
+                "Davion",
+                "Liao",
+                "8",
+                "ms_fp_phase2_reconnaissance_003_Complete",
+                null,
+                null,
+                "ms_fp_phase2_reconnaissance_900_Fail",
+                null,
+                null
+              ]
+            },
+            {
+              "Type": "System_ForceDropshipRoom",
+              "value": "Contract",
+              "valueConstant": null,
+              "additionalValues": [
+                "BaseFlashpoint"
+              ]
+            }
+          ],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_reconnaissance_003_Complete",
+        "Name": "Complete",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [
+              "fp_finished_phase2_reconnaissance_success",
+              "event_phase2_reconnaissance_done"
+            ],
+            "tagSetSourceFile": "Tags/CompanyTags"
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_CompleteFlashpoint",
+              "value": "ms_fp_phase2_reconnaissance_004_Reward",
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [
+            {
+              "Scope": "Company",
+              "EventID": "FE-phase2-scouthunt-open",
+              "MinDaysWait": 1,
+              "MaxDaysWait": 1,
+              "Probability": 100,
+              "RetainPilot": false
+            }
+          ],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_reconnaissance_004_Reward",
+        "Name": "Reward",
+        "Details": "No extra rewards on the Phase 2 test drop.",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_reconnaissance_900_Fail",
+        "Name": "Fail",
+        "Details": "Reconnaissance test failed",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [
+              "fp_finished_phase2_reconnaissance_failed",
+              "event_phase2_reconnaissance_done"
+            ],
+            "tagSetSourceFile": "Tags/CompanyTags"
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_FailFlashpoint",
+              "value": null,
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [
+            {
+              "Scope": "Company",
+              "EventID": "FE-phase2-scouthunt-open",
+              "MinDaysWait": 1,
+              "MaxDaysWait": 1,
+              "Probability": 100,
+              "RetainPilot": false
+            }
+          ],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    }
+  ]
+}

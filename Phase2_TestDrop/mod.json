@@ -1,0 +1,33 @@
+{
+  "Name": "Phase2_TestDrop",
+  "Enabled": true,
+  "Version": "0.5.0",
+  "Description": "Sequential test ladder. Combat Patrol through By the Sword (13/13). Complete or fail fires the next step the following day. Accept the flashpoint, not a standalone contract. Disable after playtest.",
+  "Author": "Blacknova",
+  "DependsOn": [
+    "ModTek",
+    "Mission Control",
+    "Timeline",
+    "ColourfulFlashPoints"
+  ],
+  "Manifest": [
+    {
+      "Type": "FlashpointDef",
+      "Path": "flashpoints",
+      "AddToDB": true
+    },
+    {
+      "Type": "SimGameMilestoneSet",
+      "Path": "milestoneSets"
+    },
+    {
+      "Type": "SimGameEventDef",
+      "Path": "timelineEvents",
+      "AddToDB": true
+    },
+    {
+      "Type": "ForcedTimelineEvent",
+      "Path": "forcedEvents"
+    }
+  ]
+}

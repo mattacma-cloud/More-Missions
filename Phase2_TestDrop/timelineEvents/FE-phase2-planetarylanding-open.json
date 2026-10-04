@@ -1,0 +1,174 @@
+{
+  "Description": {
+    "Id": "FE-phase2-planetarylanding-open",
+    "Name": "PHASE 2 TEST 4/13 PLANETARY LANDING",
+    "Details": "TEST DROP 4/13: Planetary Landing. Hold the advance point. Allied lances land every 3 rounds for 12 rounds and run to their jumpoffs.\n\nWe'll take it places Planetary Landing Test on Sekulmun (starsystemdef_Sekulmun). One jump from Fortymile. Jump there and accept the flashpoint at the command center. Do not take a leftover card on another world. Finish or fail unlocks the next test the following day. Disable Phase2_TestDrop when you are done testing.",
+    "Icon": "uixTxrSpot_IncomingTransimission.png"
+  },
+  "Scope": "Company",
+  "Weight": 10000,
+  "Requirements": {
+    "Scope": "Company",
+    "RequirementTags": {
+      "items": [
+        "event_phase2_rapidadvance_done"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+    },
+    "ExclusionTags": {
+      "items": [
+        "event_phase2_planetarylanding_accepted",
+        "event_phase2_planetarylanding_done",
+        "Phase2_planetarylanding_Active"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+    },
+    "RequirementComparisons": [
+      {
+        "obj": "Travel",
+        "op": "Equal",
+        "val": 0,
+        "valueConstant": "0"
+      }
+    ]
+  },
+  "AdditionalRequirements": [],
+  "AdditionalObjects": [],
+  "Options": [
+    {
+      "Description": {
+        "Id": "outcome_0",
+        "Name": "Not now.",
+        "Details": "Dismiss this step. It comes back tomorrow. The next step stays locked.",
+        "Icon": ""
+      },
+      "RequirementList": [],
+      "ResultSets": [
+        {
+          "Description": {
+            "Id": "outcome_0_0",
+            "Name": "Nothing happens",
+            "Details": "Test drop deferred one day.",
+            "Icon": ""
+          },
+          "Weight": 100,
+          "Results": [
+            {
+              "Scope": "Company",
+              "Requirements": null,
+              "AddedTags": {
+                "items": null,
+                "tagSetSourceFile": ""
+              },
+              "RemovedTags": {
+                "items": null,
+                "tagSetSourceFile": ""
+              },
+              "Stats": null,
+              "Actions": null,
+              "ForceEvents": [
+                {
+                  "Scope": "Company",
+                  "EventID": "FE-phase2-planetarylanding-open",
+                  "MinDaysWait": 1,
+                  "MaxDaysWait": 1,
+                  "Probability": 100,
+                  "RetainPilot": false
+                }
+              ],
+              "TemporaryResult": false,
+              "ResultDuration": 0
+            }
+          ]
+        }
+      ],
+      "Requirements": {
+        "Scope": "Company",
+        "RequirementTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "ExclusionTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "RequirementComparisons": []
+      }
+    },
+    {
+      "Description": {
+        "Id": "outcome_1",
+        "Name": "We'll take it.",
+        "Details": "Place Planetary Landing Test on Sekulmun. Jump there, then accept that flashpoint at the command center. Do not take a leftover card on another world.",
+        "Icon": ""
+      },
+      "RequirementList": [],
+      "ResultSets": [
+        {
+          "Description": {
+            "Id": "outcome_1_0",
+            "Name": "Planetary Landing Test on Sekulmun",
+            "Details": "Jump to Sekulmun. Open the command center and accept Planetary Landing Test. Four 'Mechs.",
+            "Icon": ""
+          },
+          "Weight": 100,
+          "Results": [
+            {
+              "Scope": "Company",
+              "Requirements": null,
+              "AddedTags": {
+                "items": [
+                  "event_phase2_planetarylanding_accepted",
+                  "Phase2_planetarylanding_Active"
+                ],
+                "tagSetSourceFile": "Tags/CompanyTags"
+              },
+              "RemovedTags": {
+                "items": null,
+                "tagSetSourceFile": ""
+              },
+              "Stats": null,
+              "Actions": [
+                {
+                  "Type": "System_AddFlashpoint",
+                  "value": "fp_phase2_planetarylanding",
+                  "valueConstant": null,
+                  "additionalValues": [
+                    "starsystemdef_Sekulmun"
+                  ]
+                },
+                {
+                  "Type": "System_PauseNotification",
+                  "value": "Planetary Landing Test is on Sekulmun. Jump there. Open the command center and accept the flashpoint. Ignore leftover copies on other worlds. Finish or fail: next test fires the following day.",
+                  "valueConstant": null,
+                  "additionalValues": [
+                    "Planetary Landing Test",
+                    "castDef_DariusDefault"
+                  ]
+                }
+              ],
+              "ForceEvents": null,
+              "TemporaryResult": false,
+              "ResultDuration": 0
+            }
+          ]
+        }
+      ],
+      "Requirements": {
+        "Scope": "Company",
+        "RequirementTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "ExclusionTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "RequirementComparisons": []
+      }
+    }
+  ],
+  "PublishState": "PUBLISHED",
+  "ValidationState": "UNTESTED",
+  "EventType": "NORMAL"
+}

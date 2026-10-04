@@ -1,0 +1,174 @@
+{
+  "Description": {
+    "Id": "FE-phase2-planetaryevacuation-open",
+    "Name": "PHASE 2 TEST 5/13 PLANETARY EVACUATION",
+    "Details": "TEST DROP 5/13: Planetary Evacuation. Reverse of Landing. Friendlies run to the old landing site. Hold until they dust off.\n\nWe'll take it places Planetary Evacuation Test on Kigamboni (starsystemdef_Kigamboni). One jump from Sekulmun. Jump there and accept the flashpoint at the command center. Do not take a leftover card on another world. Finish or fail unlocks the next test the following day. Disable Phase2_TestDrop when you are done testing.",
+    "Icon": "uixTxrSpot_IncomingTransimission.png"
+  },
+  "Scope": "Company",
+  "Weight": 10000,
+  "Requirements": {
+    "Scope": "Company",
+    "RequirementTags": {
+      "items": [
+        "event_phase2_planetarylanding_done"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+    },
+    "ExclusionTags": {
+      "items": [
+        "event_phase2_planetaryevacuation_accepted",
+        "event_phase2_planetaryevacuation_done",
+        "Phase2_planetaryevacuation_Active"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+    },
+    "RequirementComparisons": [
+      {
+        "obj": "Travel",
+        "op": "Equal",
+        "val": 0,
+        "valueConstant": "0"
+      }
+    ]
+  },
+  "AdditionalRequirements": [],
+  "AdditionalObjects": [],
+  "Options": [
+    {
+      "Description": {
+        "Id": "outcome_0",
+        "Name": "Not now.",
+        "Details": "Dismiss this step. It comes back tomorrow. The next step stays locked.",
+        "Icon": ""
+      },
+      "RequirementList": [],
+      "ResultSets": [
+        {
+          "Description": {
+            "Id": "outcome_0_0",
+            "Name": "Nothing happens",
+            "Details": "Test drop deferred one day.",
+            "Icon": ""
+          },
+          "Weight": 100,
+          "Results": [
+            {
+              "Scope": "Company",
+              "Requirements": null,
+              "AddedTags": {
+                "items": null,
+                "tagSetSourceFile": ""
+              },
+              "RemovedTags": {
+                "items": null,
+                "tagSetSourceFile": ""
+              },
+              "Stats": null,
+              "Actions": null,
+              "ForceEvents": [
+                {
+                  "Scope": "Company",
+                  "EventID": "FE-phase2-planetaryevacuation-open",
+                  "MinDaysWait": 1,
+                  "MaxDaysWait": 1,
+                  "Probability": 100,
+                  "RetainPilot": false
+                }
+              ],
+              "TemporaryResult": false,
+              "ResultDuration": 0
+            }
+          ]
+        }
+      ],
+      "Requirements": {
+        "Scope": "Company",
+        "RequirementTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "ExclusionTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "RequirementComparisons": []
+      }
+    },
+    {
+      "Description": {
+        "Id": "outcome_1",
+        "Name": "We'll take it.",
+        "Details": "Place Planetary Evacuation Test on Kigamboni. Jump there, then accept that flashpoint at the command center. Do not take a leftover card on another world.",
+        "Icon": ""
+      },
+      "RequirementList": [],
+      "ResultSets": [
+        {
+          "Description": {
+            "Id": "outcome_1_0",
+            "Name": "Planetary Evacuation Test on Kigamboni",
+            "Details": "Jump to Kigamboni. Open the command center and accept Planetary Evacuation Test. Four 'Mechs.",
+            "Icon": ""
+          },
+          "Weight": 100,
+          "Results": [
+            {
+              "Scope": "Company",
+              "Requirements": null,
+              "AddedTags": {
+                "items": [
+                  "event_phase2_planetaryevacuation_accepted",
+                  "Phase2_planetaryevacuation_Active"
+                ],
+                "tagSetSourceFile": "Tags/CompanyTags"
+              },
+              "RemovedTags": {
+                "items": null,
+                "tagSetSourceFile": ""
+              },
+              "Stats": null,
+              "Actions": [
+                {
+                  "Type": "System_AddFlashpoint",
+                  "value": "fp_phase2_planetaryevacuation",
+                  "valueConstant": null,
+                  "additionalValues": [
+                    "starsystemdef_Kigamboni"
+                  ]
+                },
+                {
+                  "Type": "System_PauseNotification",
+                  "value": "Planetary Evacuation Test is on Kigamboni. Jump there. Open the command center and accept the flashpoint. Ignore leftover copies on other worlds. Finish or fail: next test fires the following day.",
+                  "valueConstant": null,
+                  "additionalValues": [
+                    "Planetary Evacuation Test",
+                    "castDef_DariusDefault"
+                  ]
+                }
+              ],
+              "ForceEvents": null,
+              "TemporaryResult": false,
+              "ResultDuration": 0
+            }
+          ]
+        }
+      ],
+      "Requirements": {
+        "Scope": "Company",
+        "RequirementTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "ExclusionTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "RequirementComparisons": []
+      }
+    }
+  ],
+  "PublishState": "PUBLISHED",
+  "ValidationState": "UNTESTED",
+  "EventType": "NORMAL"
+}

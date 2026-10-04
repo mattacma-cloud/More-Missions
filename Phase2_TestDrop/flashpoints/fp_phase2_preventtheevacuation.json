@@ -1,0 +1,65 @@
+{
+  "Description": {
+    "Id": "fp_phase2_preventtheevacuation",
+    "Name": "Prevent the Evacuation Test",
+    "Details": "Same fight as Prevent the Landing, with the convoy paths reversed. They start at the four pads and try to lift at the old landing site.",
+    "Icon": "uixTxrSpot_DailyBriefing.png"
+  },
+  "Weight": 100,
+  "InternalName": "phase2_preventtheevacuation",
+  "PublishState": "PUBLISHED",
+  "Difficulty": 10,
+  "Requirements": [
+    {
+      "Scope": "Company",
+      "RequirementTags": {
+        "items": [
+          "Phase2_preventtheevacuation_Active"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+      },
+      "ExclusionTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+      },
+      "RequirementComparisons": []
+    }
+  ],
+  "LocationRequirements": {
+    "Scope": "StarSystem",
+    "RequirementTags": {
+      "items": [
+        "planet_name_firgrove"
+      ],
+      "tagSetSourceFile": "Tags/PlanetNameTags"
+    },
+    "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": []
+  },
+  "PotentialEmployers": [
+    "Davion"
+  ],
+  "TargetFaction": "Liao",
+  "AllowRefitTime": true,
+  "FlashpointLength": "SHORT",
+  "Repeatable": false,
+  "MilestoneSetID": "ms_fp_phase2_preventtheevacuation",
+  "UseAvailableTimeoutOverride": true,
+  "AvailableTimeout": 3650,
+  "UseInProgressTimeoutOverride": true,
+  "InProgressTimeout": 3650,
+  "RewardCollectionID": "itemCollection_loot_none",
+  "UnitDropTonnageHint": "None",
+  "LanceDropTonnageHint": "None",
+  "FlashpointShortDescription": "Phase 2 test 11/13: Prevent the Evacuation on Firgrove.",
+  "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+  "Tags": {
+    "items": [
+      "BLACKLISTED"
+    ],
+    "tagSetSourceFile": "tags/FlashpointTags"
+  }
+}

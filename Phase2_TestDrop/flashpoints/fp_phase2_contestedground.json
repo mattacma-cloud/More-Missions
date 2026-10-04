@@ -1,0 +1,65 @@
+{
+  "Description": {
+    "Id": "fp_phase2_contestedground",
+    "Name": "Contested Ground Test",
+    "Details": "Reach Point Alpha, then Point Bravo. Allied lance drops with you. Dust Off after Bravo. Point Charlie is optional (+25%). Accept to drop immediately.",
+    "Icon": "uixTxrSpot_DailyBriefing.png"
+  },
+  "Weight": 100,
+  "InternalName": "phase2_contestedground",
+  "PublishState": "PUBLISHED",
+  "Difficulty": 8,
+  "Requirements": [
+    {
+      "Scope": "Company",
+      "RequirementTags": {
+        "items": [
+          "Phase2_contestedground_Active"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+      },
+      "ExclusionTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+      },
+      "RequirementComparisons": []
+    }
+  ],
+  "LocationRequirements": {
+    "Scope": "StarSystem",
+    "RequirementTags": {
+      "items": [
+        "planet_name_mordialloc"
+      ],
+      "tagSetSourceFile": "Tags/PlanetNameTags"
+    },
+    "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": []
+  },
+  "PotentialEmployers": [
+    "Davion"
+  ],
+  "TargetFaction": "Liao",
+  "AllowRefitTime": true,
+  "FlashpointLength": "SHORT",
+  "Repeatable": false,
+  "MilestoneSetID": "ms_fp_phase2_contestedground",
+  "UseAvailableTimeoutOverride": true,
+  "AvailableTimeout": 3650,
+  "UseInProgressTimeoutOverride": true,
+  "InProgressTimeout": 3650,
+  "RewardCollectionID": "itemCollection_loot_none",
+  "UnitDropTonnageHint": "None",
+  "LanceDropTonnageHint": "None",
+  "FlashpointShortDescription": "Phase 2 test 7/13: Contested Ground on Mordialloc.",
+  "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+  "Tags": {
+    "items": [
+      "BLACKLISTED"
+    ],
+    "tagSetSourceFile": "tags/FlashpointTags"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "StartingMilestoneID": "ms_fp_phase2_rapidadvance_001_Start",
+  "Milestones": [
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_rapidadvance_001_Start",
+        "Name": "Start",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_SetNextMilestone",
+              "value": "ms_fp_phase2_rapidadvance_002_Mission",
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_rapidadvance_002_Mission",
+        "Name": "Mission",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_AddContract",
+              "value": "mapGeneral_escarpmentValley_vLow",
+              "valueConstant": null,
+              "additionalValues": [
+                "",
+                "64e42a17-bba0-43a1-ae94-b7c50b9b5375",
+                "RapidAdvance_EscarpmentTest",
+                "Davion",
+                "Liao",
+                "5",
+                "ms_fp_phase2_rapidadvance_003_Complete",
+                null,
+                null,
+                "ms_fp_phase2_rapidadvance_900_Fail",
+                null,
+                null
+              ]
+            },
+            {
+              "Type": "System_ForceDropshipRoom",
+              "value": "Contract",
+              "valueConstant": null,
+              "additionalValues": [
+                "BaseFlashpoint"
+              ]
+            }
+          ],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_rapidadvance_003_Complete",
+        "Name": "Complete",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [
+              "fp_finished_phase2_rapidadvance_success",
+              "event_phase2_rapidadvance_done"
+            ],
+            "tagSetSourceFile": "Tags/CompanyTags"
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_CompleteFlashpoint",
+              "value": "ms_fp_phase2_rapidadvance_004_Reward",
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [
+            {
+              "Scope": "Company",
+              "EventID": "FE-phase2-planetarylanding-open",
+              "MinDaysWait": 1,
+              "MaxDaysWait": 1,
+              "Probability": 100,
+              "RetainPilot": false
+            }
+          ],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_rapidadvance_004_Reward",
+        "Name": "Reward",
+        "Details": "No extra rewards on the Phase 2 test drop.",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_rapidadvance_900_Fail",
+        "Name": "Fail",
+        "Details": "Rapid Advance test failed",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [
+              "fp_finished_phase2_rapidadvance_failed",
+              "event_phase2_rapidadvance_done"
+            ],
+            "tagSetSourceFile": "Tags/CompanyTags"
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_FailFlashpoint",
+              "value": null,
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [
+            {
+              "Scope": "Company",
+              "EventID": "FE-phase2-planetarylanding-open",
+              "MinDaysWait": 1,
+              "MaxDaysWait": 1,
+              "Probability": 100,
+              "RetainPilot": false
+            }
+          ],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "useHmAnimation": true,
+  "flashpointPrefix": "fp_phase2_complexassignment",
+  "swapColour": true,
+  "useOnlyInner": true,
+  "autoDetectContracts": true,
+  "useContractColourOverride": true,
+  "innerCircle": {
+    "Colour": "#A817E5",
+    "Alpha": 0.44
+  },
+  "contractColour": {
+    "Colour": "#A817E5",
+    "Alpha": 0.35
+  }
+}

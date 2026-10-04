@@ -1,0 +1,238 @@
+{
+  "StartingMilestoneID": "ms_fp_phase2_contestedground_001_Start",
+  "Milestones": [
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_contestedground_001_Start",
+        "Name": "Start",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_SetNextMilestone",
+              "value": "ms_fp_phase2_contestedground_002_Mission",
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_contestedground_002_Mission",
+        "Name": "Mission",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_AddContract",
+              "value": "mapGeneral_rawCliffsides_vHigh",
+              "valueConstant": null,
+              "additionalValues": [
+                "",
+                "c4e7a91b-2d38-4f06-b8c1-5e9a7d4f2103",
+                "ContestedGround_RawCliffsidesTest",
+                "Davion",
+                "Liao",
+                "8",
+                "ms_fp_phase2_contestedground_003_Complete",
+                null,
+                null,
+                "ms_fp_phase2_contestedground_900_Fail",
+                null,
+                null
+              ]
+            },
+            {
+              "Type": "System_ForceDropshipRoom",
+              "value": "Contract",
+              "valueConstant": null,
+              "additionalValues": [
+                "BaseFlashpoint"
+              ]
+            }
+          ],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_contestedground_003_Complete",
+        "Name": "Complete",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [
+              "fp_finished_phase2_contestedground_success",
+              "event_phase2_contestedground_done"
+            ],
+            "tagSetSourceFile": "Tags/CompanyTags"
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_CompleteFlashpoint",
+              "value": "ms_fp_phase2_contestedground_004_Reward",
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [
+            {
+              "Scope": "Company",
+              "EventID": "FE-phase2-reconnaissance-open",
+              "MinDaysWait": 1,
+              "MaxDaysWait": 1,
+              "Probability": 100,
+              "RetainPilot": false
+            }
+          ],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_contestedground_004_Reward",
+        "Name": "Reward",
+        "Details": "No extra rewards on the Phase 2 test drop.",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_contestedground_900_Fail",
+        "Name": "Fail",
+        "Details": "Contested Ground test failed",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [
+              "fp_finished_phase2_contestedground_failed",
+              "event_phase2_contestedground_done"
+            ],
+            "tagSetSourceFile": "Tags/CompanyTags"
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_FailFlashpoint",
+              "value": null,
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [
+            {
+              "Scope": "Company",
+              "EventID": "FE-phase2-reconnaissance-open",
+              "MinDaysWait": 1,
+              "MaxDaysWait": 1,
+              "Probability": 100,
+              "RetainPilot": false
+            }
+          ],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    }
+  ]
+}

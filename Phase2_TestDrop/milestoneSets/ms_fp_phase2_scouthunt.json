@@ -1,0 +1,238 @@
+{
+  "StartingMilestoneID": "ms_fp_phase2_scouthunt_001_Start",
+  "Milestones": [
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_scouthunt_001_Start",
+        "Name": "Start",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_SetNextMilestone",
+              "value": "ms_fp_phase2_scouthunt_002_Mission",
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_scouthunt_002_Mission",
+        "Name": "Mission",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_AddContract",
+              "value": "mapArena_riverCrossing_vHigh",
+              "valueConstant": null,
+              "additionalValues": [
+                "",
+                "b8d4f02e-5c39-4026-af71-2e9d6b3c8015",
+                "ScoutHunt_RiverCrossingTest",
+                "Davion",
+                "Liao",
+                "8",
+                "ms_fp_phase2_scouthunt_003_Complete",
+                null,
+                null,
+                "ms_fp_phase2_scouthunt_900_Fail",
+                null,
+                null
+              ]
+            },
+            {
+              "Type": "System_ForceDropshipRoom",
+              "value": "Contract",
+              "valueConstant": null,
+              "additionalValues": [
+                "BaseFlashpoint"
+              ]
+            }
+          ],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_scouthunt_003_Complete",
+        "Name": "Complete",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [
+              "fp_finished_phase2_scouthunt_success",
+              "event_phase2_scouthunt_done"
+            ],
+            "tagSetSourceFile": "Tags/CompanyTags"
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_CompleteFlashpoint",
+              "value": "ms_fp_phase2_scouthunt_004_Reward",
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [
+            {
+              "Scope": "Company",
+              "EventID": "FE-phase2-preventthelanding-open",
+              "MinDaysWait": 1,
+              "MaxDaysWait": 1,
+              "Probability": 100,
+              "RetainPilot": false
+            }
+          ],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_scouthunt_004_Reward",
+        "Name": "Reward",
+        "Details": "No extra rewards on the Phase 2 test drop.",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_scouthunt_900_Fail",
+        "Name": "Fail",
+        "Details": "Scout Hunt test failed",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [
+              "fp_finished_phase2_scouthunt_failed",
+              "event_phase2_scouthunt_done"
+            ],
+            "tagSetSourceFile": "Tags/CompanyTags"
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_FailFlashpoint",
+              "value": null,
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [
+            {
+              "Scope": "Company",
+              "EventID": "FE-phase2-preventthelanding-open",
+              "MinDaysWait": 1,
+              "MaxDaysWait": 1,
+              "Probability": 100,
+              "RetainPilot": false
+            }
+          ],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "Description": {
+    "Id": "fp_phase2_bythesword",
+    "Name": "By the Sword Test",
+    "Details": "Four player slots and two medium allied lances advance on one heavy enemy lance. On round 4 the allies become hostile to everyone. Defeat all three lances.",
+    "Icon": "uixTxrSpot_DailyBriefing.png"
+  },
+  "Weight": 100,
+  "InternalName": "phase2_bythesword",
+  "PublishState": "PUBLISHED",
+  "Difficulty": 8,
+  "Requirements": [
+    {
+      "Scope": "Company",
+      "RequirementTags": {
+        "items": [
+          "Phase2_bythesword_Active"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+      },
+      "ExclusionTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+      },
+      "RequirementComparisons": []
+    }
+  ],
+  "LocationRequirements": {
+    "Scope": "StarSystem",
+    "RequirementTags": {
+      "items": [
+        "planet_name_hobson"
+      ],
+      "tagSetSourceFile": "Tags/PlanetNameTags"
+    },
+    "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": []
+  },
+  "PotentialEmployers": [
+    "Davion"
+  ],
+  "TargetFaction": "Liao",
+  "AllowRefitTime": true,
+  "FlashpointLength": "SHORT",
+  "Repeatable": false,
+  "MilestoneSetID": "ms_fp_phase2_bythesword",
+  "UseAvailableTimeoutOverride": true,
+  "AvailableTimeout": 3650,
+  "UseInProgressTimeoutOverride": true,
+  "InProgressTimeout": 3650,
+  "RewardCollectionID": "itemCollection_loot_none",
+  "UnitDropTonnageHint": "None",
+  "LanceDropTonnageHint": "None",
+  "FlashpointShortDescription": "Phase 2 test 13/13: By the Sword on Hobson.",
+  "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+  "Tags": {
+    "items": [
+      "BLACKLISTED"
+    ],
+    "tagSetSourceFile": "tags/FlashpointTags"
+  }
+}

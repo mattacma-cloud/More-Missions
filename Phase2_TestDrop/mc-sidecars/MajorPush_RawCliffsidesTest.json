@@ -1,0 +1,40 @@
+{
+    "ID": "MajorPush_RawCliffsidesTest",
+    "RandomSpawns": {
+        "Enable": false
+    },
+    "HotDropProtection": {
+        "Enable": false
+    },
+    "AdditionalLances": {
+        "Enable": false,
+        "UseDialogue": false,
+        "ShowObjectiveOnLanceDetected": true,
+        "EnemyLanceObjectiveNames": [],
+        "AllyLances": [],
+        "AllyLanceCount": 0,
+        "EnemyLances": [],
+        "EnemyLanceCount": 0,
+        "AlwaysDisplayHiddenObjectiveIfPrimary": false,
+        "HideObjective": true
+    },
+    "ExtendedLances": {
+        "Enable": false,
+        "Autofill": false,
+        "EmployerLanceSize": 4,
+        "EmployerAllyLanceSize": 4,
+        "TargetLanceSize": 4,
+        "TargetAllyLanceSize": 4,
+        "NeutralToAllLanceSize": 4,
+        "HostileToAllLanceSize": 4
+    },
+    "ExtendedBoundaries": {
+        "Enable": false
+    },
+    "DynamicWithdraw": {
+        "Enable": false
+    },
+    "AdditionalPlayerMechs": {
+        "Enable": true
+    }
+}

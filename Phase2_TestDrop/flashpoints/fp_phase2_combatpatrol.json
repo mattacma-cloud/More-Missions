@@ -1,0 +1,65 @@
+{
+  "Description": {
+    "Id": "fp_phase2_combatpatrol",
+    "Name": "Combat Patrol Test",
+    "Details": "Timed patrol on Taiga River. Hit every waypoint before the clock runs out. Accept to drop immediately.",
+    "Icon": "uixTxrSpot_DailyBriefing.png"
+  },
+  "Weight": 100,
+  "InternalName": "phase2_combatpatrol",
+  "PublishState": "PUBLISHED",
+  "Difficulty": 5,
+  "Requirements": [
+    {
+      "Scope": "Company",
+      "RequirementTags": {
+        "items": [
+          "Phase2_combatpatrol_Active"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+      },
+      "ExclusionTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+      },
+      "RequirementComparisons": []
+    }
+  ],
+  "LocationRequirements": {
+    "Scope": "StarSystem",
+    "RequirementTags": {
+      "items": [
+        "planet_name_novayazemlya"
+      ],
+      "tagSetSourceFile": "Tags/PlanetNameTags"
+    },
+    "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": []
+  },
+  "PotentialEmployers": [
+    "Davion"
+  ],
+  "TargetFaction": "Liao",
+  "AllowRefitTime": true,
+  "FlashpointLength": "SHORT",
+  "Repeatable": false,
+  "MilestoneSetID": "ms_fp_phase2_combatpatrol",
+  "UseAvailableTimeoutOverride": true,
+  "AvailableTimeout": 3650,
+  "UseInProgressTimeoutOverride": true,
+  "InProgressTimeout": 3650,
+  "RewardCollectionID": "itemCollection_loot_none",
+  "UnitDropTonnageHint": "None",
+  "LanceDropTonnageHint": "None",
+  "FlashpointShortDescription": "Phase 2 test 1/13: Combat Patrol on Novaya Zemlya.",
+  "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+  "Tags": {
+    "items": [
+      "BLACKLISTED"
+    ],
+    "tagSetSourceFile": "tags/FlashpointTags"
+  }
+}

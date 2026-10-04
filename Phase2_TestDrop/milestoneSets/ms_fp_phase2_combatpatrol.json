@@ -1,0 +1,238 @@
+{
+  "StartingMilestoneID": "ms_fp_phase2_combatpatrol_001_Start",
+  "Milestones": [
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_combatpatrol_001_Start",
+        "Name": "Start",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_SetNextMilestone",
+              "value": "ms_fp_phase2_combatpatrol_002_Mission",
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_combatpatrol_002_Mission",
+        "Name": "Mission",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_AddContract",
+              "value": "mapGeneral_taigaRiver_iTnd",
+              "valueConstant": null,
+              "additionalValues": [
+                "",
+                "088830ea-d511-428a-8d73-800aae2b59aa",
+                "CombatPatrol_TaigaTest",
+                "Davion",
+                "Liao",
+                "5",
+                "ms_fp_phase2_combatpatrol_003_Complete",
+                null,
+                null,
+                "ms_fp_phase2_combatpatrol_900_Fail",
+                null,
+                null
+              ]
+            },
+            {
+              "Type": "System_ForceDropshipRoom",
+              "value": "Contract",
+              "valueConstant": null,
+              "additionalValues": [
+                "BaseFlashpoint"
+              ]
+            }
+          ],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_combatpatrol_003_Complete",
+        "Name": "Complete",
+        "Details": "flashpoint",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [
+              "fp_finished_phase2_combatpatrol_success",
+              "event_phase2_combatpatrol_done"
+            ],
+            "tagSetSourceFile": "Tags/CompanyTags"
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_CompleteFlashpoint",
+              "value": "ms_fp_phase2_combatpatrol_004_Reward",
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [
+            {
+              "Scope": "Company",
+              "EventID": "FE-phase2-majorpush-open",
+              "MinDaysWait": 1,
+              "MaxDaysWait": 1,
+              "Probability": 100,
+              "RetainPilot": false
+            }
+          ],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_combatpatrol_004_Reward",
+        "Name": "Reward",
+        "Details": "No extra rewards on the Phase 2 test drop.",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [],
+          "ForceEvents": [],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    },
+    {
+      "Description": {
+        "Id": "ms_fp_phase2_combatpatrol_900_Fail",
+        "Name": "Fail",
+        "Details": "Combat Patrol test failed",
+        "Icon": null
+      },
+      "Scope": "Company",
+      "Requirements": [],
+      "Results": [
+        {
+          "Scope": "Company",
+          "Requirements": null,
+          "AddedTags": {
+            "items": [
+              "fp_finished_phase2_combatpatrol_failed",
+              "event_phase2_combatpatrol_done"
+            ],
+            "tagSetSourceFile": "Tags/CompanyTags"
+          },
+          "RemovedTags": {
+            "items": [],
+            "tagSetSourceFile": ""
+          },
+          "Stats": [],
+          "Actions": [
+            {
+              "Type": "Flashpoint_FailFlashpoint",
+              "value": null,
+              "valueConstant": null,
+              "additionalValues": null
+            }
+          ],
+          "ForceEvents": [
+            {
+              "Scope": "Company",
+              "EventID": "FE-phase2-majorpush-open",
+              "MinDaysWait": 1,
+              "MaxDaysWait": 1,
+              "Probability": 100,
+              "RetainPilot": false
+            }
+          ],
+          "TemporaryResult": false,
+          "ResultDuration": 0
+        }
+      ],
+      "Repeatable": false,
+      "UseRandomInvocation": false,
+      "InvokeChance": 0
+    }
+  ]
+}

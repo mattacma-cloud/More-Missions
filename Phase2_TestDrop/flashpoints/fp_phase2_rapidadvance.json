@@ -1,0 +1,65 @@
+{
+  "Description": {
+    "Id": "fp_phase2_rapidadvance",
+    "Name": "Rapid Advance Test",
+    "Details": "Land with an allied lance. Break the blocking force. Full lance on the mark in 10 rounds, hold 6. Accept to drop immediately.",
+    "Icon": "uixTxrSpot_DailyBriefing.png"
+  },
+  "Weight": 100,
+  "InternalName": "phase2_rapidadvance",
+  "PublishState": "PUBLISHED",
+  "Difficulty": 5,
+  "Requirements": [
+    {
+      "Scope": "Company",
+      "RequirementTags": {
+        "items": [
+          "Phase2_rapidadvance_Active"
+        ],
+        "tagSetSourceFile": "Tags/CompanyTags"
+      },
+      "ExclusionTags": {
+        "items": [],
+        "tagSetSourceFile": "Tags/CompanyTags"
+      },
+      "RequirementComparisons": []
+    }
+  ],
+  "LocationRequirements": {
+    "Scope": "StarSystem",
+    "RequirementTags": {
+      "items": [
+        "planet_name_fortymile"
+      ],
+      "tagSetSourceFile": "Tags/PlanetNameTags"
+    },
+    "ExclusionTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+    },
+    "RequirementComparisons": []
+  },
+  "PotentialEmployers": [
+    "Davion"
+  ],
+  "TargetFaction": "Liao",
+  "AllowRefitTime": true,
+  "FlashpointLength": "SHORT",
+  "Repeatable": false,
+  "MilestoneSetID": "ms_fp_phase2_rapidadvance",
+  "UseAvailableTimeoutOverride": true,
+  "AvailableTimeout": 3650,
+  "UseInProgressTimeoutOverride": true,
+  "InProgressTimeout": 3650,
+  "RewardCollectionID": "itemCollection_loot_none",
+  "UnitDropTonnageHint": "None",
+  "LanceDropTonnageHint": "None",
+  "FlashpointShortDescription": "Phase 2 test 3/13: Rapid Advance on Fortymile.",
+  "FlashpointDescriberCastDefId": "castDef_DariusDefault",
+  "Tags": {
+    "items": [
+      "BLACKLISTED"
+    ],
+    "tagSetSourceFile": "tags/FlashpointTags"
+  }
+}

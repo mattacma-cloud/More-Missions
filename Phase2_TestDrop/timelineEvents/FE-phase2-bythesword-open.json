@@ -1,0 +1,174 @@
+{
+  "Description": {
+    "Id": "FE-phase2-bythesword-open",
+    "Name": "PHASE 2 TEST 13/13 BY THE SWORD",
+    "Details": "TEST DROP 13/13: By the Sword.\n\nWe'll take it places By the Sword Test on Hobson (starsystemdef_Hobson). One jump from New Syrtis. Jump there and accept the flashpoint at the command center. Do not take a leftover card on another world. Finish or fail unlocks the next test the following day. Disable Phase2_TestDrop when you are done testing.",
+    "Icon": "uixTxrSpot_IncomingTransimission.png"
+  },
+  "Scope": "Company",
+  "Weight": 10000,
+  "Requirements": {
+    "Scope": "Company",
+    "RequirementTags": {
+      "items": [
+        "event_phase2_thevice_done"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+    },
+    "ExclusionTags": {
+      "items": [
+        "event_phase2_bythesword_accepted",
+        "event_phase2_bythesword_done",
+        "Phase2_bythesword_Active"
+      ],
+      "tagSetSourceFile": "Tags/CompanyTags"
+    },
+    "RequirementComparisons": [
+      {
+        "obj": "Travel",
+        "op": "Equal",
+        "val": 0,
+        "valueConstant": "0"
+      }
+    ]
+  },
+  "AdditionalRequirements": [],
+  "AdditionalObjects": [],
+  "Options": [
+    {
+      "Description": {
+        "Id": "outcome_0",
+        "Name": "Not now.",
+        "Details": "Dismiss this step. It comes back tomorrow. The next step stays locked.",
+        "Icon": ""
+      },
+      "RequirementList": [],
+      "ResultSets": [
+        {
+          "Description": {
+            "Id": "outcome_0_0",
+            "Name": "Nothing happens",
+            "Details": "Test drop deferred one day.",
+            "Icon": ""
+          },
+          "Weight": 100,
+          "Results": [
+            {
+              "Scope": "Company",
+              "Requirements": null,
+              "AddedTags": {
+                "items": null,
+                "tagSetSourceFile": ""
+              },
+              "RemovedTags": {
+                "items": null,
+                "tagSetSourceFile": ""
+              },
+              "Stats": null,
+              "Actions": null,
+              "ForceEvents": [
+                {
+                  "Scope": "Company",
+                  "EventID": "FE-phase2-bythesword-open",
+                  "MinDaysWait": 1,
+                  "MaxDaysWait": 1,
+                  "Probability": 100,
+                  "RetainPilot": false
+                }
+              ],
+              "TemporaryResult": false,
+              "ResultDuration": 0
+            }
+          ]
+        }
+      ],
+      "Requirements": {
+        "Scope": "Company",
+        "RequirementTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "ExclusionTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "RequirementComparisons": []
+      }
+    },
+    {
+      "Description": {
+        "Id": "outcome_1",
+        "Name": "We'll take it.",
+        "Details": "Place By the Sword Test on Hobson. Jump there, then accept that flashpoint at the command center. Do not take a leftover card on another world.",
+        "Icon": ""
+      },
+      "RequirementList": [],
+      "ResultSets": [
+        {
+          "Description": {
+            "Id": "outcome_1_0",
+            "Name": "By the Sword Test on Hobson",
+            "Details": "Jump to Hobson. Open the command center and accept By the Sword Test. Four 'Mechs.",
+            "Icon": ""
+          },
+          "Weight": 100,
+          "Results": [
+            {
+              "Scope": "Company",
+              "Requirements": null,
+              "AddedTags": {
+                "items": [
+                  "event_phase2_bythesword_accepted",
+                  "Phase2_bythesword_Active"
+                ],
+                "tagSetSourceFile": "Tags/CompanyTags"
+              },
+              "RemovedTags": {
+                "items": null,
+                "tagSetSourceFile": ""
+              },
+              "Stats": null,
+              "Actions": [
+                {
+                  "Type": "System_AddFlashpoint",
+                  "value": "fp_phase2_bythesword",
+                  "valueConstant": null,
+                  "additionalValues": [
+                    "starsystemdef_Hobson"
+                  ]
+                },
+                {
+                  "Type": "System_PauseNotification",
+                  "value": "By the Sword Test is on Hobson. Jump there. Open the command center and accept the flashpoint. Ignore leftover copies on other worlds. This is the last test in the sequence.",
+                  "valueConstant": null,
+                  "additionalValues": [
+                    "By the Sword Test",
+                    "castDef_DariusDefault"
+                  ]
+                }
+              ],
+              "ForceEvents": null,
+              "TemporaryResult": false,
+              "ResultDuration": 0
+            }
+          ]
+        }
+      ],
+      "Requirements": {
+        "Scope": "Company",
+        "RequirementTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "ExclusionTags": {
+          "items": null,
+          "tagSetSourceFile": ""
+        },
+        "RequirementComparisons": []
+      }
+    }
+  ],
+  "PublishState": "PUBLISHED",
+  "ValidationState": "UNTESTED",
+  "EventType": "NORMAL"
+}

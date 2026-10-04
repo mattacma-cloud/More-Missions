@@ -1,0 +1,23 @@
+================================================================================
+PHASE 2 TEST WORLDS (one jump apart, populated only, 13 steps)
+================================================================================
+BT_Extended_Timeline starsystemdef ids. Do not use additionalValues "local".
+Do not use planet_pop_none / empty worlds (Brabent, Helixmar, Fable, Stockpoll).
+
+  1/13 Combat Patrol          Novaya Zemlya     starsystemdef_NovayaZemlya
+  2/13 Major Push             Kluane            starsystemdef_Kluane          (22.3 LY)
+  3/13 Rapid Advance          Fortymile         starsystemdef_Fortymile       (15.2 LY)
+  4/13 Planetary Landing      Sekulmun          starsystemdef_Sekulmun        (19.6 LY)
+  5/13 Planetary Evacuation   Kigamboni         starsystemdef_Kigamboni       (28.8 LY)
+  6/13 Complex Assignment     Cumberland        starsystemdef_Cumberland      (16.6 LY)
+  7/13 Contested Ground       Mordialloc        starsystemdef_Mordialloc      (13.0 LY)
+  8/13 Reconnaissance         Kaitangata        starsystemdef_Kaitangata      (20.0 LY)
+  9/13 Scout Hunt            Okains            starsystemdef_Okains          (14.7 LY)
+ 10/13 Prevent the Landing  Oltepesi          starsystemdef_Oltepesi        (13.9 LY)
+ 11/13 Prevent the Evacuation Firgrove        starsystemdef_Firgrove        (22.3 LY)
+ 12/13 The Vice             New Syrtis        starsystemdef_NewSyrtis       (19.0 LY)
+ 13/13 By the Sword         Hobson            starsystemdef_Hobson          (21.2 LY)
+
+Ignore leftover cards on Wallis / Novaya Zemlya / Galedon / Brabent.
+Start from a save from before Combat Patrol so company tags are clean.
+================================================================================
