@@ -25,8 +25,6 @@ the mission.
 
 The missions and their locations are all one world apart and follow the path below:
 
-No.  Mission - World
-
 + 1	  Combat Patrol - Novaya Zemlya
 + 2	  Major Push - Kluane
 + 3	  Rapid Advance - Fortymile
@@ -41,7 +39,8 @@ No.  Mission - World
 + 12	The Vice - New Syrtis
 + 13	By the Sword - Hobson
 
-Each of the missions will appear on the contract screen list of contracts in green, for easy identification.
+Each of the missions will appear on the contract screen list of contracts in green, for easy identification. Failing a mission
+does not prevent the next mission from spawning as a flashpoint, though sometimes you will need to wait a week or two in game for the event to fire.
 
 Alternatively, you can use the BattleTech Save Editor to give your company all of the following tags. 
 You will then spawn all 13 mission offers in a row and can accept them all, activating all 13 Flashpoints, 
@@ -62,6 +61,8 @@ Mission			              Completion Tag
 + Prevent the Evacuation	  (event_phase2_preventtheevacuation_done)
 + The Vice		              (event_phase2_thevice_done)
 + By the Sword		          (event_phase2_bythesword_done)
+
+If the events fire, but you are not getting the Flashpoint popping up, or you activated them all and they did not appear, install Lore_Pack_4SW_FP_Cap from here: https://github.com/mattacma-cloud/Lore-Packs/tree/main. That will allow more than 5 Flashpoints to show at one time.
 
 ## Installation
 
