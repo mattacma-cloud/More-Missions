@@ -1,6 +1,5 @@
 # More Missions 
-<img width="750" height="300" alt="MoreMissions jpg" src="https://github.com/user-attachments/assets/be0c5734-12d2-4fb8-bf70-be143d0af324" />
-
+<img width="750" height="300" alt="MoreMissions jpg" src="https://github.com/user-attachments/assets/d1ba9692-0fdf-438f-a1d5-512573479c16" />
 
 More Missions adds thirteen new mission types to BattleTech, giving players new challenges to face in their games. 
 These missions were built using CWolf’s Mission Control editor and owe a lot to the work of the new missions team at BTA: 
