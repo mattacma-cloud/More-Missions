@@ -1,0 +1,6 @@
+{
+  "Id": "ContractTypePreventTheEvacuation",
+  "Name": "Prevent the Evacuation",
+  "Details": "They are already on the ground. Get them off it.\n\nExpected Forces: <color=#F4715E>1 heavy lance, 1 assault lance, 2 light-mech convoys, 2 vehicle convoys</color>",
+  "Icon": ""
+}
