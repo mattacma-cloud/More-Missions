@@ -1,0 +1,13 @@
+{
+  "Name": "MoreMissions",
+  "Enabled": true,
+  "Version": "1.0.0",
+  "Description": "Lets a Mission Control lance team swap finish every unit when that result has no combat reference.",
+  "Author": "Blacknova",
+  "DLL": "MoreMissions.dll",
+  "DLLEntryPoint": "MoreMissions.Main.Init",
+  "DependsOn": [
+    "ModTek",
+    "Mission Control"
+  ]
+}
