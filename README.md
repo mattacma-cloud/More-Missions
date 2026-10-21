@@ -92,3 +92,14 @@ to
 
 `      "c_fp_tMTM_3B_ThreeWayBattle",`\
 `      "ByTheSword_CragMireTest"`
+
+
+# Installation
+Drag the folders into you mods folder and accept any file overwrites.
+
+# Depends On
+The mod depends on the following:
+
+- ModTek
+
+- Mission Control
