@@ -41,6 +41,12 @@ Combat Patrol appears on the normal contract list when a world's difficulty wind
 
 Drag and drop the folders into your mods folder and overwrite when asked to do so.
 
+In your existing Mods/MissionControl/settings.json, add the six names below to ExcludeContractTypes under RandomSpawns, AdditionalLances, ExtendedLances, and DynamicWithdraw. Do not add them to HotDropProtection or ExtendedBoundaries. This package does not include a settings.json.
+
+Names to add: CombatPatrolD2, CombatPatrolD5, CombatPatrolD8, and the Sunken Hills types CombatPatrolSunkenD2, CombatPatrolSunkenD5, and CombatPatrolSunkenD8.
+
+Combat Patrol uses the drop zone on the layer. In Mods/CustomUnits/mod.json, ManualDeployForbidContractTypes should include CombatPatrol and the six names above.
+
 # Depends On
 
 The mod depends on the following:
@@ -51,11 +57,7 @@ The mod depends on the following:
 
 # Combat Patrol in this package
 
-The files in this package are Combat Patrol only. The draw uses six types, all named Combat Patrol: CombatPatrolD2, CombatPatrolD5, CombatPatrolD8, and the Sunken Hills types CombatPatrolSunkenD2, CombatPatrolSunkenD5, and CombatPatrolSunkenD8. The shared cards are in the normal draw. The per-map plates are not. MoreMissions copies the chosen map's title and description onto the card, and it sets the objective round counts to that map. guaranteed.json has no groups, so the mod does not add an extra contract.
-
-In your existing Mods/MissionControl/settings.json, add those six names to ExcludeContractTypes under RandomSpawns, AdditionalLances, ExtendedLances, and DynamicWithdraw. Do not add them to HotDropProtection or ExtendedBoundaries. This package does not include a settings.json.
-
-Combat Patrol uses the drop zone on the layer. In Mods/CustomUnits/mod.json, ManualDeployForbidContractTypes should include CombatPatrol and the six names above.
+The files in this package are Combat Patrol mission type only. The draw uses six types, all named Combat Patrol: CombatPatrolD2, CombatPatrolD5, CombatPatrolD8, and the Sunken Hills types CombatPatrolSunkenD2, CombatPatrolSunkenD5, and CombatPatrolSunkenD8. MoreMissions copies the chosen map's title and description onto the card, and it sets the objective round counts to that map.
 
 # New Mission Types
 
