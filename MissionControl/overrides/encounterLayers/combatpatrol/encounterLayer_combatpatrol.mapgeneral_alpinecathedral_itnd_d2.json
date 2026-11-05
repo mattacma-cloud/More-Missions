@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_alpineCathedral_iTnd.0b8e2e96-46bb-5ec4-ade8-5b20221306cc",
+  "MapID": "mapGeneral_alpineCathedral_iTnd",
+  "Name": "encMC_CombatPatrol_AlpineCathedral_d2",
+  "FriendlyName": "Alpine Cathedral",
+  "Description": "Combat Patrol Alpine Cathedral d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "0b8e2e96-46bb-5ec4-ade8-5b20221306cc",
+  "TagSetID": "mapGeneral_alpineCathedral_iTnd.0b8e2e96-46bb-5ec4-ade8-5b20221306cc",
+  "IncludeInBuild": "1"
+}

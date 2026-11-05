@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_jumbledKarst_aDes.f3a5d257-c78d-546d-b77b-2a91d3894387",
+  "MapID": "mapGeneral_jumbledKarst_aDes",
+  "Name": "encMC_CombatPatrol_JumbledKarst_d2",
+  "FriendlyName": "Jumbled Karst",
+  "Description": "Combat Patrol Jumbled Karst d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "f3a5d257-c78d-546d-b77b-2a91d3894387",
+  "TagSetID": "mapGeneral_jumbledKarst_aDes.f3a5d257-c78d-546d-b77b-2a91d3894387",
+  "IncludeInBuild": "1"
+}

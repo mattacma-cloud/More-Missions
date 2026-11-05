@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapMultiPurp_metroGreen_uTech.80b64406-a956-50e6-a4b8-8e284c1b9210",
+  "MapID": "mapMultiPurp_metroGreen_uTech",
+  "Name": "encMC_CombatPatrol_MetroGreen_d8",
+  "FriendlyName": "Metro Green",
+  "Description": "Combat Patrol Metro Green d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "80b64406-a956-50e6-a4b8-8e284c1b9210",
+  "TagSetID": "mapMultiPurp_metroGreen_uTech.80b64406-a956-50e6-a4b8-8e284c1b9210",
+  "IncludeInBuild": "1"
+}

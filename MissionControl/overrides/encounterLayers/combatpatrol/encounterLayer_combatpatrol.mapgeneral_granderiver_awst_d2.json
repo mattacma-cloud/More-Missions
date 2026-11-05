@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_grandeRiver_aWst.6d5a6689-8b8e-5376-ba17-bcb54b48115f",
+  "MapID": "mapGeneral_grandeRiver_aWst",
+  "Name": "encMC_CombatPatrol_GrandeRiver_d2",
+  "FriendlyName": "Grande River",
+  "Description": "Combat Patrol Grande River d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "6d5a6689-8b8e-5376-ba17-bcb54b48115f",
+  "TagSetID": "mapGeneral_grandeRiver_aWst.6d5a6689-8b8e-5376-ba17-bcb54b48115f",
+  "IncludeInBuild": "1"
+}

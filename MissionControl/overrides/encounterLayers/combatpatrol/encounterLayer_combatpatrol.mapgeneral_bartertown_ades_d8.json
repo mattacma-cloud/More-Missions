@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_barterTown_aDes.29ac5df8-4016-580a-84ee-a2923241793e",
+  "MapID": "mapGeneral_barterTown_aDes",
+  "Name": "encMC_CombatPatrol_BarterTown_d8",
+  "FriendlyName": "Barter Town",
+  "Description": "Combat Patrol Barter Town d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "29ac5df8-4016-580a-84ee-a2923241793e",
+  "TagSetID": "mapGeneral_barterTown_aDes.29ac5df8-4016-580a-84ee-a2923241793e",
+  "IncludeInBuild": "1"
+}

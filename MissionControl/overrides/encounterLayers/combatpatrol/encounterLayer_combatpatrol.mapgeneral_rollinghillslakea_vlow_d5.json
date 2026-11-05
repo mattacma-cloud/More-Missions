@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_rollingHillsLakeA_vLow.92335517-3b89-55a7-a4d5-2668ccf48625",
+  "MapID": "mapGeneral_rollingHillsLakeA_vLow",
+  "Name": "encMC_CombatPatrol_RollingHillsLakeA_d5",
+  "FriendlyName": "Rolling Hills Lake A",
+  "Description": "Combat Patrol Rolling Hills Lake A d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "92335517-3b89-55a7-a4d5-2668ccf48625",
+  "TagSetID": "mapGeneral_rollingHillsLakeA_vLow.92335517-3b89-55a7-a4d5-2668ccf48625",
+  "IncludeInBuild": "1"
+}

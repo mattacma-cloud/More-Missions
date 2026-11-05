@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_lushIsthmus_vJung.2569eeb0-5103-5a80-bf9a-845d18acbef7",
+  "MapID": "mapGeneral_lushIsthmus_vJung",
+  "Name": "encMC_CombatPatrol_LushIsthmus_d8",
+  "FriendlyName": "Lush Isthmus",
+  "Description": "Combat Patrol Lush Isthmus d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "2569eeb0-5103-5a80-bf9a-845d18acbef7",
+  "TagSetID": "mapGeneral_lushIsthmus_vJung.2569eeb0-5103-5a80-bf9a-845d18acbef7",
+  "IncludeInBuild": "1"
+}

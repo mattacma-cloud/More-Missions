@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_cityCenter_uTech.b8b824ec-4723-53d7-88f0-f2aa4b0a1fc4",
+  "MapID": "mapGeneral_cityCenter_uTech",
+  "Name": "encMC_CombatPatrol_CityCenter_d2",
+  "FriendlyName": "City Center",
+  "Description": "Combat Patrol City Center d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "b8b824ec-4723-53d7-88f0-f2aa4b0a1fc4",
+  "TagSetID": "mapGeneral_cityCenter_uTech.b8b824ec-4723-53d7-88f0-f2aa4b0a1fc4",
+  "IncludeInBuild": "1"
+}

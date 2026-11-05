@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_theMine_aDes.68698c69-20cd-526a-bb30-b6b65d4e2b78",
+  "MapID": "mapGeneral_theMine_aDes",
+  "Name": "encMC_CombatPatrol_TheMine_d5",
+  "FriendlyName": "The Mine",
+  "Description": "Combat Patrol The Mine d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "68698c69-20cd-526a-bb30-b6b65d4e2b78",
+  "TagSetID": "mapGeneral_theMine_aDes.68698c69-20cd-526a-bb30-b6b65d4e2b78",
+  "IncludeInBuild": "1"
+}

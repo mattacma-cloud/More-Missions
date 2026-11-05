@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_hiddenLagoon_vHigh.fa98b5d8-5e1b-5672-9df2-2e4015e6b69c",
+  "MapID": "mapGeneral_hiddenLagoon_vHigh",
+  "Name": "encMC_CombatPatrol_HiddenLagoon_d5",
+  "FriendlyName": "Hidden Lagoon",
+  "Description": "Combat Patrol Hidden Lagoon d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "fa98b5d8-5e1b-5672-9df2-2e4015e6b69c",
+  "TagSetID": "mapGeneral_hiddenLagoon_vHigh.fa98b5d8-5e1b-5672-9df2-2e4015e6b69c",
+  "IncludeInBuild": "1"
+}

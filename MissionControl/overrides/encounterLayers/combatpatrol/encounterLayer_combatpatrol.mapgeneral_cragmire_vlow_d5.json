@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_cragMire_vLow.e9d892cb-3316-5966-b812-66b5661e735c",
+  "MapID": "mapGeneral_cragMire_vLow",
+  "Name": "encMC_CombatPatrol_CragMire_d5",
+  "FriendlyName": "Crag Mire",
+  "Description": "Combat Patrol Crag Mire d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "e9d892cb-3316-5966-b812-66b5661e735c",
+  "TagSetID": "mapGeneral_cragMire_vLow.e9d892cb-3316-5966-b812-66b5661e735c",
+  "IncludeInBuild": "1"
+}

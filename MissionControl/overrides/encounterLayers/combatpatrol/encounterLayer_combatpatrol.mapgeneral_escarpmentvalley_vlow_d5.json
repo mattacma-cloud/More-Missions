@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_escarpmentValley_vLow.3e896421-db2c-552e-b7cb-81a58081560c",
+  "MapID": "mapGeneral_escarpmentValley_vLow",
+  "Name": "encMC_CombatPatrol_EscarpmentValley_d5",
+  "FriendlyName": "Escarpment Valley",
+  "Description": "Combat Patrol Escarpment Valley d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "3e896421-db2c-552e-b7cb-81a58081560c",
+  "TagSetID": "mapGeneral_escarpmentValley_vLow.3e896421-db2c-552e-b7cb-81a58081560c",
+  "IncludeInBuild": "1"
+}

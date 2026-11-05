@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_alpinePass_iGlc.3dbf7bdb-d9c4-56b0-80c8-8c23a26b5b6b",
+  "MapID": "mapGeneral_alpinePass_iGlc",
+  "Name": "encMC_CombatPatrol_AlpinePass_d2",
+  "FriendlyName": "Alpine Pass",
+  "Description": "Combat Patrol Alpine Pass d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "3dbf7bdb-d9c4-56b0-80c8-8c23a26b5b6b",
+  "TagSetID": "mapGeneral_alpinePass_iGlc.3dbf7bdb-d9c4-56b0-80c8-8c23a26b5b6b",
+  "IncludeInBuild": "1"
+}

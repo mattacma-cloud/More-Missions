@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_bleakRidge_aBad.5cecef21-f303-5fa9-85ea-87e9ba4a04ba",
+  "MapID": "mapGeneral_bleakRidge_aBad",
+  "Name": "encMC_CombatPatrol_BleakRidge_d2",
+  "FriendlyName": "Bleak Ridge",
+  "Description": "Combat Patrol Bleak Ridge d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "5cecef21-f303-5fa9-85ea-87e9ba4a04ba",
+  "TagSetID": "mapGeneral_bleakRidge_aBad.5cecef21-f303-5fa9-85ea-87e9ba4a04ba",
+  "IncludeInBuild": "1"
+}

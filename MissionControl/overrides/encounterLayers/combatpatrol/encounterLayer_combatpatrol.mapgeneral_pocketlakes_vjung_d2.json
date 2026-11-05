@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_pocketLakes_vJung.4dcc272c-df75-5158-8e43-54018a78940c",
+  "MapID": "mapGeneral_pocketLakes_vJung",
+  "Name": "encMC_CombatPatrol_PocketLakes_d2",
+  "FriendlyName": "Pocket Lakes",
+  "Description": "Combat Patrol Pocket Lakes d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "4dcc272c-df75-5158-8e43-54018a78940c",
+  "TagSetID": "mapGeneral_pocketLakes_vJung.4dcc272c-df75-5158-8e43-54018a78940c",
+  "IncludeInBuild": "1"
+}

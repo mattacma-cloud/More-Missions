@@ -1,0 +1,787 @@
+{
+  "EncounterLayerId": "mapGeneral_boulderField_vLow.e64bb88b-3e84-59e2-825f-759b78e277e8",
+  "Metadata": {
+    "DesignerVersion": "1.0",
+    "MinCompatibleMCVersion": "1.5.2",
+    "ContractTypeVersion": "1",
+    "Author": "Blacknova"
+  },
+  "Overrides": [
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_PlayerLance')].Children[?(@.Name == 'Spawner_PlayerLance')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 928.0,
+            "y": 227.28,
+            "z": 736.0
+          }
+        },
+        "Rotation": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": -90.0,
+            "z": 0.0
+          }
+        },
+        "PreciseSpawnPoints": true,
+        "SpawnPointPositions": {
+          "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "5df48a48-1840-49b0-84e9-126847053afa": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 26.0
+          },
+          "a55fc76c-c955-4b61-bb64-2608c9beb9f5": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 52.0
+          },
+          "0f10a383-7325-4726-b2c4-a0ef416e4b27": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 78.0
+          }
+        },
+        "SpawnPointRotations": {},
+        "MountOn": {}
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_1_Occupy')].Children[?(@.Name == 'Objective_Leg_1')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Title": "Waypoint 1 \u2014 9 rounds, lance",
+        "Description": "Reach Waypoint 1 with your entire lance.",
+        "NumberOfUnitsToOccupy": 4,
+        "IsPrimaryObjective": true
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_1_Occupy')].Children[?(@.Name == 'Region_Leg_1')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 160.0,
+            "y": 135.43,
+            "z": 736.0
+          }
+        },
+        "Radius": 80.0
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_2_Occupy')].Children[?(@.Name == 'Objective_Leg_2')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Title": "Waypoint 2 \u2014 1 rounds, lance",
+        "Description": "Reach Waypoint 2 with your entire lance.",
+        "NumberOfUnitsToOccupy": 4,
+        "IsPrimaryObjective": false
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_2_Occupy')].Children[?(@.Name == 'Region_Leg_2')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -80.0,
+            "y": 139.29,
+            "z": 944.0
+          }
+        },
+        "Radius": 80.0
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_3_Occupy')].Children[?(@.Name == 'Objective_Leg_3')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Title": "Waypoint 2 \u2014 9 rounds, lance",
+        "Description": "Reach Waypoint 2 with your entire lance.",
+        "NumberOfUnitsToOccupy": 4,
+        "IsPrimaryObjective": true
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_3_Occupy')].Children[?(@.Name == 'Region_Leg_3')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -688.0,
+            "y": 279.99,
+            "z": 480.0
+          }
+        },
+        "Radius": 80.0
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_4_Occupy')].Children[?(@.Name == 'Objective_Leg_4')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Title": "Waypoint 3 \u2014 7 rounds, lance",
+        "Description": "Reach Waypoint 3 with your entire lance.",
+        "NumberOfUnitsToOccupy": 4,
+        "IsPrimaryObjective": true
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_4_Occupy')].Children[?(@.Name == 'Region_Leg_4')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -832.0,
+            "y": 276.55,
+            "z": -208.0
+          }
+        },
+        "Radius": 80.0
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_5_Occupy')].Children[?(@.Name == 'Objective_Leg_5')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Title": "Waypoint 4 \u2014 6 rounds, lance",
+        "Description": "Reach Waypoint 4 with your entire lance.",
+        "NumberOfUnitsToOccupy": 4,
+        "IsPrimaryObjective": true
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Leg_5_Occupy')].Children[?(@.Name == 'Region_Leg_5')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -800.0,
+            "y": 247.82,
+            "z": -800.0
+          }
+        },
+        "Radius": 80.0
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Tank')].Children[?(@.Name == 'Spawner_Event_Tank')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -448.0,
+            "y": 235.12,
+            "z": 432.0
+          }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Mech')].Children[?(@.Name == 'Spawner_Event_Mech')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -304.0,
+            "y": 145.17,
+            "z": 80.0
+          }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Mech_2')].Children[?(@.Name == 'Spawner_Event_Mech_2')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -576.0,
+            "y": 154.5,
+            "z": -944.0
+          }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Artillery_Overwatch')].Children[?(@.Name == 'Spawner_Artillery_Overwatch')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 560.0,
+            "y": 280.58,
+            "z": 96.0
+          }
+        }
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Exit_Mission')].Children[?(@.Name == 'Region_Exit_Plot')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -80.0,
+            "y": 206.08,
+            "z": -672.0
+          }
+        },
+        "Radius": 120.0
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Exit_Mission')].Children[?(@.Name == 'Objective_Exit_Mission')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Title": "Dust-off \u2014 11 rounds",
+        "NumberOfUnitsToOccupy": 1,
+        "UseDropship": false
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Buildings')].Children[?(@.Name == 'Region_Buildings')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": -420.0,
+            "y": 238.23,
+            "z": 380.0
+          }
+        },
+        "Radius": 120.0,
+        "ShowHexWhenActive": true,
+        "AlwaysShowRegionWhenActive": true
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Buildings_Occupy')].Children[?(@.Name == 'Objective_Destroy_Buildings')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Title": "Destroy All Buildings Within the Objective Zone",
+        "IsPrimaryObjective": true,
+        "DisplayToUser": true,
+        "RequiredTagsOnUnit": [
+          "Player 1"
+        ],
+        "DurationToOccupy": 99,
+        "DurationType": "Rounds",
+        "ProgressFormat": "0/0 Buildings Remain"
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Buildings')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "StartingStatus": "Active"
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_Event_Buildings_Occupy')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "StartingStatus": "Active"
+      }
+    },
+    {
+      "Path": "Chunks[?(@.Name == 'Chunk_EncounterBoundary')].Children[?(@.Name == 'EncounterBoundaryRect')]",
+      "Action": "ObjectMerge",
+      "Value": {
+        "Position": {
+          "Type": "World",
+          "Value": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "Width": 2000,
+        "Length": 2000
+      }
+    },
+    {
+      "Path": "Triggers[?(@.Name == 'Trigger_MissionStart')].Results",
+      "Action": "Replace",
+      "Value": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "f7e65b8c-6927-4a2a-baf2-04fe19319c7a"
+        },
+        {
+          "Type": "Delay",
+          "Name": "Spawn_Artillery_Overwatch",
+          "Rounds": 2,
+          "Results": [
+            {
+              "Type": "SetStatus",
+              "Status": "Active",
+              "EncounterGuid": "f992954b-f484-47b2-bb2a-2b587b935f83"
+            }
+          ]
+        },
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "e64491df-79cb-4fd2-973c-e59557b990ed"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "3d2a70f6-720a-475e-9e38-f3dab5243eb3"
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Leg_1_Half",
+          "Rounds": 4,
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "14d170ac-f882-4855-9596-01c96b41a64a",
+                "Status": "Success"
+              }
+            ]
+          },
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "efc566be-c3f2-4616-88f3-7f81d4adad72"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Leg_1_Last",
+              "Rounds": 4,
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "14d170ac-f882-4855-9596-01c96b41a64a",
+                    "Status": "Success"
+                  }
+                ]
+              },
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "c3776212-fa69-43da-b21e-ae2975317d02"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerWarn_Leg_1_Fail",
+                  "Rounds": 1,
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "14d170ac-f882-4855-9596-01c96b41a64a",
+                        "Status": "Success"
+                      }
+                    ]
+                  },
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "545c386f-ef13-48a7-be14-e662639a6f13"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "14d170ac-f882-4855-9596-01c96b41a64a",
+                      "CompletionType": "Failed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Path": "Triggers[?(@.Name == 'Trigger_Leg_1_Success')].Results",
+      "Action": "Replace",
+      "Value": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "b28e2440-27ec-4bc9-9a4f-721323653543"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "293c5e8b-931f-4817-ba97-f2fa1743d4db"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "4a683fb6-11d2-4aed-8057-52ac5596948e"
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Leg_3_Half",
+          "Rounds": 4,
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+                "Status": "Success"
+              }
+            ]
+          },
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "efc566be-c3f2-4616-88f3-7f81d4adad72"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Leg_3_Last",
+              "Rounds": 4,
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+                    "Status": "Success"
+                  }
+                ]
+              },
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "c3776212-fa69-43da-b21e-ae2975317d02"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerWarn_Leg_3_Fail",
+                  "Rounds": 1,
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+                        "Status": "Success"
+                      }
+                    ]
+                  },
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "545c386f-ef13-48a7-be14-e662639a6f13"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "eedeacf0-2412-49a4-b3ef-f384a1cc2719",
+                      "CompletionType": "Failed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Path": "Triggers[?(@.Name == 'Trigger_Leg_2_Success')].Results",
+      "Action": "Replace",
+      "Value": []
+    },
+    {
+      "Path": "Triggers[?(@.Name == 'Trigger_Leg_3_Success')].Results",
+      "Action": "Replace",
+      "Value": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "21338b06-8b5b-4899-866b-2ad409c58a2d"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "87c53c62-e28c-4bea-85ca-c761a782fcdc"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "d8dc0d1e-f195-4e54-8765-3cc22723d65a"
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Leg_4_Half",
+          "Rounds": 3,
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+                "Status": "Success"
+              }
+            ]
+          },
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "efc566be-c3f2-4616-88f3-7f81d4adad72"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Leg_4_Last",
+              "Rounds": 3,
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+                    "Status": "Success"
+                  }
+                ]
+              },
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "c3776212-fa69-43da-b21e-ae2975317d02"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerWarn_Leg_4_Fail",
+                  "Rounds": 1,
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+                        "Status": "Success"
+                      }
+                    ]
+                  },
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "545c386f-ef13-48a7-be14-e662639a6f13"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "8c5e85f9-e7ac-4bfc-aa5f-d13e493c2f45",
+                      "CompletionType": "Failed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Path": "Triggers[?(@.Name == 'Trigger_Leg_4_Success')].Results",
+      "Action": "Replace",
+      "Value": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "a11e5004-0005-4c00-a000-000000000005"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "a11e5001-0005-4c00-a000-000000000005"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "b22e6001-0006-4c00-b000-000000000006"
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Leg_5_Half",
+          "Rounds": 3,
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "a11e5002-0005-4c00-a000-000000000005",
+                "Status": "Success"
+              }
+            ]
+          },
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "efc566be-c3f2-4616-88f3-7f81d4adad72"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Leg_5_Last",
+              "Rounds": 2,
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "a11e5002-0005-4c00-a000-000000000005",
+                    "Status": "Success"
+                  }
+                ]
+              },
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "c3776212-fa69-43da-b21e-ae2975317d02"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerWarn_Leg_5_Fail",
+                  "Rounds": 1,
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "a11e5002-0005-4c00-a000-000000000005",
+                        "Status": "Success"
+                      }
+                    ]
+                  },
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "545c386f-ef13-48a7-be14-e662639a6f13"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "a11e5002-0005-4c00-a000-000000000005",
+                      "CompletionType": "Failed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Path": "Triggers[?(@.Name == 'Trigger_Open_Evac')].Results",
+      "Action": "Replace",
+      "Value": [
+        {
+          "Type": "Dialogue",
+          "DialogueGuid": "7db35656-45bc-4a78-aa7f-7a91e0f45a6d"
+        },
+        {
+          "Type": "SetStatus",
+          "Status": "Active",
+          "EncounterGuid": "e395a2c8-8018-4d05-8fce-7d57068fbca8"
+        },
+        {
+          "Type": "Delay",
+          "Name": "TimerWarn_Dustoff_Half",
+          "Rounds": 5,
+          "SkipIf": {
+            "TriggerOn": "OnObjectiveUpdated",
+            "Conditionals": [
+              {
+                "Type": "ObjectiveStatusConditional",
+                "Guid": "d8dd6175-b1c3-4c59-97e0-dd55e299788f",
+                "Status": "Success"
+              }
+            ]
+          },
+          "Results": [
+            {
+              "Type": "Dialogue",
+              "DialogueGuid": "efc566be-c3f2-4616-88f3-7f81d4adad72"
+            },
+            {
+              "Type": "Delay",
+              "Name": "TimerWarn_Dustoff_Last",
+              "Rounds": 5,
+              "SkipIf": {
+                "TriggerOn": "OnObjectiveUpdated",
+                "Conditionals": [
+                  {
+                    "Type": "ObjectiveStatusConditional",
+                    "Guid": "d8dd6175-b1c3-4c59-97e0-dd55e299788f",
+                    "Status": "Success"
+                  }
+                ]
+              },
+              "Results": [
+                {
+                  "Type": "Dialogue",
+                  "DialogueGuid": "c3776212-fa69-43da-b21e-ae2975317d02"
+                },
+                {
+                  "Type": "Delay",
+                  "Name": "TimerWarn_Dustoff_Fail",
+                  "Rounds": 1,
+                  "SkipIf": {
+                    "TriggerOn": "OnObjectiveUpdated",
+                    "Conditionals": [
+                      {
+                        "Type": "ObjectiveStatusConditional",
+                        "Guid": "d8dd6175-b1c3-4c59-97e0-dd55e299788f",
+                        "Status": "Success"
+                      }
+                    ]
+                  },
+                  "Results": [
+                    {
+                      "Type": "Dialogue",
+                      "DialogueGuid": "545c386f-ef13-48a7-be14-e662639a6f13"
+                    },
+                    {
+                      "Type": "CompleteObjective",
+                      "ObjectiveGuid": "d8dd6175-b1c3-4c59-97e0-dd55e299788f",
+                      "CompletionType": "Failed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Path": "Triggers[?(@.Name == 'Trigger_Open_Evac')].Conditionals",
+      "Action": "Replace",
+      "Value": [
+        {
+          "Type": "ObjectiveStatusConditional",
+          "Guid": "a11e5002-0005-4c00-a000-000000000005",
+          "Status": "Success"
+        }
+      ]
+    }
+  ]
+}

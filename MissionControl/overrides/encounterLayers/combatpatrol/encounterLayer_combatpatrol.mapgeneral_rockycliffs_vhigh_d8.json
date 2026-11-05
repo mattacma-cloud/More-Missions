@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_rockyCliffs_vHigh.219e86f5-b59f-596a-90c1-3e113613d2c9",
+  "MapID": "mapGeneral_rockyCliffs_vHigh",
+  "Name": "encMC_CombatPatrol_RockyCliffs_d8",
+  "FriendlyName": "Rocky Cliffs",
+  "Description": "Combat Patrol Rocky Cliffs d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "219e86f5-b59f-596a-90c1-3e113613d2c9",
+  "TagSetID": "mapGeneral_rockyCliffs_vHigh.219e86f5-b59f-596a-90c1-3e113613d2c9",
+  "IncludeInBuild": "1"
+}

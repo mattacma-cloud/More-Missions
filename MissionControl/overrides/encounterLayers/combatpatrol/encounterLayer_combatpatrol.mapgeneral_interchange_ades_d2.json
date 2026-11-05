@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_Interchange_aDes.5b823ac3-696f-5d1d-8c57-4d62c0f4c046",
+  "MapID": "mapGeneral_Interchange_aDes",
+  "Name": "encMC_CombatPatrol_Interchange_d2",
+  "FriendlyName": "Interchange",
+  "Description": "Combat Patrol Interchange d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "5b823ac3-696f-5d1d-8c57-4d62c0f4c046",
+  "TagSetID": "mapGeneral_Interchange_aDes.5b823ac3-696f-5d1d-8c57-4d62c0f4c046",
+  "IncludeInBuild": "1"
+}

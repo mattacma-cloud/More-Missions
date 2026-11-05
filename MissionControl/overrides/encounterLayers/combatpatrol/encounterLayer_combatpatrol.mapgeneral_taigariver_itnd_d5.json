@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_taigaRiver_iTnd.612f3e1c-2896-5f76-a609-027b40394396",
+  "MapID": "mapGeneral_taigaRiver_iTnd",
+  "Name": "encMC_CombatPatrol_TaigaRiver_d5",
+  "FriendlyName": "Taiga River",
+  "Description": "Combat Patrol Taiga River d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "612f3e1c-2896-5f76-a609-027b40394396",
+  "TagSetID": "mapGeneral_taigaRiver_iTnd.612f3e1c-2896-5f76-a609-027b40394396",
+  "IncludeInBuild": "1"
+}

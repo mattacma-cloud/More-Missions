@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_icyOutpost_iGlc.e62b3354-ecf0-5960-9e7c-25458bd82eec",
+  "MapID": "mapGeneral_icyOutpost_iGlc",
+  "Name": "encMC_CombatPatrol_IcyOutpost_d8",
+  "FriendlyName": "Icy Outpost",
+  "Description": "Combat Patrol Icy Outpost d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "e62b3354-ecf0-5960-9e7c-25458bd82eec",
+  "TagSetID": "mapGeneral_icyOutpost_iGlc.e62b3354-ecf0-5960-9e7c-25458bd82eec",
+  "IncludeInBuild": "1"
+}

@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_paupersCanyon_aWst.88bca4e1-3070-5b83-8544-75bcb59dc8a5",
+  "MapID": "mapGeneral_paupersCanyon_aWst",
+  "Name": "encMC_CombatPatrol_PaupersCanyon_d8",
+  "FriendlyName": "Paupers Canyon",
+  "Description": "Combat Patrol Paupers Canyon d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "88bca4e1-3070-5b83-8544-75bcb59dc8a5",
+  "TagSetID": "mapGeneral_paupersCanyon_aWst.88bca4e1-3070-5b83-8544-75bcb59dc8a5",
+  "IncludeInBuild": "1"
+}

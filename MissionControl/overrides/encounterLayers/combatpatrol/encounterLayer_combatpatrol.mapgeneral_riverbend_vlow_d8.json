@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_riverBend_vLow.c90b8b5e-ade7-5e01-abed-b8faba59966a",
+  "MapID": "mapGeneral_riverBend_vLow",
+  "Name": "encMC_CombatPatrol_RiverBend_d8",
+  "FriendlyName": "River Bend",
+  "Description": "Combat Patrol River Bend d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "c90b8b5e-ade7-5e01-abed-b8faba59966a",
+  "TagSetID": "mapGeneral_riverBend_vLow.c90b8b5e-ade7-5e01-abed-b8faba59966a",
+  "IncludeInBuild": "1"
+}

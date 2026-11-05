@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_highPeak_iGlc.b77897d7-5e43-5963-a649-8040dd343f0d",
+  "MapID": "mapGeneral_highPeak_iGlc",
+  "Name": "encMC_CombatPatrol_HighPeak_d5",
+  "FriendlyName": "High Peak",
+  "Description": "Combat Patrol High Peak d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "b77897d7-5e43-5963-a649-8040dd343f0d",
+  "TagSetID": "mapGeneral_highPeak_iGlc.b77897d7-5e43-5963-a649-8040dd343f0d",
+  "IncludeInBuild": "1"
+}

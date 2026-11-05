@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_bluffs_vHigh.a84f701f-4a1b-5d85-bc04-c9dbc7016696",
+  "MapID": "mapGeneral_bluffs_vHigh",
+  "Name": "encMC_CombatPatrol_Bluffs_d5",
+  "FriendlyName": "Bluffs",
+  "Description": "Combat Patrol Bluffs d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "a84f701f-4a1b-5d85-bc04-c9dbc7016696",
+  "TagSetID": "mapGeneral_bluffs_vHigh.a84f701f-4a1b-5d85-bc04-c9dbc7016696",
+  "IncludeInBuild": "1"
+}

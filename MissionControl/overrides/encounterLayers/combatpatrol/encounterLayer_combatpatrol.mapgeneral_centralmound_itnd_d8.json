@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_CentralMound_iTnd.e6425db9-fa7b-53c8-9c22-1d5c06a33301",
+  "MapID": "mapGeneral_CentralMound_iTnd",
+  "Name": "encMC_CombatPatrol_CentralMound_d8",
+  "FriendlyName": "Central Mound",
+  "Description": "Combat Patrol Central Mound d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "e6425db9-fa7b-53c8-9c22-1d5c06a33301",
+  "TagSetID": "mapGeneral_CentralMound_iTnd.e6425db9-fa7b-53c8-9c22-1d5c06a33301",
+  "IncludeInBuild": "1"
+}

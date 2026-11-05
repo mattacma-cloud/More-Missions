@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_craterField_bMars.5131944a-58d9-5d3e-818f-f6a5488514a9",
+  "MapID": "mapGeneral_craterField_bMars",
+  "Name": "encMC_CombatPatrol_CraterField_d8",
+  "FriendlyName": "Crater Field",
+  "Description": "Combat Patrol Crater Field d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "5131944a-58d9-5d3e-818f-f6a5488514a9",
+  "TagSetID": "mapGeneral_craterField_bMars.5131944a-58d9-5d3e-818f-f6a5488514a9",
+  "IncludeInBuild": "1"
+}

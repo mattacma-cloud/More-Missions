@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_bigCrater_bMoon.080ac378-b2a8-502d-a10e-a51744c3a0cb",
+  "MapID": "mapGeneral_bigCrater_bMoon",
+  "Name": "encMC_CombatPatrol_BigCrater_d8",
+  "FriendlyName": "Big Crater",
+  "Description": "Combat Patrol Big Crater d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "080ac378-b2a8-502d-a10e-a51744c3a0cb",
+  "TagSetID": "mapGeneral_bigCrater_bMoon.080ac378-b2a8-502d-a10e-a51744c3a0cb",
+  "IncludeInBuild": "1"
+}

@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_terraceLakes_vLow.7350aa9b-a81d-5b27-8b95-a41c0a17b49e",
+  "MapID": "mapGeneral_terraceLakes_vLow",
+  "Name": "encMC_CombatPatrol_TerraceLakes_d8",
+  "FriendlyName": "Terrace Lakes",
+  "Description": "Combat Patrol Terrace Lakes d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "7350aa9b-a81d-5b27-8b95-a41c0a17b49e",
+  "TagSetID": "mapGeneral_terraceLakes_vLow.7350aa9b-a81d-5b27-8b95-a41c0a17b49e",
+  "IncludeInBuild": "1"
+}

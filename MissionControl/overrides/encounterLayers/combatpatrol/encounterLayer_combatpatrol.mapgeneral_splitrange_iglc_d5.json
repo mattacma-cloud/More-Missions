@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_splitRange_iGlc.bc57dec6-4604-5195-9ef4-d2534ebd8b91",
+  "MapID": "mapGeneral_splitRange_iGlc",
+  "Name": "encMC_CombatPatrol_SplitRange_d5",
+  "FriendlyName": "Split Range",
+  "Description": "Combat Patrol Split Range d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "bc57dec6-4604-5195-9ef4-d2534ebd8b91",
+  "TagSetID": "mapGeneral_splitRange_iGlc.bc57dec6-4604-5195-9ef4-d2534ebd8b91",
+  "IncludeInBuild": "1"
+}

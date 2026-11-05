@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_lostCanyon_aBad.14326d7a-36ea-5481-9027-b831e29d903d",
+  "MapID": "mapGeneral_lostCanyon_aBad",
+  "Name": "encMC_CombatPatrol_LostCanyon_d2",
+  "FriendlyName": "Lost Canyon",
+  "Description": "Combat Patrol Lost Canyon d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "14326d7a-36ea-5481-9027-b831e29d903d",
+  "TagSetID": "mapGeneral_lostCanyon_aBad.14326d7a-36ea-5481-9027-b831e29d903d",
+  "IncludeInBuild": "1"
+}

@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_frostySlopes_iTnd.b8fc4121-5022-595b-9d6c-de8393cc4d21",
+  "MapID": "mapGeneral_frostySlopes_iTnd",
+  "Name": "encMC_CombatPatrol_FrostySlopes_d5",
+  "FriendlyName": "Frosty Slopes",
+  "Description": "Combat Patrol Frosty Slopes d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "b8fc4121-5022-595b-9d6c-de8393cc4d21",
+  "TagSetID": "mapGeneral_frostySlopes_iTnd.b8fc4121-5022-595b-9d6c-de8393cc4d21",
+  "IncludeInBuild": "1"
+}

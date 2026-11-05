@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_mountainHold_bMoon.f3f079b2-2115-5c53-9249-555ed40fe6b7",
+  "MapID": "mapGeneral_mountainHold_bMoon",
+  "Name": "encMC_CombatPatrol_MountainHold_d5",
+  "FriendlyName": "Mountain Hold",
+  "Description": "Combat Patrol Mountain Hold d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "f3f079b2-2115-5c53-9249-555ed40fe6b7",
+  "TagSetID": "mapGeneral_mountainHold_bMoon.f3f079b2-2115-5c53-9249-555ed40fe6b7",
+  "IncludeInBuild": "1"
+}

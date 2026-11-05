@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_gridLock_uTech.e5dc776d-f4e4-5841-81bb-fc78d5c77516",
+  "MapID": "mapGeneral_gridLock_uTech",
+  "Name": "encMC_CombatPatrol_GridLock_d5",
+  "FriendlyName": "Grid Lock",
+  "Description": "Combat Patrol Grid Lock d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "e5dc776d-f4e4-5841-81bb-fc78d5c77516",
+  "TagSetID": "mapGeneral_gridLock_uTech.e5dc776d-f4e4-5841-81bb-fc78d5c77516",
+  "IncludeInBuild": "1"
+}

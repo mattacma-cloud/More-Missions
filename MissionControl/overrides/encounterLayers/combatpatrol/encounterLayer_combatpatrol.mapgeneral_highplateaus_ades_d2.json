@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_highPlateaus_aDes.e235375c-67d6-5667-a0ff-b19874d56f20",
+  "MapID": "mapGeneral_highPlateaus_aDes",
+  "Name": "encMC_CombatPatrol_HighPlateaus_d2",
+  "FriendlyName": "High Plateaus",
+  "Description": "Combat Patrol High Plateaus d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "e235375c-67d6-5667-a0ff-b19874d56f20",
+  "TagSetID": "mapGeneral_highPlateaus_aDes.e235375c-67d6-5667-a0ff-b19874d56f20",
+  "IncludeInBuild": "1"
+}

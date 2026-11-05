@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_riftValley_vJung.c7b89bce-f417-5180-8d46-6a419d6325cf",
+  "MapID": "mapGeneral_riftValley_vJung",
+  "Name": "encMC_CombatPatrol_RiftValley_d5",
+  "FriendlyName": "Rift Valley",
+  "Description": "Combat Patrol Rift Valley d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "c7b89bce-f417-5180-8d46-6a419d6325cf",
+  "TagSetID": "mapGeneral_riftValley_vJung.c7b89bce-f417-5180-8d46-6a419d6325cf",
+  "IncludeInBuild": "1"
+}

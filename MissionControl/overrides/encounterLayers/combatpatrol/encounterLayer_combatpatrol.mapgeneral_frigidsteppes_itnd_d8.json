@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_frigidSteppes_iTnd.b4163443-7a39-563f-94a4-cb743e253f70",
+  "MapID": "mapGeneral_frigidSteppes_iTnd",
+  "Name": "encMC_CombatPatrol_FrigidSteppes_d8",
+  "FriendlyName": "Frigid Steppes",
+  "Description": "Combat Patrol Frigid Steppes d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "b4163443-7a39-563f-94a4-cb743e253f70",
+  "TagSetID": "mapGeneral_frigidSteppes_iTnd.b4163443-7a39-563f-94a4-cb743e253f70",
+  "IncludeInBuild": "1"
+}

@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_lostWorld_vJung.b63570d3-34fe-5e76-b9c3-283af0368853",
+  "MapID": "mapGeneral_lostWorld_vJung",
+  "Name": "encMC_CombatPatrol_LostWorld_d5",
+  "FriendlyName": "Lost World",
+  "Description": "Combat Patrol Lost World d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "b63570d3-34fe-5e76-b9c3-283af0368853",
+  "TagSetID": "mapGeneral_lostWorld_vJung.b63570d3-34fe-5e76-b9c3-283af0368853",
+  "IncludeInBuild": "1"
+}

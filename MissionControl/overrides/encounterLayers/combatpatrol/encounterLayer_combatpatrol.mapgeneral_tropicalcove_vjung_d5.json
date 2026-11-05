@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_tropicalCove_vJung.0e792333-d9f5-5ffd-9126-4f0099aa1b63",
+  "MapID": "mapGeneral_tropicalCove_vJung",
+  "Name": "encMC_CombatPatrol_TropicalCove_d5",
+  "FriendlyName": "Tropical Cove",
+  "Description": "Combat Patrol Tropical Cove d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "0e792333-d9f5-5ffd-9126-4f0099aa1b63",
+  "TagSetID": "mapGeneral_tropicalCove_vJung.0e792333-d9f5-5ffd-9126-4f0099aa1b63",
+  "IncludeInBuild": "1"
+}

@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_MonsFoothills_bMars.656501df-a35f-568a-bcc8-5ea80e26982c",
+  "MapID": "mapGeneral_MonsFoothills_bMars",
+  "Name": "encMC_CombatPatrol_MonsFoothills_d8",
+  "FriendlyName": "Mons Foothills",
+  "Description": "Combat Patrol Mons Foothills d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "656501df-a35f-568a-bcc8-5ea80e26982c",
+  "TagSetID": "mapGeneral_MonsFoothills_bMars.656501df-a35f-568a-bcc8-5ea80e26982c",
+  "IncludeInBuild": "1"
+}

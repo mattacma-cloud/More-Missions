@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_boulderField_vLow.3f5310fd-1aad-5eb4-acd8-59c16b1f2cdc",
+  "MapID": "mapGeneral_boulderField_vLow",
+  "Name": "encMC_CombatPatrol_BoulderField_d8",
+  "FriendlyName": "Boulder Field",
+  "Description": "Combat Patrol Boulder Field d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "3f5310fd-1aad-5eb4-acd8-59c16b1f2cdc",
+  "TagSetID": "mapGeneral_boulderField_vLow.3f5310fd-1aad-5eb4-acd8-59c16b1f2cdc",
+  "IncludeInBuild": "1"
+}

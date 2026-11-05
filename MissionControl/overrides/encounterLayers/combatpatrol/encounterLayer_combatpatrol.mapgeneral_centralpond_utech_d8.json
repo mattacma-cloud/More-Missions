@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_centralPond_uTech.c3d7a1b0-4e15-4a20-9c11-0d7e5a11e008",
+  "MapID": "mapGeneral_centralPond_uTech",
+  "Name": "encMC_CombatPatrol_CentralPond_d8",
+  "FriendlyName": "Central Pond",
+  "Description": "Combat Patrol Central Pond d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18000",
+  "EncounterLayerGUID": "c3d7a1b0-4e15-4a20-9c11-0d7e5a11e008",
+  "TagSetID": "mapGeneral_centralPond_uTech.c3d7a1b0-4e15-4a20-9c11-0d7e5a11e008",
+  "IncludeInBuild": "1"
+}

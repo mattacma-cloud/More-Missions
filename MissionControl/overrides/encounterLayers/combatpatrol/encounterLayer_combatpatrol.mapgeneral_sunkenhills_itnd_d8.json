@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_sunkenHills_iTnd.c9d32031-94a5-561c-8993-08aea2205a90",
+  "MapID": "mapGeneral_sunkenHills_iTnd",
+  "Name": "encMC_CombatPatrol_SunkenHills_d8",
+  "FriendlyName": "Sunken Hills",
+  "Description": "Combat Patrol Sunken Hills d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18019",
+  "EncounterLayerGUID": "c9d32031-94a5-561c-8993-08aea2205a90",
+  "TagSetID": "mapGeneral_sunkenHills_iTnd.c9d32031-94a5-561c-8993-08aea2205a90",
+  "IncludeInBuild": "1"
+}

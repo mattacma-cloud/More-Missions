@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_boggyRocks_vLow.83f21b08-a890-5e88-b470-cbf89fa8d67e",
+  "MapID": "mapGeneral_boggyRocks_vLow",
+  "Name": "encMC_CombatPatrol_BoggyRocks_d2",
+  "FriendlyName": "Boggy Rocks",
+  "Description": "Combat Patrol Boggy Rocks d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "83f21b08-a890-5e88-b470-cbf89fa8d67e",
+  "TagSetID": "mapGeneral_boggyRocks_vLow.83f21b08-a890-5e88-b470-cbf89fa8d67e",
+  "IncludeInBuild": "1"
+}

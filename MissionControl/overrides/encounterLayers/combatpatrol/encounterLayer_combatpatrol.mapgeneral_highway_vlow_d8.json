@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_highway_vLow.9644e339-4a59-59a5-8244-af15b75f576c",
+  "MapID": "mapGeneral_highway_vLow",
+  "Name": "encMC_CombatPatrol_Highway_d8",
+  "FriendlyName": "Highway",
+  "Description": "Combat Patrol Highway d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "9644e339-4a59-59a5-8244-af15b75f576c",
+  "TagSetID": "mapGeneral_highway_vLow.9644e339-4a59-59a5-8244-af15b75f576c",
+  "IncludeInBuild": "1"
+}

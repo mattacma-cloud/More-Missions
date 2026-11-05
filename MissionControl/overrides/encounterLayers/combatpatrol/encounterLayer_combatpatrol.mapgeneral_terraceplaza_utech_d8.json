@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_terracePlaza_uTech.a29b20e9-5160-548d-9f80-c5223c59ae31",
+  "MapID": "mapGeneral_terracePlaza_uTech",
+  "Name": "encMC_CombatPatrol_TerracePlaza_d8",
+  "FriendlyName": "Terrace Plaza",
+  "Description": "Combat Patrol Terrace Plaza d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "a29b20e9-5160-548d-9f80-c5223c59ae31",
+  "TagSetID": "mapGeneral_terracePlaza_uTech.a29b20e9-5160-548d-9f80-c5223c59ae31",
+  "IncludeInBuild": "1"
+}

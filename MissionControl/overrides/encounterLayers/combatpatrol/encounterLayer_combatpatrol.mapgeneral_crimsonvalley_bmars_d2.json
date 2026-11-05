@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_crimsonValley_bMars.311ddbe8-cf92-5a54-b117-a8368f64e25b",
+  "MapID": "mapGeneral_crimsonValley_bMars",
+  "Name": "encMC_CombatPatrol_CrimsonValley_d2",
+  "FriendlyName": "Crimson Valley",
+  "Description": "Combat Patrol Crimson Valley d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "311ddbe8-cf92-5a54-b117-a8368f64e25b",
+  "TagSetID": "mapGeneral_crimsonValley_bMars.311ddbe8-cf92-5a54-b117-a8368f64e25b",
+  "IncludeInBuild": "1"
+}

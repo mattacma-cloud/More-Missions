@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_theMound_vHigh.6a05a981-0676-5d9d-8ed2-b2dbc5caa949",
+  "MapID": "mapGeneral_theMound_vHigh",
+  "Name": "encMC_CombatPatrol_TheMound_d2",
+  "FriendlyName": "The Mound",
+  "Description": "Combat Patrol The Mound d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "6a05a981-0676-5d9d-8ed2-b2dbc5caa949",
+  "TagSetID": "mapGeneral_theMound_vHigh.6a05a981-0676-5d9d-8ed2-b2dbc5caa949",
+  "IncludeInBuild": "1"
+}

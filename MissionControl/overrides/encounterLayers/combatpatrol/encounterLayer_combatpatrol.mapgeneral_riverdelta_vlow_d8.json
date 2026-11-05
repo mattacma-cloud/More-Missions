@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_riverDelta_vLow.4260aa9d-192d-5d8d-939c-d9690f06931f",
+  "MapID": "mapGeneral_riverDelta_vLow",
+  "Name": "encMC_CombatPatrol_RiverDelta_d8",
+  "FriendlyName": "River Delta",
+  "Description": "Combat Patrol River Delta d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "4260aa9d-192d-5d8d-939c-d9690f06931f",
+  "TagSetID": "mapGeneral_riverDelta_vLow.4260aa9d-192d-5d8d-939c-d9690f06931f",
+  "IncludeInBuild": "1"
+}

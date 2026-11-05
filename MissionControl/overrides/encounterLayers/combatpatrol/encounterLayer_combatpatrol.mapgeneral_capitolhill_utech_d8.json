@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_capitolHill_uTech.fadad157-7d0f-5104-8cf1-33a5b18a8f8f",
+  "MapID": "mapGeneral_capitolHill_uTech",
+  "Name": "encMC_CombatPatrol_CapitolHill_d8",
+  "FriendlyName": "Capitol Hill",
+  "Description": "Combat Patrol Capitol Hill d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "fadad157-7d0f-5104-8cf1-33a5b18a8f8f",
+  "TagSetID": "mapGeneral_capitolHill_uTech.fadad157-7d0f-5104-8cf1-33a5b18a8f8f",
+  "IncludeInBuild": "1"
+}

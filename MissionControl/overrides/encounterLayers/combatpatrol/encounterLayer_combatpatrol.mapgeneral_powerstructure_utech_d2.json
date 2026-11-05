@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_powerStructure_uTech.d010cd78-0576-5b84-99a4-9711c77fbb37",
+  "MapID": "mapGeneral_powerStructure_uTech",
+  "Name": "encMC_CombatPatrol_PowerStructure_d2",
+  "FriendlyName": "Power Structure",
+  "Description": "Combat Patrol Power Structure d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "d010cd78-0576-5b84-99a4-9711c77fbb37",
+  "TagSetID": "mapGeneral_powerStructure_uTech.d010cd78-0576-5b84-99a4-9711c77fbb37",
+  "IncludeInBuild": "1"
+}

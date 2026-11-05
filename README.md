@@ -35,7 +35,7 @@ The mission types and their status are:
 + 12	The Vice - Initial map tested and working
 + 13	By the Sword - Initial map tested and working
 
-Each of the missions will appear on the contract screen list of contracts in green, for easy identification. 
+Combat Patrol appears on the normal contract list when a world's difficulty window includes 2, 5, or 8 and that biome has a map. It is not a flashpoint. 
 
 ## Installation
 
@@ -48,6 +48,14 @@ The mod depends on the following:
 - ModTek
 
 - Mission Control
+
+# Combat Patrol in this package
+
+The files in this package are Combat Patrol only. The draw uses six types, all named Combat Patrol: CombatPatrolD2, CombatPatrolD5, CombatPatrolD8, and the Sunken Hills types CombatPatrolSunkenD2, CombatPatrolSunkenD5, and CombatPatrolSunkenD8. The shared cards are in the normal draw. The per-map plates are not. MoreMissions copies the chosen map's title and description onto the card, and it sets the objective round counts to that map. guaranteed.json has no groups, so the mod does not add an extra contract.
+
+In your existing Mods/MissionControl/settings.json, add those six names to ExcludeContractTypes under RandomSpawns, AdditionalLances, ExtendedLances, and DynamicWithdraw. Do not add them to HotDropProtection or ExtendedBoundaries. This package does not include a settings.json.
+
+Combat Patrol uses the drop zone on the layer. In Mods/CustomUnits/mod.json, ManualDeployForbidContractTypes should include CombatPatrol and the six names above.
 
 # New Mission Types
 

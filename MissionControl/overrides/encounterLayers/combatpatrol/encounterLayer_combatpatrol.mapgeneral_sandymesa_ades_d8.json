@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_sandyMesa_aDes.80c711a8-87bc-5c03-a6db-c3170baf6208",
+  "MapID": "mapGeneral_sandyMesa_aDes",
+  "Name": "encMC_CombatPatrol_SandyMesa_d8",
+  "FriendlyName": "Sandy Mesa",
+  "Description": "Combat Patrol Sandy Mesa d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "80c711a8-87bc-5c03-a6db-c3170baf6208",
+  "TagSetID": "mapGeneral_sandyMesa_aDes.80c711a8-87bc-5c03-a6db-c3170baf6208",
+  "IncludeInBuild": "1"
+}

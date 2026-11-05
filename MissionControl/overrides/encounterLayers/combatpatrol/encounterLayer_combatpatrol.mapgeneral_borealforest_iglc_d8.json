@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_borealForest_iGlc.ff0fc7d3-168c-5584-8746-3ee21192b807",
+  "MapID": "mapGeneral_borealForest_iGlc",
+  "Name": "encMC_CombatPatrol_BorealForest_d8",
+  "FriendlyName": "Boreal Forest",
+  "Description": "Combat Patrol Boreal Forest d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "ff0fc7d3-168c-5584-8746-3ee21192b807",
+  "TagSetID": "mapGeneral_borealForest_iGlc.ff0fc7d3-168c-5584-8746-3ee21192b807",
+  "IncludeInBuild": "1"
+}

@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_rawCliffsides_vHigh.5ee2e9a2-62f5-535a-b1b4-573c2d22b1fb",
+  "MapID": "mapGeneral_rawCliffsides_vHigh",
+  "Name": "encMC_CombatPatrol_RawCliffsides_d5",
+  "FriendlyName": "Raw Cliffsides",
+  "Description": "Combat Patrol Raw Cliffsides d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "5ee2e9a2-62f5-535a-b1b4-573c2d22b1fb",
+  "TagSetID": "mapGeneral_rawCliffsides_vHigh.5ee2e9a2-62f5-535a-b1b4-573c2d22b1fb",
+  "IncludeInBuild": "1"
+}

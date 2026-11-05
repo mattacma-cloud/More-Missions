@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_toxicMire_aBad.fe9f8563-b68e-5d06-af41-65923faa2278",
+  "MapID": "mapGeneral_toxicMire_aBad",
+  "Name": "encMC_CombatPatrol_ToxicMire_d8",
+  "FriendlyName": "Toxic Mire",
+  "Description": "Combat Patrol Toxic Mire d8",
+  "BattleValue": "0",
+  "ContractTypeID": "18016",
+  "EncounterLayerGUID": "fe9f8563-b68e-5d06-af41-65923faa2278",
+  "TagSetID": "mapGeneral_toxicMire_aBad.fe9f8563-b68e-5d06-af41-65923faa2278",
+  "IncludeInBuild": "1"
+}

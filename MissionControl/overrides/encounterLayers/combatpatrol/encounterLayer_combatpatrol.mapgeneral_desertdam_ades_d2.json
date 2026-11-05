@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_desertDam_aDes.c6566999-a2c9-54fb-9530-f423e15b8827",
+  "MapID": "mapGeneral_desertDam_aDes",
+  "Name": "encMC_CombatPatrol_DesertDam_d2",
+  "FriendlyName": "Desert Dam",
+  "Description": "Combat Patrol Desert Dam d2",
+  "BattleValue": "0",
+  "ContractTypeID": "18014",
+  "EncounterLayerGUID": "c6566999-a2c9-54fb-9530-f423e15b8827",
+  "TagSetID": "mapGeneral_desertDam_aDes.c6566999-a2c9-54fb-9530-f423e15b8827",
+  "IncludeInBuild": "1"
+}

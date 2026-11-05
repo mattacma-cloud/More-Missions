@@ -1,0 +1,12 @@
+{
+  "EncounterLayerID": "mapGeneral_ruggedAtoll_vJung.2650a276-d6f0-5d47-a152-d800e9d3e508",
+  "MapID": "mapGeneral_ruggedAtoll_vJung",
+  "Name": "encMC_CombatPatrol_RuggedAtoll_d5",
+  "FriendlyName": "Rugged Atoll",
+  "Description": "Combat Patrol Rugged Atoll d5",
+  "BattleValue": "0",
+  "ContractTypeID": "18015",
+  "EncounterLayerGUID": "2650a276-d6f0-5d47-a152-d800e9d3e508",
+  "TagSetID": "mapGeneral_ruggedAtoll_vJung.2650a276-d6f0-5d47-a152-d800e9d3e508",
+  "IncludeInBuild": "1"
+}
