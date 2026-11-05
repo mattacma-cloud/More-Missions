@@ -2,9 +2,9 @@
   "Name": "MoreMissions",
   "Enabled": true,
   "Version": "1.0.0",
-  "Description": "Lets a Mission Control lance team swap finish every unit when that result has no combat reference.",
+  "Description": "Lets a Mission Control lance team swap finish every unit when that result has no combat reference. Arms map structures for Combat Patrol. After a map is chosen, copies that plate's title and descriptions onto the shared card. guaranteed.json is empty, so Combat Patrol uses the normal contract draw.",
   "Author": "Blacknova",
-  "DLL": "MoreMissions.dll",
+  "DLL": "MoreMissions.next17.dll",
   "DLLEntryPoint": "MoreMissions.Main.Init",
   "DependsOn": [
     "ModTek",

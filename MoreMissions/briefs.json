@@ -1,0 +1,14 @@
+{
+  "groups": [
+    {
+      "name": "Combat Patrol",
+      "shellId": "CombatPatrol_Procedural_D{difficulty}",
+      "plateId": "CombatPatrol_{mapId}_D{difficulty}"
+    },
+    {
+      "name": "Combat Patrol Sunken Hills",
+      "shellId": "CombatPatrol_SunkenHills_D{difficulty}",
+      "plateId": "CombatPatrol_{mapId}_D{difficulty}"
+    }
+  ]
+}
